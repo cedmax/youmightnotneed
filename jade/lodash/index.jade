@@ -1,0 +1,99 @@
+doctype html
+
+//- This will go into the HTML file to let people know to edit this file instead:
+// Please edit the index.jade or the files in comparisons/, this file is generated
+
+include _support
+
+<!--[if lt IE 10 ]> <html class="old-ie"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html> <!--<![endif]-->
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='chrome=1')
+  meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+
+  title You Might Not Need Lodash
+
+  meta(name='description', content='Examples of how to do replicate lodash functionalities with plain javascript.')
+
+  link(rel='stylesheet', href='/css/prism.css')
+  link(rel='stylesheet', href='/css/index.css')
+
+  script(src='/js/prism.js')
+  script(src='/js/index.js')
+body
+  .page
+    header.page-header
+      .inner
+        h1
+          | You might <span class="highlighted">no</span>t need <span class="highlighted">Lodash</span>
+
+    .explanation
+      .inner
+        p
+          | Lodash is a great library, well crafted and with a strong team behind it, this page is a mere exercise to see what we can achieve with plain js, even more now that ES2015 is getting used more and more.
+
+        p
+          | There are many many reasons why you should rely on lodash, but sometimes it's nice to know the nitty gritty details of what we are building or how stuff works behind the hood, hence this project.
+
+        p
+          | The project is on working, please <a href="https://github.com/cedmax/youmightnotneed">contribute on github</a>
+
+    header.search
+
+      input(type="search", placeholder="Search...", required)
+
+    .comparisons
+
+      .empty-message
+        | Your search didn't match any comparisons.
+
+      - var i = 0
+      for comp in comparisons
+        section(id=comp.title, class=(++i % 2 ? 'odd' : ''))
+          .inner
+            h2= titleCase(comp.title)
+
+            if comp.comparison._support
+              +support(comp.comparison._support)
+
+            for co, name in comp.comparison
+              - if (name[0] === '_') continue;
+
+              .comparison(id=name.replace(' ', '-').toLowerCase())
+                h3
+                  a(href='#' + name.replace(' ', '-'))= titleCase(name.replace(/_/g, ' '))
+
+                for browser in ['lodash', 'vanilla']
+                  if co[browser]
+                    .browser(data-browser=getNamePart(browser), class=getNamePart(browser))
+
+                      if browser === 'lodash'
+                        h4 Lodash
+                      else
+                        h4 Vanilla JS
+
+                      for lang in ['js', 'css']
+                        if co[browser][lang]
+                          .code-block(class='language-' + fullLanguage(lang), data-lang=fullLanguage(lang))
+                            pre
+                              code= co[browser][lang]
+
+                if co.support
+                    +support(co.support.txt)
+
+    footer
+      script.
+        (function(){
+          peeps = ['cedmax']
+          document.write('<p>Made by <a href="http://twitter.com/'+ peeps[0] + '">@' + peeps[0] + '</a>. <br/><small>Inspired to <a href="http://YouMightNotNeedjQuery.com">You Might Not Need jQuery</a></small></p>');
+        })()
+
+
+  script.
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-240287-36', 'auto');
+    ga('send', 'pageview');

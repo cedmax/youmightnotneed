@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<!-- Please edit the index.jade or the files in comparisons/, this file is generated--><!--[if lt IE 10 ]> <html class="old-ie"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>You Might Not Need Lodash</title>
+  <meta name="description" content="Examples of how to do replicate lodash functionalities with plain javascript.">
+  <link rel="stylesheet" href="/css/prism.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <script src="/js/prism.js"></script>
+  <script src="/js/index.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <div class="inner">
+        <h1>You might <span class="highlighted">no</span>t need <span class="highlighted">Lodash</span></h1>
+      </div>
+    </header>
+    <div class="explanation">
+      <div class="inner">
+        <p>Lodash is a great library, well crafted and with a strong team behind it, this page is a mere exercise to see what we can achieve with plain js, even more now that ES2015 is getting used more and more.</p>
+        <p>There are many many reasons why you should rely on lodash, but sometimes it's nice to know the nitty gritty details of what we are building or how stuff works behind the hood, hence this project.</p>
+        <p>The project is on working, please <a href="https://github.com/cedmax/youmightnotneed">contribute on github</a></p>
+      </div>
+    </div>
+    <header class="search">
+      <input type="search" placeholder="Search..." required>
+    </header>
+    <div class="comparisons">
+      <div class="empty-message">Your search didn't match any comparisons.</div>
+      <section id="array" class="odd">
+        <div class="inner">
+          <h2>Array</h2>
+          <div id="compact" class="comparison">
+            <h3><a href="#compact">Compact</a></h3>
+            <div data-browser="lodash" class="browser lodash">
+              <h4>Lodash</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>_.compact([0, 1, 2]);
+//[1, 2]</code></pre>
+              </div>
+            </div>
+            <div data-browser="vanilla" class="browser vanilla">
+              <h4>Vanilla JS</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>[0,1,2].filter(Boolean)
+//[1, 2]
+
+//es2015
+array.filter(x =&gt; !!x);
+//[1, 2]</code></pre>
+              </div>
+            </div>
+            <div class="support-block">
+              <h4>Refs:</h4>
+              <ul class="support">
+                <li><a href=" https://www.reindex.io/blog/you-might-not-need-underscore/" target="_blank">support</a></li>
+                <li><a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank">mdn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="concat" class="comparison">
+            <h3><a href="#concat">Concat</a></h3>
+            <div data-browser="lodash" class="browser lodash">
+              <h4>Lodash</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>var array = [1]
+_.concat(array, 2, [3], [[4]]);
+//[1, 2, 3, [4]]
+</code></pre>
+              </div>
+            </div>
+            <div data-browser="vanilla" class="browser vanilla">
+              <h4>Vanilla JS</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>var array = [1]
+array.concat(2, [3], [[4]])
+//[1, 2, 3, [4]]</code></pre>
+              </div>
+            </div>
+            <div class="support-block">
+              <h4>Refs:</h4>
+              <ul class="support">
+                <li><a href=" https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore#_concat" target="_blank">source</a></li>
+                <li><a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat" target="_blank">mdn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="difference" class="comparison">
+            <h3><a href="#difference">Difference</a></h3>
+            <div data-browser="lodash" class="browser lodash">
+              <h4>Lodash</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>var a = [2, 1];
+var b = [3, 2];
+
+_.difference(a, b);
+// =&gt; [1]</code></pre>
+              </div>
+            </div>
+            <div data-browser="vanilla" class="browser vanilla">
+              <h4>Vanilla JS</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>var a = [2, 1];
+var b = [3, 2];
+
+[...a].filter(x =&gt; !b.includes(x));
+//[1]</code></pre>
+              </div>
+            </div>
+            <div class="support-block">
+              <h4>Refs:</h4>
+              <ul class="support">
+                <li><a href=" http://www.2ality.com/2015/01/es6-set-operations.html" target="_blank">source</a></li>
+                <li><a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator" target="_blank">mdn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="each" class="comparison">
+            <h3><a href="#each">Each</a></h3>
+            <div data-browser="lodash" class="browser lodash">
+              <h4>Lodash</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>function iteratee(value, index) {
+  console.log(value, index);
+}
+
+_.each(['a', 'b', 'c'], iteratee)
+//output: a 0
+//output: b 1
+//output: c 2</code></pre>
+              </div>
+            </div>
+            <div data-browser="vanilla" class="browser vanilla">
+              <h4>Vanilla JS</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>function iteratee(value, index) {
+  console.log(value, index);
+}
+
+['a', 'b', 'c'].forEach(iteratee)
+//output: a 0
+//output: b 1
+//output: c 2</code></pre>
+              </div>
+            </div>
+            <div class="support-block">
+              <h4>Refs:</h4>
+              <ul class="support">
+                <li><a href=" https://www.reindex.io/blog/you-might-not-need-underscore/" target="_blank">source</a></li>
+                <li><a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">mdn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="every" class="comparison">
+            <h3><a href="#every">Every</a></h3>
+            <div data-browser="lodash" class="browser lodash">
+              <h4>Lodash</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>function isLargerThanTen (element, index, array) {
+  return element &gt;= 10
+}
+
+var array = [10, 20, 30]
+_.every(array, isLargerThanTen)
+//true</code></pre>
+              </div>
+            </div>
+            <div data-browser="vanilla" class="browser vanilla">
+              <h4>Vanilla JS</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>function isLargerThanTen (element, index, array) {
+  return element &gt;= 10
+}
+
+var array = [10, 20, 30]
+array.every(isLargerThanTen)
+//true</code></pre>
+              </div>
+            </div>
+            <div class="support-block">
+              <h4>Refs:</h4>
+              <ul class="support">
+                <li><a href=" https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore#_every" target="_blank">source</a></li>
+                <li><a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every" target="_blank">mdn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="fill" class="comparison">
+            <h3><a href="#fill">Fill</a></h3>
+            <div data-browser="lodash" class="browser lodash">
+              <h4>Lodash</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>var array = [1, 2, 3]
+_.fill(array, 'a')
+
+console.log(array)
+//output: ['a', 'a', 'a']
+
+_.fill(Array(3), 2)
+//[2, 2, 2]
+
+_.fill([4, 6, 8, 10], '*', 1, 3)
+//[4, '*', '*', 10]</code></pre>
+              </div>
+            </div>
+            <div data-browser="vanilla" class="browser vanilla">
+              <h4>Vanilla JS</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>// Native
+var array = [1, 2, 3]
+array.fill('a')
+
+console.log(array)
+//output: ['a', 'a', 'a']
+
+Array(3).fill(2)
+//[2, 2, 2]
+
+[4, 6, 8, 10].fill('*', 1, 3)
+//[4, '*', '*', 10]</code></pre>
+              </div>
+            </div>
+            <div class="support-block">
+              <h4>Refs:</h4>
+              <ul class="support">
+                <li><a href=" https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore#_find" target="_blank">source</a></li>
+                <li><a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find" target="_blank">mdn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="filter" class="comparison">
+            <h3><a href="#filter">Filter</a></h3>
+            <div data-browser="lodash" class="browser lodash">
+              <h4>Lodash</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>function isBigEnough(value) {
+  return value &gt;= 10
+}
+var array = [12, 5, 8, 130, 44]
+_.filter(array, isBigEnough)
+//[12, 130, 44]
+</code></pre>
+              </div>
+            </div>
+            <div data-browser="vanilla" class="browser vanilla">
+              <h4>Vanilla JS</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>function isBigEnough(value) {
+  return value &gt;= 10
+}
+
+var array = [12, 5, 8, 130, 44]
+array.filter(isBigEnough)
+//[12, 130, 44]</code></pre>
+              </div>
+            </div>
+            <div class="support-block">
+              <h4>Refs:</h4>
+              <ul class="support">
+                <li><a href=" https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore#_filter" target="_blank">source</a></li>
+                <li><a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank">mdn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="find" class="comparison">
+            <h3><a href="#find">Find</a></h3>
+            <div data-browser="lodash" class="browser lodash">
+              <h4>Lodash</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>var users = [
+  { 'user': 'barney',  'age': 36, 'active': true },
+  { 'user': 'fred',    'age': 40, 'active': false },
+  { 'user': 'pebbles', 'age': 1,  'active': true }
+]
+
+_.find(users, function (o) { return o.age &lt; 40; })
+//Object { user: &quot;barney&quot;, age: 36, active: true }</code></pre>
+              </div>
+            </div>
+            <div data-browser="vanilla" class="browser vanilla">
+              <h4>Vanilla JS</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>var users = [
+  { 'user': 'barney',  'age': 36, 'active': true },
+  { 'user': 'fred',    'age': 40, 'active': false },
+  { 'user': 'pebbles', 'age': 1,  'active': true }
+]
+
+users.find(function (o) { return o.age &lt; 40; })
+//Object { user: &quot;barney&quot;, age: 36, active: true }</code></pre>
+              </div>
+            </div>
+            <div class="support-block">
+              <h4>Refs:</h4>
+              <ul class="support">
+                <li><a href=" https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore#_find" target="_blank">SOURCE</a></li>
+                <li><a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find" target="_blank">mdn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="findindex" class="comparison">
+            <h3><a href="#findIndex">FindIndex</a></h3>
+            <div data-browser="lodash" class="browser lodash">
+              <h4>Lodash</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>var users = [
+  { 'user': 'barney',  'age': 36, 'active': true },
+  { 'user': 'fred',    'age': 40, 'active': false },
+  { 'user': 'pebbles', 'age': 1,  'active': true }
+]
+
+_.findIndex(users, function (o) { return o.age &gt;= 40; })
+//1</code></pre>
+              </div>
+            </div>
+            <div data-browser="vanilla" class="browser vanilla">
+              <h4>Vanilla JS</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>var users = [
+  { 'user': 'barney',  'age': 36, 'active': true },
+  { 'user': 'fred',    'age': 40, 'active': false },
+  { 'user': 'pebbles', 'age': 1,  'active': true }
+]
+
+users.findIndex(function (o) { return o.age &gt;= 40; })
+//1</code></pre>
+              </div>
+            </div>
+            <div class="support-block">
+              <h4>Refs:</h4>
+              <ul class="support">
+                <li><a href=" https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore#_findindex" target="_blank">source</a></li>
+                <li><a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex" target="_blank">mdn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="head" class="comparison">
+            <h3><a href="#head">Head</a></h3>
+            <div data-browser="lodash" class="browser lodash">
+              <h4>Lodash</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>_.head([1, 2, 3]);
+// 1</code></pre>
+              </div>
+            </div>
+            <div data-browser="vanilla" class="browser vanilla">
+              <h4>Vanilla JS</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>const [head, ...tail] = [1, 2, 3];
+console.log(head);
+//output: 1</code></pre>
+              </div>
+            </div>
+            <div class="support-block">
+              <h4>Refs:</h4>
+              <ul class="support">
+                <li><a href=" https://www.sitepoint.com/lodash-features-replace-es6/" target="_blank">source</a></li>
+                <li><a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator" target="_blank">mdn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="includes" class="comparison">
+            <h3><a href="#includes">Includes</a></h3>
+            <div data-browser="lodash" class="browser lodash">
+              <h4>Lodash</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>var array = [1, 2, 3]
+_.includes(array, 1)
+//true</code></pre>
+              </div>
+            </div>
+            <div data-browser="vanilla" class="browser vanilla">
+              <h4>Vanilla JS</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>var array = [1, 2, 3]
+array.includes(1)
+//true
+
+var array = [1, 2, 3]
+array.indexOf(1) &gt; -1
+//true</code></pre>
+              </div>
+            </div>
+            <div class="support-block">
+              <h4>Refs:</h4>
+              <ul class="support">
+                <li><a href=" https://www.sitepoint.com/lodash-features-replace-es6/" target="_blank">Source</a></li>
+                <li><a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes" target="_blank">mdn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="indexof" class="comparison">
+            <h3><a href="#indexOf">IndexOf</a></h3>
+            <div data-browser="lodash" class="browser lodash">
+              <h4>Lodash</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>_.indexOf([1, 2, 3], 3);
+//2</code></pre>
+              </div>
+            </div>
+            <div data-browser="vanilla" class="browser vanilla">
+              <h4>Vanilla JS</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>[1, 2, 3].indexOf(3)
+//2</code></pre>
+              </div>
+            </div>
+            <div class="support-block">
+              <h4>Refs:</h4>
+              <ul class="support">
+                <li><a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf" target="_blank">mdn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="map" class="comparison">
+            <h3><a href="#map">Map</a></h3>
+            <div data-browser="lodash" class="browser lodash">
+              <h4>Lodash</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>_.map([1, 2, 3], function(n) { return n * 3; });
+//[3, 6, 9]</code></pre>
+              </div>
+            </div>
+            <div data-browser="vanilla" class="browser vanilla">
+              <h4>Vanilla JS</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>[1, 2, 3].map(n =&gt; n * 3);
+//[3, 6, 9]</code></pre>
+              </div>
+            </div>
+            <div class="support-block">
+              <h4>Refs:</h4>
+              <ul class="support">
+                <li><a href=" https://www.sitepoint.com/lodash-features-replace-es6/" target="_blank">source</a></li>
+                <li><a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank">mdn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="reduce" class="comparison">
+            <h3><a href="#reduce">Reduce</a></h3>
+            <div data-browser="lodash" class="browser lodash">
+              <h4>Lodash</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>_.reduce([0, 1, 2, 3], function(a, b) {
+  return a + b;
+}, 0);
+//6</code></pre>
+              </div>
+            </div>
+            <div data-browser="vanilla" class="browser vanilla">
+              <h4>Vanilla JS</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>[1, 2, 3].reduce((a, b) =&gt; a + b);
+
+//6</code></pre>
+              </div>
+            </div>
+            <div class="support-block">
+              <h4>Refs:</h4>
+              <ul class="support">
+                <li><a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce" target="_blank">mdn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="tail" class="comparison">
+            <h3><a href="#tail">Tail</a></h3>
+            <div data-browser="lodash" class="browser lodash">
+              <h4>Lodash</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>_.tail([1, 2, 3]);
+// [2, 3]</code></pre>
+              </div>
+            </div>
+            <div data-browser="vanilla" class="browser vanilla">
+              <h4>Vanilla JS</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>const [head, ...tail] = [1, 2, 3];
+console.log(tail)
+//output: [2, 3]</code></pre>
+              </div>
+            </div>
+            <div class="support-block">
+              <h4>Refs:</h4>
+              <ul class="support">
+                <li><a href=" https://www.sitepoint.com/lodash-features-replace-es6/" target="_blank">source</a></li>
+                <li><a href=" https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator" target="_blank">mdn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <script>
+        (function(){
+          peeps = ['cedmax']
+          document.write('<p>Made by <a href="http://twitter.com/'+ peeps[0] + '">@' + peeps[0] + '</a>. <br/><small>Inspired to <a href="http://YouMightNotNeedjQuery.com">You Might Not Need jQuery</a></small></p>');
+        })()
+        
+        
+      </script>
+    </footer>
+  </div>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-240287-36', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
