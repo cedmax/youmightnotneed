@@ -2,6 +2,8 @@ fs = require('fs')
 
 readFileTree = require('readfiletree')
 
+toIgnore = [ 'reference.txt' ]
+
 get = (cb) ->
   readFileTree 'comparisons/', (err, tree) ->
     if err
@@ -11,13 +13,16 @@ get = (cb) ->
     out = {}
 
     for title, comps of tree
-      if title.startsWith '.' 
+      if title.startsWith '.'
+        break
+
+      if toIgnore.includes title
         break
 
       out[title] = {}
 
       for name, comp of comps
-        if name.startsWith '.' 
+        if name.startsWith '.'
           break
 
         if name is 'support.txt'
