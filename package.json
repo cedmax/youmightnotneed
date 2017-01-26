@@ -2,6 +2,10 @@
   "name": "youmightnotneed",
   "version": "0.1.0",
   "description": "You might not need *",
+  "scripts": {
+    "watch": "gulp",
+    "build": "gulp build"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/cedmax/youmightnotneed.git"

@@ -64,3 +64,8 @@ gulp.task 'default', ->
 
   gulp.watch ['./jade/**/*.jade', './comparisons/**/*'], ->
     gulp.run 'jade'
+
+
+gulp.task 'build', ->
+
+  gulp.run 'coffee', 'stylus', 'jade'

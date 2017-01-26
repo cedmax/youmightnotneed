@@ -34,6 +34,34 @@
       <section id="array" class="odd">
         <div class="inner">
           <h2>Array</h2>
+          <div id="chunk" class="comparison">
+            <h3><a href="#chunk">Chunk</a></h3>
+            <div data-browser="lodash" class="browser lodash">
+              <h4>Lodash</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>_.chunk(['a', 'b', 'c', 'd', 'e', 'f', 'g'], 3);
+//[['a', 'b', 'c'], ['d', 'e', 'f'], ['g']]</code></pre>
+              </div>
+            </div>
+            <div data-browser="vanilla" class="browser vanilla">
+              <h4>Vanilla JS</h4>
+              <div data-lang="javascript" class="code-block language-javascript">
+                <pre><code>function chunk(arr, n) {
+  return arr.slice(0, (arr.length + n - 1)/n | 0)
+          .map((c, i) =&gt; arr.slice(n * i, n * i + n));
+}
+
+chunk(['a', 'b', 'c', 'd', 'e', 'f', 'g'], 3);
+//[['a', 'b', 'c'], ['d', 'e', 'f'], ['g']]</code></pre>
+              </div>
+            </div>
+            <div class="support-block">
+              <h4>Refs:</h4>
+              <ul class="support">
+                <li><a href=" http://stackoverflow.com/a/22649021/2880414" target="_blank">source</a></li>
+              </ul>
+            </div>
+          </div>
           <div id="compact" class="comparison">
             <h3><a href="#compact">Compact</a></h3>
             <div data-browser="lodash" class="browser lodash">
