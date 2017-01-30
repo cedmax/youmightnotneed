@@ -3,4 +3,4 @@ function isBigEnough(value) {
 }
 var array = [12, 5, 8, 130, 44]
 _.filter(array, isBigEnough)
-//[12, 130, 44]
+// => [12, 130, 44]

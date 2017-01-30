@@ -5,4 +5,4 @@ var users = [
 ]
 
 users.find(function (o) { return o.age < 40; })
-//Object { user: "barney", age: 36, active: true }
+// => { user: "barney", age: 36, active: true }

@@ -5,4 +5,4 @@ var users = [
 ]
 
 _.findIndex(users, function (o) { return o.age >= 40; })
-//1
+// => 1

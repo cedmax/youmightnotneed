@@ -4,4 +4,4 @@ function isLargerThanTen (element, index, array) {
 
 var array = [10, 20, 30]
 _.every(array, isLargerThanTen)
-//true
+// => true
