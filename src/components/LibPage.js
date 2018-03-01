@@ -108,7 +108,7 @@ export default class LibPage extends Component {
 
     return (
       <Fragment>
-        <Content><Input onChange={this.onChange} value={value} /></Content>
+        <Content><Input placeholder="Search..." onChange={this.onChange} value={value} /></Content>
         <AnchoredBlock>
           {Object.keys(data).map(section =>
             (<Row key={section}>
