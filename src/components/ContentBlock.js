@@ -5,6 +5,10 @@ const Content = styled.div`
   max-width: 50em;
   margin: auto;
   
+  & + & {
+    padding-top: 0;
+  }
+
   h1 {
     background: #414141;
     padding: .2em;

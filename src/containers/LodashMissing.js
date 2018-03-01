@@ -1,12 +1,9 @@
-
-import React, { Fragment } from 'react'
-import { Head } from 'react-static'
+import React from 'react'
 import content from '../content/lodash-missing.md'
-import Content from '../components/ContentBlock'
+import Page from '../components/Page'
 
 export default () => (
-  <Fragment>
-    <Head><title>You Might Not Need Lodash</title></Head>
-    <Content dangerouslySetInnerHTML={{ __html: content }} />
-  </Fragment>
+  <Page
+    title="You Might Not Need Lodash"
+    content={content} />
 )

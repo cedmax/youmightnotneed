@@ -3,28 +3,33 @@ import { ServerStyleSheet } from 'styled-components'
 import marked from 'marked'
 
 const renderer = new marked.Renderer()
-
+renderer.link = (href, title, text) => {
+  const isExternal = href.indexOf('http') === 0
+  return `<a href="${href}"
+    ${isExternal ? 'target="_blank" rel="noopener"' : ''} 
+    ${title ? `title="${title}"` : ''}>${text}</a>`
+}
 export default {
   getSiteData: () => ({
-    title: 'React Static',
+    title: 'React Static'
   }),
   getRoutes: async () => [
     {
       path: '/',
-      component: 'src/containers/Home',
+      component: 'src/containers/Home'
     },
     {
       path: '/lodash',
-      component: 'src/containers/Lodash',
+      component: 'src/containers/Lodash'
     },
     {
       path: '/lodash/missing',
-      component: 'src/containers/LodashMissing',
+      component: 'src/containers/LodashMissing'
     },
     {
       path: '/css',
-      component: 'src/containers/Css',
-    },
+      component: 'src/containers/Css'
+    }
   ],
   renderToHtml: (render, Comp, meta) => {
     const sheet = new ServerStyleSheet()
@@ -39,37 +44,41 @@ export default {
       return (
         <Html>
           <Head>
-            <meta name="description" content="A collection of &quot;You might not need&quot; resources" />
-            <meta charSet="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta name='description' content='A collection of &quot;You might not need&quot; resources' />
+            <meta charSet='UTF-8' />
+            <meta name='viewport' content='width=device-width, initial-scale=1' />
             {renderMeta.styleTags}
           </Head>
-          <Body>{children}</Body>
+          <Body>
+            {children}
+          </Body>
         </Html>
       )
     }
   },
-  webpack: [config => {
-    config.module.rules.push({
-      test: /\/content\/(.*).js$/,
-      use: 'raw-loader',
-    })
+  webpack: [
+    config => {
+      config.module.rules.push({
+        test: /\/content\/(.*).js$/,
+        use: 'raw-loader'
+      })
 
-    config.module.rules[0].oneOf.unshift({
-      test: /\.md$/,
-      use: [
-        {
-          loader: 'html-loader',
-        },
-        {
-          loader: 'markdown-loader',
-          options: {
-            renderer,
+      config.module.rules[0].oneOf.unshift({
+        test: /\.md$/,
+        use: [
+          {
+            loader: 'html-loader'
           },
-        },
-      ],
-    })
+          {
+            loader: 'markdown-loader',
+            options: {
+              renderer
+            }
+          }
+        ]
+      })
 
-    return config
-  }],
+      return config
+    }
+  ]
 }
