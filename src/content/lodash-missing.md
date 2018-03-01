@@ -13,8 +13,13 @@
 ~~_.differenceBy~~  
 ~~_.fill~~  
 ~~_.findIndex~~  
+~~_.first -> head~~
+~~_.flatten~~
+~~_.flattenDeep~~
+~~_.join~~
 ~~_.head~~  
 ~~_.indexOf~~  
+~~_.lastIndexOf~~
 ~~_.tail~~  
 
     _.differenceWith
@@ -23,18 +28,13 @@
     _.dropRightWhile
     _.dropWhile
     _.findLastIndex
-    _.first -> head
-    _.flatten
-    _.flattenDeep
     _.flattenDepth
     _.fromPairs
     _.initial
     _.intersection
     _.intersectionBy
     _.intersectionWith
-    _.join
     _.last
-    _.lastIndexOf
     _.nth
     _.pull
     _.pullAll
