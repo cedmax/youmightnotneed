@@ -19,7 +19,8 @@
 ~~_.join~~
 ~~_.head~~  
 ~~_.indexOf~~  
-~~_.lastIndexOf~~
+~~_.last~~  
+~~_.lastIndexOf~~  
 ~~_.tail~~  
 
     _.differenceWith
@@ -34,7 +35,6 @@
     _.intersection
     _.intersectionBy
     _.intersectionWith
-    _.last
     _.nth
     _.pull
     _.pullAll
