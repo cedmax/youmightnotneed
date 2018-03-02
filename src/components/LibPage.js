@@ -1,48 +1,10 @@
 import React, { Fragment, Component } from 'react'
 import styled from 'styled-components'
 import debounce from 'debounce'
-import Hightlight from 'react-highlight.js'
 import AnchoredBlock from '../components/AnchoredBlock'
-import Heading from '../components/Heading'
-import Content from '../components/ContentBlock'
-
-const LineBlock = styled.div`
-  padding-bottom: 2rem;
-  margin: auto;
-
-  code {
-    padding: 15px;
-    background: #f0f0f0;
-  }
-
-  @media (min-width: 800px) {
-    display: flex;
-    justify-content: space-between;
-
-    & > div {
-      overflow: hidden;
-      width: 48%;
-
-      * {
-        margin-bottom: 0;
-      }
-    }
-  }
-`
-
-const NotesLinks = styled.div`
-  text-align: center;
-
-  a {
-    padding: 0 3px;
-  }
-
-  a::after {
-    content: ' ⏍';
-    display: inline-block;
-    white-space: pre;
-  }
-`
+import Search from '../components/Search'
+import CodeComparison from '../components/CodeComparison'
+import dataFilter from '../helpers/data-filter'
 
 const Row = styled.div`
   background: white;
@@ -51,12 +13,6 @@ const Row = styled.div`
     background: #fafafa;
     border-bottom: 1px solid #eee;
   }
-`
-
-const Input = styled.input`
-  width: 100%;
-  padding: .5em;
-  font-size: 120%;
 `
 
 export default class LibPage extends Component {
@@ -84,19 +40,7 @@ export default class LibPage extends Component {
   filter (value) {
     const { data } = this.props
 
-    const newData = Object.keys(data).reduce((cache, section) => {
-      const methods = Object.keys(data[section]).filter(method => method.indexOf(value)===0)
-      cache[section] = methods.reduce((innerCache, method) => {
-        innerCache[method] = data[section][method]
-        return innerCache
-      }, {})
-
-      if (!Object.keys(cache[section]).length) {
-        delete cache[section]
-      }
-
-      return cache
-    }, {})
+    const newData = dataFilter(data, value)
 
     this.setState({
       data: newData,
@@ -108,36 +52,18 @@ export default class LibPage extends Component {
 
     return (
       <Fragment>
-        <Content><Input placeholder="Search..." onChange={this.onChange} value={value} /></Content>
-        <AnchoredBlock>
-          {Object.keys(data).map(section =>
-            (<Row key={section}>
-              <AnchoredBlock title={section} hierarchy="2">
-                {Object.keys(data[section]).map(method =>
-                  (<AnchoredBlock key={method} title={method} hierarchy="3">
-                    <Fragment>
-                      <LineBlock>
-                        {Object.keys(data[section][method])
-                          .filter(variant => variant !== 'notes')
-                          .map(variant =>
-                            (<div key={variant}>
-                              <Heading hierarchy="4">
-                                {variant}
-                              </Heading>
-                              <Hightlight className="javascript">
-                                {data[section][method][variant]}
-                              </Hightlight>
-                            </div>)
-                          )}
-                      </LineBlock>
-                      <NotesLinks dangerouslySetInnerHTML={{ __html: data[section][method].notes }} />
-                    </Fragment>
-                  </AnchoredBlock>)
-                )}
-              </AnchoredBlock>
-            </Row>)
-          )}
-        </AnchoredBlock>
+        <Search value={value} onChange={this.onChange} />
+        {Object.keys(data).map(section => (
+          <Row key={section}>
+            <AnchoredBlock title={section} hierarchy="2">
+              {Object.keys(data[section]).map(method => (
+                <AnchoredBlock key={method} title={method} hierarchy="3">
+                  <CodeComparison methodData={data[section][method]} />
+                </AnchoredBlock>
+              ))}
+            </AnchoredBlock>
+          </Row>
+        ))}
       </Fragment>
     )
   }
