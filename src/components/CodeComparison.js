@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import styled from 'styled-components'
 import Hightlight from 'react-highlight.js'
 import Heading from '../components/Heading'
+import Spec from '../components/Spec'
 
 const LineBlock = styled.div`
   padding-bottom: 2rem;
@@ -41,11 +42,11 @@ const NotesLinks = styled.div`
   }
 `
 
-export default ({ methodData }) => (
+export default ({ methodData, showTests }) => (
   <Fragment>
     <LineBlock>
       {Object.keys(methodData)
-        .filter(variant => variant !== 'notes')
+        .filter(variant => variant !== 'notes' && variant !=='spec')
         .map(variant =>
           (<div key={variant}>
             <Heading hierarchy="4">
@@ -58,5 +59,6 @@ export default ({ methodData }) => (
         )}
     </LineBlock>
     <NotesLinks dangerouslySetInnerHTML={{ __html: methodData.notes }} />
+    { methodData.spec && showTests ? <Spec code={methodData.spec} /> : null }
   </Fragment>
 )

@@ -6,5 +6,5 @@ const users = [
   { user: 'pebbles', age: 1, active: true },
 ]
 
-findIndex(users, o => o.age >= 40)
+module.exports = findIndex(users, o => o.age >= 40)
 // => 1

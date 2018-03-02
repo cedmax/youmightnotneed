@@ -4,5 +4,5 @@ function isLargerThanTen (element) {
   return element >= 10
 }
 
-every([10, 20, 30], isLargerThanTen)
+module.exports = every([10, 20, 30], isLargerThanTen)
 // => true

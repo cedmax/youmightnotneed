@@ -1,4 +1,4 @@
 import { last } from 'lodash'
 
-last(['a', 'b', 'c'])
+module.exports = last(['a', 'b', 'c'])
 // => 'c'

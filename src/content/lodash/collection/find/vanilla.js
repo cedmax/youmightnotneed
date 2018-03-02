@@ -4,5 +4,5 @@ const users = [
   { user: 'pebbles', age: 1, active: true },
 ]
 
-users.find(o => o.age < 40)
+module.exports = users.find(o => o.age < 40)
 // => { user: "barney", age: 36, active: true }

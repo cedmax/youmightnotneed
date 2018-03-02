@@ -1,10 +1,12 @@
 import React, { Fragment, Component } from 'react'
 import styled from 'styled-components'
 import debounce from 'debounce'
+import Content from '../components/ContentBlock'
 import AnchoredBlock from '../components/AnchoredBlock'
 import Search from '../components/Search'
 import CodeComparison from '../components/CodeComparison'
 import dataFilter from '../helpers/data-filter'
+import ShowTests from './ShowTests';
 
 const Row = styled.div`
   background: white;
@@ -23,6 +25,7 @@ export default class LibPage extends Component {
     this.filter = debounce(this.filter.bind(this), 50, true)
     this.state = {
       value: '',
+      showTests: false,
       data: this.props.data,
     }
   }
@@ -48,17 +51,20 @@ export default class LibPage extends Component {
   }
 
   render () {
-    const { data, value } = this.state
+    const { data, value, showTests } = this.state
 
     return (
       <Fragment>
-        <Search value={value} onChange={this.onChange} />
+        <Content>
+          <Search value={value} onChange={this.onChange} />
+          <ShowTests value={showTests} onChange={() => this.setState({ showTests: !showTests })} />
+        </Content>
         {Object.keys(data).map(section => (
           <Row key={section}>
             <AnchoredBlock title={section} hierarchy="2">
               {Object.keys(data[section]).map(method => (
                 <AnchoredBlock key={method} title={method} hierarchy="3">
-                  <CodeComparison methodData={data[section][method]} />
+                  <CodeComparison showTests={showTests} methodData={data[section][method]} />
                 </AnchoredBlock>
               ))}
             </AnchoredBlock>

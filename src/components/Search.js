@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Content from '../components/ContentBlock'
 
 const Input = styled.input`
   width: 100%;
@@ -9,5 +8,5 @@ const Input = styled.input`
 `
 
 export default props => (
-  <Content><Input placeholder="Search..." {...props} /></Content>
+  <Input placeholder="Search..." {...props} />
 )

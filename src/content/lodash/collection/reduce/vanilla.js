@@ -1,2 +1,2 @@
-[1, 2, 3].reduce((a, b) => a + b)
+module.exports = [1, 2, 3].reduce((a, b) => a + b)
 // => 6

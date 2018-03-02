@@ -1,4 +1,4 @@
 import { join } from 'lodash'
 
-join(['a', 'b', 'c'], '~')
+module.exports = join(['a', 'b', 'c'], '~')
 // => 'a~b~c'

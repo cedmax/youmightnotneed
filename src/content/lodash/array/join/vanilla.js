@@ -1,2 +1,2 @@
-['a', 'b', 'c'].join('~')
+module.exports = ['a', 'b', 'c'].join('~')
 // => 'a~b~c'

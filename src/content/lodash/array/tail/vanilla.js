@@ -1,3 +1,3 @@
 const [head, ...tail] = [1, 2, 3]
-console.log(tail)
+module.exports = tail
 // => [2, 3]
