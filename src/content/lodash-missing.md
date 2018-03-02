@@ -13,10 +13,10 @@
 ~~_.differenceBy~~  
 ~~_.fill~~  
 ~~_.findIndex~~  
-~~_.first -> head~~
-~~_.flatten~~
-~~_.flattenDeep~~
-~~_.join~~
+~~_.first -> head~~  
+~~_.flatten~~  
+~~_.flattenDeep~~  
+~~_.join~~  
 ~~_.head~~  
 ~~_.indexOf~~  
 ~~_.last~~  
