@@ -1,4 +1,4 @@
-const arr = [1, 2, 3]
+const arr = ['a', 'b', 'c']
 
 arr[arr.length - 1]
-// => 3
+// => 'c'
