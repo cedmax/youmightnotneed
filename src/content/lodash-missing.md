@@ -19,6 +19,7 @@
 ~~_.join~~  
 ~~_.head~~  
 ~~_.indexOf~~  
+~~_.last~~  
 ~~_.lastIndexOf~~  
 ~~_.tail~~  
 
@@ -34,7 +35,6 @@
     _.intersection
     _.intersectionBy
     _.intersectionWith
-    _.last
     _.nth
     _.pull
     _.pullAll
