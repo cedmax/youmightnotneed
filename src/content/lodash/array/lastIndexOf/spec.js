@@ -1,6 +1,6 @@
 const expected = {
   simple: 3,
-  fromIndex: 1
+  fromIndex: 1,
 }
 
 const lodash = require('./lodash')

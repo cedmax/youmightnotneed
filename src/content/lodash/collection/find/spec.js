@@ -1,4 +1,4 @@
-const expected = { user: "barney", age: 36, active: true }
+const expected = { user: 'barney', age: 36, active: true }
 
 const lodash = require('./lodash')
 const plain = require('./vanilla')

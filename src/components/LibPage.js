@@ -6,7 +6,7 @@ import AnchoredBlock from '../components/AnchoredBlock'
 import Search from '../components/Search'
 import CodeComparison from '../components/CodeComparison'
 import dataFilter from '../helpers/data-filter'
-import ShowTests from './ShowTests';
+import ShowTests from './ShowTests'
 
 const Row = styled.div`
   background: white;
