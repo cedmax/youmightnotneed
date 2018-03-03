@@ -11,27 +11,27 @@
 ~~_.concat~~  
 ~~_.difference~~  
 ~~_.differenceBy~~  
+~~_.drop~~  
+~~_.dropRight~~  
 ~~_.fill~~  
 ~~_.findIndex~~  
 ~~_.first -> head~~  
 ~~_.flatten~~  
-~~_.flattenDeep~~  
+~~_.flattenDeep~~
+~~_.fromPairs~~  
 ~~_.join~~  
 ~~_.head~~  
 ~~_.indexOf~~  
+~~_.initial~~  
 ~~_.last~~  
 ~~_.lastIndexOf~~  
 ~~_.tail~~  
 
     _.differenceWith
-    _.drop
-    _.dropRight
     _.dropRightWhile
     _.dropWhile
     _.findLastIndex
     _.flattenDepth
-    _.fromPairs
-    _.initial
     _.intersection
     _.intersectionBy
     _.intersectionWith
