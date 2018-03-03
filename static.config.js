@@ -10,9 +10,6 @@ renderer.link = (href, title, text) => {
     ${title ? `title="${title}"` : ''}>${text}</a>`
 }
 export default {
-  getSiteData: () => ({
-    title: 'React Static'
-  }),
   getRoutes: async () => [
     {
       path: '/',
@@ -29,7 +26,7 @@ export default {
     {
       path: '/css',
       component: 'src/containers/Css'
-    }
+    },
   ],
   renderToHtml: (render, Comp, meta) => {
     const sheet = new ServerStyleSheet()
@@ -44,9 +41,9 @@ export default {
       return (
         <Html>
           <Head>
-            <meta name='description' content='A collection of &quot;You might not need&quot; resources' />
-            <meta charSet='UTF-8' />
-            <meta name='viewport' content='width=device-width, initial-scale=1' />
+            <meta name="description" content="A collection of &quot;You might not need&quot; resources" />
+            <meta charSet="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
             {renderMeta.styleTags}
           </Head>
           <Body>
@@ -60,25 +57,25 @@ export default {
     config => {
       config.module.rules.push({
         test: /\/content\/(.*).js$/,
-        use: 'raw-loader'
+        use: 'raw-loader',
       })
 
       config.module.rules[0].oneOf.unshift({
         test: /\.md$/,
         use: [
           {
-            loader: 'html-loader'
+            loader: 'html-loader',
           },
           {
             loader: 'markdown-loader',
             options: {
-              renderer
-            }
-          }
-        ]
+              renderer,
+            },
+          },
+        ],
       })
 
       return config
-    }
-  ]
+    },
+  ],
 }
