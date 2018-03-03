@@ -1,8 +1,5 @@
-A resource for doing things differently.
+### [youmightnotneed.com](https://youmightnotneed.com)
 
-### [youmightnotneed.com](http://youmightnotneed.com)
+You might not need * is a collection of `You might not need ${something}` resources. 
 
-To Build: 
-- In the project directory, run `yarn`
-- To watch, run `yarn start`
-- To build, run `yarn build`
+Currently working on [Lodash](./src/content/lodash-missing.md). Please read [how to contribute](./src/content/how-to-contribute.md) if you want to add a method implementation. 
