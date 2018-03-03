@@ -8,7 +8,7 @@
     "stage": "react-static build --staging",
     "build": "react-static build",
     "serve": "serve dist -p 3000",
-    "test": "jest --verbose"
+    "test": "eslint src && jest --verbose"
   },
   "dependencies": {
     "axios": "^0.18.0",
