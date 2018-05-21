@@ -7,9 +7,9 @@ function merge (...args) {
   args.forEach(currentArg => {
     if (currentArg) {
       Object.keys(currentArg).forEach(key => {
-        if (isObject(currentArg[key]) && result[key] && isObject(result[key])) {
+        if (isObject(currentArg[key]) && isObject(result[key])) {
           result[key] = merge(result[key], currentArg[key])
-        } else if (Array.isArray(currentArg[key]) && result[key] && Array.isArray(result[key])) {
+        } else if (Array.isArray(currentArg[key]) && Array.isArray(result[key])) {
           let i = 0
           while (i < currentArg[key].length || i < result[key].length) {
             result[key][i] = merge(result[key][i], currentArg[key][i])
