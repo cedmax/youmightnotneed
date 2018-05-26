@@ -1,7 +1,19 @@
 function merge (...args) {
-  const result = {}
   if (!args || !args.length) {
-    return result
+    return {}
+  }
+
+  if (!isObject(args[0] || Array.isArray(args[0]))) {
+    // eslint-disable-next-line no-use-before-define
+    return args[0]
+  }
+
+  let result
+  if (isObject(args[0])) {
+    result = {}
+  }
+  if (Array.isArray(args[0])) {
+    result = []
   }
 
   args.forEach(currentArg => {
@@ -45,5 +57,7 @@ const other = {
   a: [{ c: 3 }, { e: 5 }],
 }
 
-module.exports = merge(object, other)
+merge(object, other)
 // => { 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
+
+module.exports = merge
