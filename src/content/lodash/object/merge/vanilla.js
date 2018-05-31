@@ -1,54 +1,45 @@
 const isObject = data => data && Object.prototype.toString.call(data) === '[object Object]'
+const isArray = data => Array.isArray(data)
 
 function merge (...args) {
-  if (!args || !args.length) return {}
+  const [firstArg, secondArg] = args
 
-  const [firstArg, secondArg, ...otherArgs] = args // eslint-disable-line no-unused-vars
-  if (!firstArg && secondArg) {
-    return secondArg
-  }
+  if (typeof firstArg === 'undefined') { return secondArg }
 
-  if (!isObject(firstArg) && !Array.isArray(firstArg)) {
+  const firstArgIsObject = isObject(firstArg)
+  const firstArgIsArray = isArray(firstArg)
+
+  if (!firstArgIsObject && !firstArgIsArray) {
     return firstArg
   }
 
-  let result
-  if (isObject(firstArg)) {
-    result = {}
-  }
-  if (Array.isArray(firstArg)) {
-    result = []
-  }
+  const result = firstArgIsObject ? {} : []
 
-  args.forEach(currentArg => {
-    if (currentArg) {
-      Object.keys(currentArg).forEach(key => {
-        if (isObject(currentArg[key]) && isObject(result[key])) {
-          result[key] = merge(result[key], currentArg[key])
-        } else if (Array.isArray(currentArg[key]) && Array.isArray(result[key])) {
-          let i = 0
-          while (i < currentArg[key].length || i < result[key].length) {
-            result[key][i] = merge(result[key][i], currentArg[key][i])
-            i += 1
-          }
-
-
-          let additionalDataArray = []
-          if (i < currentArg[key].length) {
-            additionalDataArray = currentArg[key].slice(i, currentArg[key].length)
-          }
-          if (i < result[key].length) {
-            additionalDataArray = result[key].slice(i, currentArg[key].length)
-          }
-          result[key] = result[key].concat(additionalDataArray)
-        } else {
-          result[key] = currentArg[key]
+  return args.reduce((result, currentArg) => {
+    Object.entries(currentArg).forEach(([key, value]) => {
+      if (isObject(value) && isObject(result[key])) {
+        result[key] = merge(result[key], value)
+      } else if (isArray(value) && isArray(result[key])) {
+        let i = 0
+        while (i < value.length || i < result[key].length) {
+          result[key][i] = merge(result[key][i], value[i])
+          i += 1
         }
-      })
-    }
-  })
 
-  return result
+        let additionalDataArray = []
+        if (i < value.length) {
+          additionalDataArray = value.slice(i, value.length)
+        }
+        if (i < result[key].length) {
+          additionalDataArray = result[key].slice(i, value.length)
+        }
+        result[key] = result[key].concat(additionalDataArray)
+      } else {
+        result[key] = value
+      }
+    })
+    return result
+  }, result)
 }
 
 const object = {
