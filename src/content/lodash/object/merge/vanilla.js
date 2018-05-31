@@ -1,18 +1,22 @@
+const isObject = data => data && Object.prototype.toString.call(data) === '[object Object]'
+
 function merge (...args) {
-  if (!args || !args.length) {
-    return {}
+  if (!args || !args.length) return {}
+
+  const [firstArg, secondArg, ...otherArgs] = args // eslint-disable-line no-unused-vars
+  if (!firstArg && secondArg) {
+    return secondArg
   }
 
-  if (!isObject(args[0]) && !Array.isArray(args[0])) {
-    // eslint-disable-next-line no-use-before-define
-    return args[0]
+  if (!isObject(firstArg) && !Array.isArray(firstArg)) {
+    return firstArg
   }
 
   let result
-  if (isObject(args[0])) {
+  if (isObject(firstArg)) {
     result = {}
   }
-  if (Array.isArray(args[0])) {
+  if (Array.isArray(firstArg)) {
     result = []
   }
 
@@ -27,6 +31,8 @@ function merge (...args) {
             result[key][i] = merge(result[key][i], currentArg[key][i])
             i += 1
           }
+
+
           let additionalDataArray = []
           if (i < currentArg[key].length) {
             additionalDataArray = currentArg[key].slice(i, currentArg[key].length)
@@ -45,10 +51,6 @@ function merge (...args) {
   return result
 }
 
-function isObject (data) {
-  return (data && Object.prototype.toString.call(data) === '[object Object]')
-}
-
 const object = {
   a: [{ b: 2 }, { d: 4 }],
 }
@@ -57,7 +59,34 @@ const other = {
   a: [{ c: 3 }, { e: 5 }],
 }
 
-merge(object, other)
+exports.simple = merge(object, other)
 // => { 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
 
-module.exports = merge
+const arrayWithObjects = [{
+  a: 'testdata',
+  b: 123,
+  c: {
+    ca: 1,
+    cb: [{ a: 1 }, { b: 1 }],
+  },
+}, {
+  a: 1,
+  b: 'abc',
+}, {
+  a: 'test',
+}]
+
+const otherArray = [{
+  a: 'testdata',
+  b: 555,
+  c: {
+    cc: 1,
+    cb: [{ a: 'test', x: 2 }, { b: 56 }, { c: 1 }],
+  },
+}, {
+  b: 2,
+  c: 'def',
+}]
+
+exports.complex = merge(arrayWithObjects, otherArray)
+// look at the spec file for the output
