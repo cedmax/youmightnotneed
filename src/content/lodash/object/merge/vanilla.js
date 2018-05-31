@@ -3,7 +3,7 @@ function merge (...args) {
     return {}
   }
 
-  if (!isObject(args[0] || Array.isArray(args[0]))) {
+  if (!isObject(args[0]) && !Array.isArray(args[0])) {
     // eslint-disable-next-line no-use-before-define
     return args[0]
   }
