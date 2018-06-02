@@ -11,9 +11,9 @@ const other = {
 exports.simple = _.merge(object, other)
 // => { 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
 
-const array = [{ a: 1 }, {b: 2}, {c: 3}, [1, 2, 3]]
-const anotherArray = [{ b: 1 }, {c: 2}, {d: 3}, [4, 5, 6, 7]]
-const lastArray = [{ f: 1 }, {c: 5}, {e: 3}, []]
+const array = [{ a: 1 }, { b: 2 }, { c: 3 }, [1, 2, 3]]
+const anotherArray = [{ b: 1 }, { c: 2 }, { d: 3 }, [4, 5, 6, 7]]
+const lastArray = [{ f: 1 }, { c: 5 }, { e: 3 }, []]
 
 exports.array = _.merge(array, anotherArray, lastArray)
 // [{"a": 1, "b": 1, "f": 1}, {"b": 2, "c": 5}, {"c": 3, "d": 3, "e": 3}, [4, 5, 6, 7]]

@@ -19,19 +19,15 @@ function merge (...args) {
       if (isObject(value) && isObject(result[key])) {
         result[key] = merge(result[key], value)
       } else if (isArray(value) && isArray(result[key])) {
-        let i = 0
-        while (i < value.length || i < result[key].length) {
+        const maxLength = Math.min(value.length, result[key].length)
+
+        for (let i = 0; i < maxLength; i++) {
           result[key][i] = merge(result[key][i], value[i])
-          i += 1
         }
 
-        let additionalDataArray = []
-        if (i < value.length) {
-          additionalDataArray = value.slice(i, value.length)
-        }
-        if (i < result[key].length) {
-          additionalDataArray = result[key].slice(i, value.length)
-        }
+        const additionalDataArray = []
+        additionalDataArray.push(...value.slice(maxLength, value.length))
+        additionalDataArray.push(...result[key].slice(maxLength, value.length))
         result[key] = result[key].concat(additionalDataArray)
       } else {
         result[key] = value
@@ -52,9 +48,9 @@ const other = {
 exports.simple = merge(object, other)
 // => { 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
 
-const array = [{ a: 1 }, {b: 2}, {c: 3}, [1, 2, 3]]
-const anotherArray = [{ b: 1 }, {c: 2}, {d: 3}, [4, 5, 6, 7]]
-const lastArray = [{ f: 1 }, {c: 5}, {e: 3}, []]
+const array = [{ a: 1 }, { b: 2 }, { c: 3 }, [1, 2, 3]]
+const anotherArray = [{ b: 1 }, { c: 2 }, { d: 3 }, [4, 5, 6, 7]]
+const lastArray = [{ f: 1 }, { c: 5 }, { e: 3 }, []]
 
 exports.array = merge(array, anotherArray, lastArray)
 // [{"a": 1, "b": 1, "f": 1}, {"b": 2, "c": 5}, {"c": 3, "d": 3, "e": 3}, [4, 5, 6, 7]]
