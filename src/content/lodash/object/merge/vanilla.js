@@ -20,15 +20,11 @@ function merge (...args) {
         result[key] = merge(result[key], value)
       } else if (isArray(value) && isArray(result[key])) {
         const maxLength = Math.min(value.length, result[key].length)
+        const longerArray = value.length === maxLength ? result[key] : value
 
-        for (let i = 0; i < maxLength; i++) {
-          result[key][i] = merge(result[key][i], value[i])
-        }
-
-        const additionalDataArray = []
-        additionalDataArray.push(...value.slice(maxLength, value.length))
-        additionalDataArray.push(...result[key].slice(maxLength, value.length))
-        result[key] = result[key].concat(additionalDataArray)
+        result[key] = result[key]
+          .map((result, i) => merge(result, value[i]))
+          .concat(...(longerArray).slice(maxLength, value.length))
       } else {
         result[key] = value
       }
