@@ -13,19 +13,23 @@ export default {
   getRoutes: async () => [
     {
       path: '/',
-      component: 'src/containers/Home'
+      component: 'src/containers/Home',
     },
     {
       path: '/lodash',
-      component: 'src/containers/Lodash'
+      component: 'src/containers/Lodash',
     },
     {
       path: '/lodash/missing',
-      component: 'src/containers/LodashMissing'
+      component: 'src/containers/LodashMissing',
+    },
+    {
+      path: '/momentjs',
+      component: 'src/containers/Moment',
     },
     {
       path: '/css',
-      component: 'src/containers/Css'
+      component: 'src/containers/Css',
     },
   ],
   renderToHtml: (render, Comp, meta) => {

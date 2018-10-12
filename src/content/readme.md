@@ -5,7 +5,8 @@ You might not need * is a collection of `You might not need ${something}` resour
 Please contribute on [github](https://github.com/cedmax/youmightnotneed)
 
 ## You might not need...
-* [Lodash](/lodash)  
+* [Lodash](/lodash) 
+* [Moment.js](/momentjs)  
 * [Css](/css)  
 
 ##### External Resources & Articles
