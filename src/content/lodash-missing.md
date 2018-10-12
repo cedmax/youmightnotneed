@@ -107,7 +107,7 @@
 
 ### Date
 
-    _.now
+~~_.now~~  
 
 ### Function
 
