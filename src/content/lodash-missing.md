@@ -82,7 +82,8 @@
 ~~_.forEach~~  
 ~~_.includes~~  
 ~~_.map~~  
-~~_.reduce~~  
+~~_.reduce~~ 
+~~_.reduceRight~~  
 ~~_.size~~  
 
     _.countBy
@@ -97,7 +98,6 @@
     _.keyBy
     _.orderBy
     _.partition
-    _.reduceRight
     _.reject
     _.sample
     _.sampleSize
