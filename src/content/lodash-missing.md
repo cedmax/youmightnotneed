@@ -26,6 +26,7 @@
 ~~_.last~~  
 ~~_.lastIndexOf~~  
 ~~_.tail~~  
+~~_.uniq~~  
 
     _.differenceWith
     _.dropRightWhile
@@ -59,7 +60,6 @@
     _.union
     _.unionBy
     _.unionWith
-    _.uniq
     _.uniqBy
     _.uniqWith
     _.unzip
