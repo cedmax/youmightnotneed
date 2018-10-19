@@ -10,6 +10,7 @@ renderer.link = (href, title, text) => {
     ${title ? `title="${title}"` : ''}>${text}</a>`
 }
 export default {
+  siteRoot: 'https://youmightnotneed.com/',
   getRoutes: async () => [
     {
       path: '/',
