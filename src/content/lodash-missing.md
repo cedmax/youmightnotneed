@@ -26,6 +26,7 @@
 ~~_.last~~  
 ~~_.lastIndexOf~~  
 ~~_.tail~~  
+~~_.uniq~~  
 
     _.differenceWith
     _.dropRightWhile
@@ -59,7 +60,6 @@
     _.union
     _.unionBy
     _.unionWith
-    _.uniq
     _.uniqBy
     _.uniqWith
     _.unzip
@@ -82,7 +82,9 @@
 ~~_.forEach~~  
 ~~_.includes~~  
 ~~_.map~~  
-~~_.reduce~~  
+~~_.reduce~~ 
+~~_.reduceRight~~  
+~~_.size~~  
 
     _.countBy
     _.eachRight -> forEachRight
@@ -96,12 +98,10 @@
     _.keyBy
     _.orderBy
     _.partition
-    _.reduceRight
     _.reject
     _.sample
     _.sampleSize
     _.shuffle
-    _.size
     _.some
     _.sortBy
 

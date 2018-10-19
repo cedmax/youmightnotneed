@@ -1,6 +1,7 @@
 const expected = {
   array: 3,
-  object: { 1: ['a', 'c'], 2: ['b'] },
+  object: 2,
+  string: 7,
 }
 
 const lodash = require('./lodash')
@@ -14,4 +15,9 @@ test('array', () => {
 test('object', () => {
   expect(lodash.object).toEqual(expected.object)
   expect(plain.object).toEqual(lodash.object)
+})
+
+test('string', () => {
+  expect(lodash.string).toEqual(expected.string)
+  expect(plain.string).toEqual(lodash.string)
 })
