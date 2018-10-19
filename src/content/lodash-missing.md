@@ -83,6 +83,7 @@
 ~~_.includes~~  
 ~~_.map~~  
 ~~_.reduce~~  
+~~_.size~~  
 
     _.countBy
     _.eachRight -> forEachRight
@@ -101,7 +102,6 @@
     _.sample
     _.sampleSize
     _.shuffle
-    _.size
     _.some
     _.sortBy
 
