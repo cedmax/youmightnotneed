@@ -2,6 +2,7 @@
 # How To Contribute
 
 Feel free to open a PR on the [github repository](https://github.com/cedmax/youmightnotneed).
+If you want to suggest any othe framework or library please [open an issue](https://github.com/cedmax/youmightnotneed/issues/new), before the PR
 
 ## How to add a method implementation
 
