@@ -5,7 +5,8 @@ Feel free to open a PR on the [github repository](https://github.com/cedmax/youm
 
 ## How to add a method implementation
 
-In order to add a method/section, go to the content folder for the framework (currently only [Lodash](https://github.com/cedmax/youmightnotneed/tree/master/src/content/lodash)) and add the relevant files.
+In order to add a method/section, go to the content folder for the framework and add the relevant files.
+The following examples are based on [Lodash](https://github.com/cedmax/youmightnotneed/tree/master/src/content/lodash).
 
 ## File structure
 
@@ -28,17 +29,7 @@ module.exports = chunk(['a', 'b', 'c', 'd', 'e', 'f', 'g'], 3)
 // => [['a', 'b', 'c'], ['d', 'e', 'f'], ['g']]
 ```
 
-Note that both lodash and vanilla need to `module.exports` the result of their operations: it's hidden on the website, but necessary for testing purposes.
-
-The `notes.md` file is meant to contain external links relevant to the the vanilla implementation (where the implementation was found, if not original, mdn references or such).
-
-##### ./lodash/array/tail/notes.md
-```md
-[source](https://www.sitepoint.com/lodash-features-replace-es6/)
-[mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
-```
-
-Please also make sure you add the spec file
+Note that both lodash and vanilla need to `module.exports` the result of their operations: it's hidden on the website, but necessary for testing purposes. If you have more example, feel free to use something like `exports.propertyNameThatMakesSense` and change the spec file accordingly.
 
 ##### ./lodash/collection/find/spec.js
 ```javascript
@@ -51,6 +42,14 @@ test('find', () => {
   expect(lodash).toEqual(expected)
   expect(plain).toEqual(lodash)
 })
+```
+
+The `notes.md` file is meant to contain external links relevant to the the vanilla implementation (where the implementation was found, if not original, mdn references or such).
+
+##### ./lodash/array/tail/notes.md
+```md
+[source](https://www.sitepoint.com/lodash-features-replace-es6/)
+[mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
 ```
 
 ## How it make it work on local
