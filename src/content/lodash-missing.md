@@ -220,6 +220,8 @@
 
 ### Object
 
+~~_.values~~
+
     _.assign
     _.assignIn
     _.assignInWith
@@ -265,7 +267,6 @@
     _.unset
     _.update
     _.updateWith
-    _.values
     _.valuesIn
 
 ### String
