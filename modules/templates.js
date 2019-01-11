@@ -12,5 +12,5 @@ test('${method}', () => {
 exports.lodash = method => `import { ${method} } from 'lodash'
 
 module.exports = ${method}()
-// => 
+// =>
 `
