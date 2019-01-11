@@ -6,27 +6,27 @@
 
 ### Array
 
-~~_.chunk~~  
-~~_.compact~~  
-~~_.concat~~  
-~~_.difference~~  
-~~_.differenceBy~~  
-~~_.drop~~  
-~~_.dropRight~~  
-~~_.fill~~  
-~~_.findIndex~~  
-~~_.first -> head~~  
-~~_.flatten~~  
-~~_.flattenDeep~~
-~~_.fromPairs~~  
-~~_.join~~  
-~~_.head~~  
-~~_.indexOf~~  
-~~_.initial~~  
-~~_.last~~  
-~~_.lastIndexOf~~  
-~~_.tail~~  
-~~_.uniq~~  
+~~\_.chunk~~  
+~~\_.compact~~  
+~~\_.concat~~  
+~~\_.difference~~  
+~~\_.differenceBy~~  
+~~\_.drop~~  
+~~\_.dropRight~~  
+~~\_.fill~~  
+~~\_.findIndex~~  
+~~\_.first -> head~~  
+~~\_.flatten~~  
+~~\_.flattenDeep~~
+~~\_.fromPairs~~  
+~~\_.join~~  
+~~\_.head~~  
+~~\_.indexOf~~  
+~~\_.initial~~  
+~~\_.last~~  
+~~\_.lastIndexOf~~  
+~~\_.tail~~  
+~~\_.uniq~~
 
     _.differenceWith
     _.dropRightWhile
@@ -75,16 +75,16 @@
 
 ### Collection **ONLY FOR ARRAYS SO FAR**
 
-~~_.each -> forEach~~  
-~~_.every~~  
-~~_.filter~~  
-~~_.find~~  
-~~_.forEach~~  
-~~_.includes~~  
-~~_.map~~  
-~~_.reduce~~ 
-~~_.reduceRight~~  
-~~_.size~~  
+~~\_.each -> forEach~~  
+~~\_.every~~  
+~~\_.filter~~  
+~~\_.find~~  
+~~\_.forEach~~  
+~~\_.includes~~  
+~~\_.map~~  
+~~\_.reduce~~
+~~\_.reduceRight~~  
+~~\_.size~~
 
     _.countBy
     _.eachRight -> forEachRight
@@ -107,7 +107,7 @@
 
 ### Date
 
-~~_.now~~  
+~~\_.now~~
 
 ### Function
 
@@ -196,21 +196,21 @@
 
 ### Math
 
-    _.add
-    _.ceil
-    _.divide
-    _.floor
-    _.max
-    _.maxBy
-    _.mean
-    _.meanBy
-    _.min
-    _.minBy
-    _.multiply
-    _.round
-    _.subtract
-    _.sum
-    _.sumBy
+~~\_.add~~  
+~~\_.ceil~~  
+~~\_.divide~~  
+~~\_.floor~~  
+~~\_.max~~  
+~~\_.maxBy~~  
+~~\_.mean~~  
+~~\_.meanBy~~  
+~~\_.min~~  
+~~\_.minBy~~  
+~~\_.multiply~~  
+~~\_.round~~  
+~~\_.subtract~~  
+~~\_.sum~~  
+~~\_.sumBy~~
 
 ### Number
 
@@ -220,7 +220,7 @@
 
 ### Object
 
-~~_.values~~
+~~\_.values~~
 
     _.assign
     _.assignIn
