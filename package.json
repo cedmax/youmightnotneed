@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "new": "node modules/new",
     "start": "react-static start",
     "stage": "react-static build --staging",
     "build": "react-static build",
@@ -30,6 +31,7 @@
   "devDependencies": {
     "babel-plugin-styled-components": "^1.5.0",
     "eslint-config-react-tools": "1.1.2",
+    "inquirer": "^6.2.1",
     "serve": "^6.5.1"
   }
 }
