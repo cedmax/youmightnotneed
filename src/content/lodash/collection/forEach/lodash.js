@@ -1,4 +1,4 @@
-import { each } from 'lodash'
+import { forEach } from 'lodash'
 
 function iteratee (item, index) {
   console.log(item, index)
@@ -6,7 +6,7 @@ function iteratee (item, index) {
 
 const array = ['a', 'b', 'c']
 
-each(array, iteratee)
+forEach(array, iteratee)
 // => a 0
 // => b 1
 // => c 2
