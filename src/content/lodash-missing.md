@@ -214,8 +214,9 @@
 
 ### Number
 
-    _.clamp
-    _.inRange
+~~\_.clamp~~
+~~\_.inRange~~
+
     _.random
 
 ### Object
