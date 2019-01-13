@@ -6,336 +6,325 @@
 
 ### Array
 
-~~\_.chunk~~  
-~~\_.compact~~  
-~~\_.concat~~  
-~~\_.difference~~  
-~~\_.differenceBy~~  
-~~\_.drop~~  
-~~\_.dropRight~~  
-~~\_.fill~~  
-~~\_.findIndex~~  
-~~\_.first -> head~~  
-~~\_.flatten~~  
-~~\_.flattenDeep~~
-~~\_.fromPairs~~  
-~~\_.join~~  
-~~\_.head~~  
-~~\_.indexOf~~  
-~~\_.initial~~  
-~~\_.last~~  
-~~\_.lastIndexOf~~  
-~~\_.tail~~  
-~~\_.uniq~~
-
-    _.differenceWith
-    _.dropRightWhile
-    _.dropWhile
-    _.findLastIndex
-    _.flattenDepth
-    _.intersection
-    _.intersectionBy
-    _.intersectionWith
-    _.nth
-    _.pull
-    _.pullAll
-    _.pullAllBy
-    _.pullAllWith
-    _.pullAt
-    _.remove
-    _.reverse
-    _.slice
-    _.sortedIndex
-    _.sortedIndexBy
-    _.sortedIndexOf
-    _.sortedLastIndex
-    _.sortedLastIndexBy
-    _.sortedLastIndexOf
-    _.sortedUniq
-    _.sortedUniqBy
-    _.take
-    _.takeRight
-    _.takeRightWhile
-    _.takeWhile
-    _.union
-    _.unionBy
-    _.unionWith
-    _.uniqBy
-    _.uniqWith
-    _.unzip
-    _.unzipWith
-    _.without
-    _.xor
-    _.xorBy
-    _.xorWith
-    _.zip
-    _.zipObject
-    _.zipObjectDeep
-    _.zipWith
+[\_.differenceWith](https://lodash.com/docs/#differenceWith)  
+[\_.dropRightWhile](https://lodash.com/docs/#dropRightWhile)  
+[\_.dropWhile](https://lodash.com/docs/#dropWhile)  
+[\_.findLastIndex](https://lodash.com/docs/#findLastIndex)  
+[\_.flattenDepth](https://lodash.com/docs/#flattenDepth)  
+[\_.intersection](https://lodash.com/docs/#intersection)  
+[\_.intersectionBy](https://lodash.com/docs/#intersectionBy)  
+[\_.intersectionWith](https://lodash.com/docs/#intersectionWith)  
+[\_.nth](https://lodash.com/docs/#nth)  
+[\_.pull](https://lodash.com/docs/#pull)  
+[\_.pullAll](https://lodash.com/docs/#pullAll)  
+[\_.pullAllBy](https://lodash.com/docs/#pullAllBy)  
+[\_.pullAllWith](https://lodash.com/docs/#pullAllWith)  
+[\_.pullAt](https://lodash.com/docs/#pullAt)  
+[\_.remove](https://lodash.com/docs/#remove)  
+[\_.reverse](https://lodash.com/docs/#reverse)  
+[\_.slice](https://lodash.com/docs/#slice)  
+[\_.sortedIndex](https://lodash.com/docs/#sortedIndex)  
+[\_.sortedIndexBy](https://lodash.com/docs/#sortedIndexBy)  
+[\_.sortedIndexOf](https://lodash.com/docs/#sortedIndexOf)  
+[\_.sortedLastIndex](https://lodash.com/docs/#sortedLastIndex)  
+[\_.sortedLastIndexBy](https://lodash.com/docs/#sortedLastIndexBy)  
+[\_.sortedLastIndexOf](https://lodash.com/docs/#sortedLastIndexOf)  
+[\_.sortedUniq](https://lodash.com/docs/#sortedUniq)  
+[\_.sortedUniqBy](https://lodash.com/docs/#sortedUniqBy)  
+[\_.take](https://lodash.com/docs/#take)  
+[\_.takeRight](https://lodash.com/docs/#takeRight)  
+[\_.takeRightWhile](https://lodash.com/docs/#takeRightWhile)  
+[\_.takeWhile](https://lodash.com/docs/#takeWhile)  
+[\_.union](https://lodash.com/docs/#union)  
+[\_.unionBy](https://lodash.com/docs/#unionBy)  
+[\_.unionWith](https://lodash.com/docs/#unionWith)  
+[\_.uniqBy](https://lodash.com/docs/#uniqBy)  
+[\_.uniqWith](https://lodash.com/docs/#uniqWith)  
+[\_.unzip](https://lodash.com/docs/#unzip)  
+[\_.unzipWith](https://lodash.com/docs/#unzipWith)  
+[\_.without](https://lodash.com/docs/#without)  
+[\_.xor](https://lodash.com/docs/#xor)  
+[\_.xorBy](https://lodash.com/docs/#xorBy)  
+[\_.xorWith](https://lodash.com/docs/#xorWith)  
+[\_.zip](https://lodash.com/docs/#zip)  
+[\_.zipObject](https://lodash.com/docs/#zipObject)  
+[\_.zipObjectDeep](https://lodash.com/docs/#zipObjectDeep)  
+[\_.zipWith](https://lodash.com/docs/#zipWith)  
+[~~\_.chunk~~](https://lodash.com/docs/#chunk)  
+[~~\_.compact~~](https://lodash.com/docs/#compact)  
+[~~\_.concat~~](https://lodash.com/docs/#concat)  
+[~~\_.difference~~](https://lodash.com/docs/#difference)  
+[~~\_.differenceBy~~](https://lodash.com/docs/#differenceBy)  
+[~~\_.drop~~](https://lodash.com/docs/#drop)  
+[~~\_.dropRight~~](https://lodash.com/docs/#dropRight)  
+[~~\_.fill~~](https://lodash.com/docs/#fill)  
+[~~\_.findIndex~~](https://lodash.com/docs/#findIndex)  
+[~~\_.flatten~~](https://lodash.com/docs/#flatten)  
+[~~\_.flattenDeep~~](https://lodash.com/docs/#flattenDeep)  
+[~~\_.fromPairs~~](https://lodash.com/docs/#fromPairs)  
+[~~\_.head~~](https://lodash.com/docs/#head)  
+[~~\_.indexOf~~](https://lodash.com/docs/#indexOf)  
+[~~\_.initial~~](https://lodash.com/docs/#initial)  
+[~~\_.join~~](https://lodash.com/docs/#join)  
+[~~\_.last~~](https://lodash.com/docs/#last)  
+[~~\_.lastIndexOf~~](https://lodash.com/docs/#lastIndexOf)  
+[~~\_.tail~~](https://lodash.com/docs/#tail)  
+[~~\_.uniq~~](https://lodash.com/docs/#uniq)
 
 ### Collection **ONLY FOR ARRAYS SO FAR**
 
-~~\_.each -> forEach~~  
-~~\_.every~~  
-~~\_.filter~~  
-~~\_.find~~  
-~~\_.forEach~~  
-~~\_.includes~~  
-~~\_.map~~  
-~~\_.reduce~~
-~~\_.reduceRight~~  
-~~\_.size~~
-
-    _.countBy
-    _.eachRight -> forEachRight
-    _.findLast
-    _.flatMap
-    _.flatMapDeep
-    _.flatMapDepth
-    _.forEachRight
-    _.groupBy
-    _.invokeMap
-    _.keyBy
-    _.orderBy
-    _.partition
-    _.reject
-    _.sample
-    _.sampleSize
-    _.shuffle
-    _.some
-    _.sortBy
+[\_.countBy](https://lodash.com/docs/#countBy)  
+[\_.findLast](https://lodash.com/docs/#findLast)  
+[\_.flatMap](https://lodash.com/docs/#flatMap)  
+[\_.flatMapDeep](https://lodash.com/docs/#flatMapDeep)  
+[\_.flatMapDepth](https://lodash.com/docs/#flatMapDepth)  
+[\_.forEachRight](https://lodash.com/docs/#forEachRight)  
+[\_.groupBy](https://lodash.com/docs/#groupBy)  
+[\_.invokeMap](https://lodash.com/docs/#invokeMap)  
+[\_.keyBy](https://lodash.com/docs/#keyBy)  
+[\_.orderBy](https://lodash.com/docs/#orderBy)  
+[\_.partition](https://lodash.com/docs/#partition)  
+[\_.reject](https://lodash.com/docs/#reject)  
+[\_.sample](https://lodash.com/docs/#sample)  
+[\_.sampleSize](https://lodash.com/docs/#sampleSize)  
+[\_.shuffle](https://lodash.com/docs/#shuffle)  
+[\_.some](https://lodash.com/docs/#some)  
+[\_.sortBy](https://lodash.com/docs/#sortBy)  
+[~~\_.every~~](https://lodash.com/docs/#every)  
+[~~\_.filter~~](https://lodash.com/docs/#filter)  
+[~~\_.find~~](https://lodash.com/docs/#find)  
+[~~\_.forEach~~](https://lodash.com/docs/#forEach)  
+[~~\_.includes~~](https://lodash.com/docs/#includes)  
+[~~\_.map~~](https://lodash.com/docs/#map)  
+[~~\_.reduce~~](https://lodash.com/docs/#reduce)  
+[~~\_.reduceRight~~](https://lodash.com/docs/#reduceRight)  
+[~~\_.size~~](https://lodash.com/docs/#size)
 
 ### Date
 
-~~\_.now~~
+[~~\_.now~~](https://lodash.com/docs/#now)
 
 ### Function
 
-    _.after
-    _.ary
-    _.before
-    _.bind
-    _.bindKey
-    _.curry
-    _.curryRight
-    _.debounce
-    _.defer
-    _.delay
-    _.flip
-    _.memoize
-    _.negate
-    _.once
-    _.overArgs
-    _.partial
-    _.partialRight
-    _.rearg
-    _.rest
-    _.spread
-    _.throttle
-    _.unary
-    _.wrap
+[\_.after](https://lodash.com/docs/#after)  
+[\_.ary](https://lodash.com/docs/#ary)  
+[\_.before](https://lodash.com/docs/#before)  
+[\_.bind](https://lodash.com/docs/#bind)  
+[\_.bindKey](https://lodash.com/docs/#bindKey)  
+[\_.curry](https://lodash.com/docs/#curry)  
+[\_.curryRight](https://lodash.com/docs/#curryRight)  
+[\_.debounce](https://lodash.com/docs/#debounce)  
+[\_.defer](https://lodash.com/docs/#defer)  
+[\_.delay](https://lodash.com/docs/#delay)  
+[\_.flip](https://lodash.com/docs/#flip)  
+[\_.memoize](https://lodash.com/docs/#memoize)  
+[\_.negate](https://lodash.com/docs/#negate)  
+[\_.once](https://lodash.com/docs/#once)  
+[\_.overArgs](https://lodash.com/docs/#overArgs)  
+[\_.partial](https://lodash.com/docs/#partial)  
+[\_.partialRight](https://lodash.com/docs/#partialRight)  
+[\_.rearg](https://lodash.com/docs/#rearg)  
+[\_.rest](https://lodash.com/docs/#rest)  
+[\_.spread](https://lodash.com/docs/#spread)  
+[\_.throttle](https://lodash.com/docs/#throttle)  
+[\_.unary](https://lodash.com/docs/#unary)  
+[\_.wrap](https://lodash.com/docs/#wrap)
 
 ### Lang
 
-    _.castArray
-    _.clone
-    _.cloneDeep
-    _.cloneDeepWith
-    _.cloneWith
-    _.conformsTo
-    _.eq
-    _.gt
-    _.gte
-    _.isArguments
-    _.isArray
-    _.isArrayBuffer
-    _.isArrayLike
-    _.isArrayLikeObject
-    _.isBoolean
-    _.isBuffer
-    _.isDate
-    _.isElement
-    _.isEmpty
-    _.isEqual
-    _.isEqualWith
-    _.isError
-    _.isFinite
-    _.isFunction
-    _.isInteger
-    _.isLength
-    _.isMap
-    _.isMatch
-    _.isMatchWith
-    _.isNaN
-    _.isNative
-    _.isNil
-    _.isNull
-    _.isNumber
-    _.isObject
-    _.isObjectLike
-    _.isPlainObject
-    _.isRegExp
-    _.isSafeInteger
-    _.isSet
-    _.isString
-    _.isSymbol
-    _.isTypedArray
-    _.isUndefined
-    _.isWeakMap
-    _.isWeakSet
-    _.lt
-    _.lte
-    _.toArray
-    _.toFinite
-    _.toInteger
-    _.toLength
-    _.toNumber
-    _.toPlainObject
-    _.toSafeInteger
-    _.toString
+[\_.castArray](https://lodash.com/docs/#castArray)  
+[\_.clone](https://lodash.com/docs/#clone)  
+[\_.cloneDeep](https://lodash.com/docs/#cloneDeep)  
+[\_.cloneDeepWith](https://lodash.com/docs/#cloneDeepWith)  
+[\_.cloneWith](https://lodash.com/docs/#cloneWith)  
+[\_.conformsTo](https://lodash.com/docs/#conformsTo)  
+[\_.eq](https://lodash.com/docs/.eq)  
+[\_.gt](https://lodash.com/docs/.gt)  
+[\_.gte](https://lodash.com/docs/#gte)  
+[\_.isArguments](https://lodash.com/docs/#isArguments)  
+[\_.isArray](https://lodash.com/docs/#isArray)  
+[\_.isArrayBuffer](https://lodash.com/docs/#isArrayBuffer)  
+[\_.isArrayLike](https://lodash.com/docs/#isArrayLike)  
+[\_.isArrayLikeObject](https://lodash.com/docs/#isArrayLikeObject)  
+[\_.isBoolean](https://lodash.com/docs/#isBoolean)  
+[\_.isBuffer](https://lodash.com/docs/#isBuffer)  
+[\_.isDate](https://lodash.com/docs/#isDate)  
+[\_.isElement](https://lodash.com/docs/#isElement)  
+[\_.isEmpty](https://lodash.com/docs/#isEmpty)  
+[\_.isEqual](https://lodash.com/docs/#isEqual)  
+[\_.isEqualWith](https://lodash.com/docs/#isEqualWith)  
+[\_.isError](https://lodash.com/docs/#isError)  
+[\_.isFinite](https://lodash.com/docs/#isFinite)  
+[\_.isFunction](https://lodash.com/docs/#isFunction)  
+[\_.isInteger](https://lodash.com/docs/#isInteger)  
+[\_.isLength](https://lodash.com/docs/#isLength)  
+[\_.isMap](https://lodash.com/docs/#isMap)  
+[\_.isMatch](https://lodash.com/docs/#isMatch)  
+[\_.isMatchWith](https://lodash.com/docs/#isMatchWith)  
+[\_.isNaN](https://lodash.com/docs/#isNaN)  
+[\_.isNative](https://lodash.com/docs/#isNative)  
+[\_.isNil](https://lodash.com/docs/#isNil)  
+[\_.isNull](https://lodash.com/docs/#isNull)  
+[\_.isNumber](https://lodash.com/docs/#isNumber)  
+[\_.isObject](https://lodash.com/docs/#isObject)  
+[\_.isObjectLike](https://lodash.com/docs/#isObjectLike)  
+[\_.isPlainObject](https://lodash.com/docs/#isPlainObject)  
+[\_.isRegExp](https://lodash.com/docs/#isRegExp)  
+[\_.isSafeInteger](https://lodash.com/docs/#isSafeInteger)  
+[\_.isSet](https://lodash.com/docs/#isSet)  
+[\_.isString](https://lodash.com/docs/#isString)  
+[\_.isSymbol](https://lodash.com/docs/#isSymbol)  
+[\_.isTypedArray](https://lodash.com/docs/#isTypedArray)  
+[\_.isUndefined](https://lodash.com/docs/#isUndefined)  
+[\_.isWeakMap](https://lodash.com/docs/#isWeakMap)  
+[\_.isWeakSet](https://lodash.com/docs/#isWeakSet)  
+[\_.lt](https://lodash.com/docs/.lt)  
+[\_.lte](https://lodash.com/docs/#lte)  
+[\_.toArray](https://lodash.com/docs/#toArray)  
+[\_.toFinite](https://lodash.com/docs/#toFinite)  
+[\_.toInteger](https://lodash.com/docs/#toInteger)  
+[\_.toLength](https://lodash.com/docs/#toLength)  
+[\_.toNumber](https://lodash.com/docs/#toNumber)  
+[\_.toPlainObject](https://lodash.com/docs/#toPlainObject)  
+[\_.toSafeInteger](https://lodash.com/docs/#toSafeInteger)  
+[\_.toString](https://lodash.com/docs/#toString)
 
-### Math
+### ~~Math~~
 
-~~\_.add~~  
-~~\_.ceil~~  
-~~\_.divide~~  
-~~\_.floor~~  
-~~\_.max~~  
-~~\_.maxBy~~  
-~~\_.mean~~  
-~~\_.meanBy~~  
-~~\_.min~~  
-~~\_.minBy~~  
-~~\_.multiply~~  
-~~\_.round~~  
-~~\_.subtract~~  
-~~\_.sum~~  
-~~\_.sumBy~~
+[~~\_.add~~](https://lodash.com/docs/#add)  
+[~~\_.ceil~~](https://lodash.com/docs/#ceil)  
+[~~\_.divide~~](https://lodash.com/docs/#divide)  
+[~~\_.floor~~](https://lodash.com/docs/#floor)  
+[~~\_.max~~](https://lodash.com/docs/#max)  
+[~~\_.maxBy~~](https://lodash.com/docs/#maxBy)  
+[~~\_.mean~~](https://lodash.com/docs/#mean)  
+[~~\_.meanBy~~](https://lodash.com/docs/#meanBy)  
+[~~\_.min~~](https://lodash.com/docs/#min)  
+[~~\_.minBy~~](https://lodash.com/docs/#minBy)  
+[~~\_.multiply~~](https://lodash.com/docs/#multiply)  
+[~~\_.round~~](https://lodash.com/docs/#round)  
+[~~\_.subtract~~](https://lodash.com/docs/#subtract)  
+[~~\_.sum~~](https://lodash.com/docs/#sum)  
+[~~\_.sumBy~~](https://lodash.com/docs/#sumBy)
 
 ### Number
 
-~~\_.clamp~~
-~~\_.inRange~~
-
-    _.random
+[\_.random](https://lodash.com/docs/#random)  
+[~~\_.clamp~~](https://lodash.com/docs/#clamp)  
+[~~\_.inRange~~](https://lodash.com/docs/#inRange)
 
 ### Object
 
-~~\_.values~~
-
-    _.assign
-    _.assignIn
-    _.assignInWith
-    _.assignWith
-    _.at
-    _.create
-    _.defaults
-    _.defaultsDeep
-    _.entries -> toPairs
-    _.entriesIn -> toPairsIn
-    _.extend -> assignIn
-    _.extendWith -> assignInWith
-    _.findKey
-    _.findLastKey
-    _.forIn
-    _.forInRight
-    _.forOwn
-    _.forOwnRight
-    _.functions
-    _.functionsIn
-    _.get
-    _.has
-    _.hasIn
-    _.invert
-    _.invertBy
-    _.invoke
-    _.keys
-    _.keysIn
-    _.mapKeys
-    _.mapValues
-    _.merge
-    _.mergeWith
-    _.omit
-    _.omitBy
-    _.pick
-    _.pickBy
-    _.result
-    _.set
-    _.setWith
-    _.toPairs
-    _.toPairsIn
-    _.transform
-    _.unset
-    _.update
-    _.updateWith
-    _.valuesIn
+[\_.assign](https://lodash.com/docs/#assign)  
+[\_.assignIn](https://lodash.com/docs/#assignIn)  
+[\_.assignInWith](https://lodash.com/docs/#assignInWith)  
+[\_.assignWith](https://lodash.com/docs/#assignWith)  
+[\_.at](https://lodash.com/docs/.at)  
+[\_.create](https://lodash.com/docs/#create)  
+[\_.defaults](https://lodash.com/docs/#defaults)  
+[\_.defaultsDeep](https://lodash.com/docs/#defaultsDeep)  
+[\_.findKey](https://lodash.com/docs/#findKey)  
+[\_.findLastKey](https://lodash.com/docs/#findLastKey)  
+[\_.forIn](https://lodash.com/docs/#forIn)  
+[\_.forInRight](https://lodash.com/docs/#forInRight)  
+[\_.forOwn](https://lodash.com/docs/#forOwn)  
+[\_.forOwnRight](https://lodash.com/docs/#forOwnRight)  
+[\_.functions](https://lodash.com/docs/#functions)  
+[\_.functionsIn](https://lodash.com/docs/#functionsIn)  
+[\_.get](https://lodash.com/docs/#get)  
+[\_.has](https://lodash.com/docs/#has)  
+[\_.hasIn](https://lodash.com/docs/#hasIn)  
+[\_.invert](https://lodash.com/docs/#invert)  
+[\_.invertBy](https://lodash.com/docs/#invertBy)  
+[\_.invoke](https://lodash.com/docs/#invoke)  
+[\_.keys](https://lodash.com/docs/#keys)  
+[\_.keysIn](https://lodash.com/docs/#keysIn)  
+[\_.mapKeys](https://lodash.com/docs/#mapKeys)  
+[\_.mapValues](https://lodash.com/docs/#mapValues)  
+[\_.merge](https://lodash.com/docs/#merge)  
+[\_.mergeWith](https://lodash.com/docs/#mergeWith)  
+[\_.omit](https://lodash.com/docs/#omit)  
+[\_.omitBy](https://lodash.com/docs/#omitBy)  
+[\_.pick](https://lodash.com/docs/#pick)  
+[\_.pickBy](https://lodash.com/docs/#pickBy)  
+[\_.result](https://lodash.com/docs/#result)  
+[\_.set](https://lodash.com/docs/#set)  
+[\_.setWith](https://lodash.com/docs/#setWith)  
+[\_.toPairs](https://lodash.com/docs/#toPairs)  
+[\_.toPairsIn](https://lodash.com/docs/#toPairsIn)  
+[\_.transform](https://lodash.com/docs/#transform)  
+[\_.unset](https://lodash.com/docs/#unset)  
+[\_.update](https://lodash.com/docs/#update)  
+[\_.updateWith](https://lodash.com/docs/#updateWith)  
+[\_.valuesIn](https://lodash.com/docs/#valuesIn)  
+[~~\_.values~~](https://lodash.com/docs/#values)
 
 ### String
 
-    _.camelCase
-    _.capitalize
-    _.deburr
-    _.endsWith
-    _.escape
-    _.escapeRegExp
-    _.kebabCase
-    _.lowerCase
-    _.lowerFirst
-    _.pad
-    _.padEnd
-    _.padStart
-    _.parseInt
-    _.repeat
-    _.replace
-    _.snakeCase
-    _.split
-    _.startCase
-    _.startsWith
-    _.template
-    _.toLower
-    _.toUpper
-    _.trim
-    _.trimEnd
-    _.trimStart
-    _.truncate
-    _.unescape
-    _.upperCase
-    _.upperFirst
-    _.words
+[\_.camelCase](https://lodash.com/docs/#camelCase)  
+[\_.capitalize](https://lodash.com/docs/#capitalize)  
+[\_.deburr](https://lodash.com/docs/#deburr)  
+[\_.endsWith](https://lodash.com/docs/#endsWith)  
+[\_.escape](https://lodash.com/docs/#escape)  
+[\_.escapeRegExp](https://lodash.com/docs/#escapeRegExp)  
+[\_.kebabCase](https://lodash.com/docs/#kebabCase)  
+[\_.lowerCase](https://lodash.com/docs/#lowerCase)  
+[\_.lowerFirst](https://lodash.com/docs/#lowerFirst)  
+[\_.pad](https://lodash.com/docs/#pad)  
+[\_.padEnd](https://lodash.com/docs/#padEnd)  
+[\_.padStart](https://lodash.com/docs/#padStart)  
+[\_.parseInt](https://lodash.com/docs/#parseInt)  
+[\_.repeat](https://lodash.com/docs/#repeat)  
+[\_.replace](https://lodash.com/docs/#replace)  
+[\_.snakeCase](https://lodash.com/docs/#snakeCase)  
+[\_.split](https://lodash.com/docs/#split)  
+[\_.startCase](https://lodash.com/docs/#startCase)  
+[\_.startsWith](https://lodash.com/docs/#startsWith)  
+[\_.template](https://lodash.com/docs/#template)  
+[\_.toLower](https://lodash.com/docs/#toLower)  
+[\_.toUpper](https://lodash.com/docs/#toUpper)  
+[\_.trim](https://lodash.com/docs/#trim)  
+[\_.trimEnd](https://lodash.com/docs/#trimEnd)  
+[\_.trimStart](https://lodash.com/docs/#trimStart)  
+[\_.truncate](https://lodash.com/docs/#truncate)  
+[\_.unescape](https://lodash.com/docs/#unescape)  
+[\_.upperCase](https://lodash.com/docs/#upperCase)  
+[\_.upperFirst](https://lodash.com/docs/#upperFirst)  
+[\_.words](https://lodash.com/docs/#words)
 
 ### Util
 
-    _.attempt
-    _.bindAll
-    _.cond
-    _.conforms
-    _.constant
-    _.defaultTo
-    _.flow
-    _.flowRight
-    _.identity
-    _.iteratee
-    _.matches
-    _.matchesProperty
-    _.method
-    _.methodOf
-    _.mixin
-    _.noConflict
-    _.noop
-    _.nthArg
-    _.over
-    _.overEvery
-    _.overSome
-    _.property
-    _.propertyOf
-    _.range
-    _.rangeRight
-    _.runInContext
-    _.stubArray
-    _.stubFalse
-    _.stubObject
-    _.stubString
-    _.stubTrue
-    _.times
-    _.toPath
-    _.uniqueId
+[\_.attempt](https://lodash.com/docs/#attempt)  
+[\_.bindAll](https://lodash.com/docs/#bindAll)  
+[\_.cond](https://lodash.com/docs/#cond)  
+[\_.conforms](https://lodash.com/docs/#conforms)  
+[\_.constant](https://lodash.com/docs/#constant)  
+[\_.defaultTo](https://lodash.com/docs/#defaultTo)  
+[\_.flow](https://lodash.com/docs/#flow)  
+[\_.flowRight](https://lodash.com/docs/#flowRight)  
+[\_.identity](https://lodash.com/docs/#identity)  
+[\_.iteratee](https://lodash.com/docs/#iteratee)  
+[\_.matches](https://lodash.com/docs/#matches)  
+[\_.matchesProperty](https://lodash.com/docs/#matchesProperty)  
+[\_.method](https://lodash.com/docs/#method)  
+[\_.methodOf](https://lodash.com/docs/#methodOf)  
+[\_.mixin](https://lodash.com/docs/#mixin)  
+[\_.noConflict](https://lodash.com/docs/#noConflict)  
+[\_.noop](https://lodash.com/docs/#noop)  
+[\_.nthArg](https://lodash.com/docs/#nthArg)  
+[\_.over](https://lodash.com/docs/#over)  
+[\_.overEvery](https://lodash.com/docs/#overEvery)  
+[\_.overSome](https://lodash.com/docs/#overSome)  
+[\_.property](https://lodash.com/docs/#property)  
+[\_.propertyOf](https://lodash.com/docs/#propertyOf)  
+[\_.range](https://lodash.com/docs/#range)  
+[\_.rangeRight](https://lodash.com/docs/#rangeRight)  
+[\_.runInContext](https://lodash.com/docs/#runInContext)  
+[\_.stubArray](https://lodash.com/docs/#stubArray)  
+[\_.stubFalse](https://lodash.com/docs/#stubFalse)  
+[\_.stubObject](https://lodash.com/docs/#stubObject)  
+[\_.stubString](https://lodash.com/docs/#stubString)  
+[\_.stubTrue](https://lodash.com/docs/#stubTrue)  
+[\_.times](https://lodash.com/docs/#times)  
+[\_.toPath](https://lodash.com/docs/#toPath)  
+[\_.uniqueId](https://lodash.com/docs/#uniqueId)
