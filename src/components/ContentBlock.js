@@ -15,6 +15,8 @@ const Content = styled.div`
     color: white;
     text-align: center;
   }
+
+  del {font-size: 85%}
 `
 
 export default Content
