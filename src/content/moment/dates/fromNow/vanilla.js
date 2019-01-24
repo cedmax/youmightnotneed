@@ -59,7 +59,7 @@ date = new Date(Date.now() - 5 * day)
 exports.days = timeAgo(date)
 // 5 days ago
 
-date = new Date(Date.now() - 46 * day)
+date = new Date(Date.now() - 44 * day)
 exports.month = timeAgo(date)
 // a month ago
 
