@@ -245,7 +245,6 @@
 [\_.mergeWith](https://lodash.com/docs/#mergeWith)  
 [\_.omit](https://lodash.com/docs/#omit)  
 [\_.omitBy](https://lodash.com/docs/#omitBy)  
-[\_.pick](https://lodash.com/docs/#pick)  
 [\_.pickBy](https://lodash.com/docs/#pickBy)  
 [\_.result](https://lodash.com/docs/#result)  
 [\_.set](https://lodash.com/docs/#set)  
@@ -257,6 +256,7 @@
 [\_.update](https://lodash.com/docs/#update)  
 [\_.updateWith](https://lodash.com/docs/#updateWith)  
 [\_.valuesIn](https://lodash.com/docs/#valuesIn)  
+[~~\_.pick~~](https://lodash.com/docs/#pick)  
 [~~\_.values~~](https://lodash.com/docs/#values)
 
 ### String
