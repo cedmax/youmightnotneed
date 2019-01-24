@@ -6,5 +6,5 @@ const object = {
   c: 3,
 }
 
-module.exports = pick(object)
+module.exports = pick(object, ['a', 'c'])
 // => {a: 1, c: 3}
