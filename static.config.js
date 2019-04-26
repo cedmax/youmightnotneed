@@ -9,9 +9,6 @@ renderer.link = (href, title, text) => {
     ${isExternal ? 'target="_blank" rel="noopener"' : ''} 
     ${title ? `title="${title}"` : ''}>${text}</a>`
 }
-
-console.log(process.env.DEPLOY_PRIME_URL)
-
 export default {
   siteRoot: 'https://youmightnotneed.com/',
   getRoutes: async () => [
