@@ -10,8 +10,12 @@ renderer.link = (href, title, text) => {
     ${title ? `title="${title}"` : ''}>${text}</a>`
 }
 
+const siteRoot = process.env.URL 
+  ? process.env.URL.replace('http://', 'https://') 
+  : 'https://youmightnotneed.com/';
+
 export default {
-  siteRoot: process.env.DEPLOY_PRIME_URL || 'https://youmightnotneed.com/',
+  siteRoot,
   getRoutes: async () => [
     {
       path: '/',
