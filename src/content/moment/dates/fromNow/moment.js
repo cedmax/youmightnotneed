@@ -33,7 +33,7 @@ date = new Date(Date.now() - 5 * day)
 exports.days = moment(date).fromNow()
 // 5 days ago
 
-date = new Date(Date.now() - 46 * day)
+date = new Date(Date.now() - 44 * day)
 exports.month = moment(date).fromNow()
 // a month ago
 
