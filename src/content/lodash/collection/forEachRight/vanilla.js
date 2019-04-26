@@ -1,7 +1,7 @@
 function forEachRight (array, iteratee) {
-    array.slice().reverse().forEach((val, index) => {
-        iteratee(val, Math.abs(arr.length - index), arr)
-    })
+  array.slice().reverse().forEach((val, index) => {
+    iteratee(val, Math.abs(arr.length - index), arr)
+  })
 }
 
 const array = ['a', 'b', 'c']
