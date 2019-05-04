@@ -9,8 +9,13 @@ renderer.link = (href, title, text) => {
     ${isExternal ? 'target="_blank" rel="noopener"' : ''} 
     ${title ? `title="${title}"` : ''}>${text}</a>`
 }
+
+const siteRoot = process.env.URL 
+  ? process.env.URL.replace('http://', 'https://') 
+  : 'https://youmightnotneed.com/';
+
 export default {
-  siteRoot: 'https://youmightnotneed.com/',
+  siteRoot,
   getRoutes: async () => [
     {
       path: '/',
