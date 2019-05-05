@@ -10,9 +10,9 @@ renderer.link = (href, title, text) => {
     ${title ? `title="${title}"` : ''}>${text}</a>`
 }
 
-const siteRoot = process.env.URL 
-  ? process.env.URL.replace('http://', 'https://') 
-  : 'https://youmightnotneed.com/';
+const siteRoot = (process.env.PULL_REQUEST
+  ? process.env.DEPLOY_PRIME_URL
+  : process.env.URL).replace('http://', 'https://');
 
 console.log('building', siteRoot);
 
