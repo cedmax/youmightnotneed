@@ -10,11 +10,11 @@ renderer.link = (href, title, text) => {
     ${title ? `title="${title}"` : ''}>${text}</a>`
 }
 
-const siteRoot = (process.env.PULL_REQUEST
+const siteRoot = (process.env.PULL_REQUEST === 'true' 
   ? process.env.DEPLOY_PRIME_URL
   : process.env.URL).replace('http://', 'https://');
 
-console.log('building',process.env.PULL_REQUEST, siteRoot);
+console.log('building', siteRoot);
 
 export default {
   siteRoot,
