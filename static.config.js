@@ -14,6 +14,8 @@ const siteRoot = process.env.URL
   ? process.env.URL.replace('http://', 'https://') 
   : 'https://youmightnotneed.com/';
 
+console.log('building', siteRoot);
+
 export default {
   siteRoot,
   getRoutes: async () => [
