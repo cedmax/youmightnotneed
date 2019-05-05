@@ -14,7 +14,7 @@ const siteRoot = (process.env.PULL_REQUEST
   ? process.env.DEPLOY_PRIME_URL
   : process.env.URL).replace('http://', 'https://');
 
-console.log('building', siteRoot);
+console.log('building',process.env.PULL_REQUEST, siteRoot);
 
 export default {
   siteRoot,
