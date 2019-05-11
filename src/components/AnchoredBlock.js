@@ -1,24 +1,24 @@
-import React, { Fragment } from 'react'
-import styled from 'styled-components'
-import Heading from '../components/Heading'
+import React, { Fragment } from "react";
+import styled from "styled-components";
+import Heading from "./Heading";
 
 const Anchor = styled.a`
   text-decoration: none;
   cursor: pointer;
-  position:relative;
+  position: relative;
 
   &::before {
-    position:absolute;
-    left: -.7em;
+    position: absolute;
+    left: -0.7em;
     font-family: monospace;
-    content: '  ';
+    content: "  ";
     white-space: pre;
   }
 
   &:hover::before {
-    content: '# ';
+    content: "# ";
   }
-`
+`;
 
 export default ({ title, hierarchy, children }) => (
   <Fragment>
@@ -31,4 +31,4 @@ export default ({ title, hierarchy, children }) => (
     ) : null}
     {children}
   </Fragment>
-)
+);

@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import Content from '../components/ContentBlock'
+import React from "react";
+import styled from "styled-components";
+import Content from "./ContentBlock";
 
 const VideoContainer = styled.div`
   margin: auto;
@@ -17,7 +17,7 @@ const VideoContainer = styled.div`
     width: 100%;
     height: 100%;
   }
-`
+`;
 
 export default ({ title, embedUrl }) => (
   <Content>
@@ -32,4 +32,4 @@ export default ({ title, embedUrl }) => (
       />
     </VideoContainer>
   </Content>
-)
+);
