@@ -1,5 +1,5 @@
 {
-  "extends": ["react-tools"],
+  "extends": ["eslint:recommended", "react-tools"],
   "overrides": [
     {
       "files": ["**/**/spec.js"],
@@ -7,10 +7,6 @@
     }
   ],
   "rules": {
-    "import/no-extraneous-dependencies": 0,
-    "quotes": [2, "single"],
-    "semi": [2, "never"],
-    "max-len": [2, { "code": 120 }],
-    "comma-dangle": [2, "always-multiline"]
+    "import/no-extraneous-dependencies": 0
   }
 }
