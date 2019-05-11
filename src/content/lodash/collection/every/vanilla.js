@@ -1,4 +1,4 @@
-function isLargerThanTen (element) {
+function isLargerThanTen(element) {
   return element >= 10
 }
 

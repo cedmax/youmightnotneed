@@ -1,4 +1,4 @@
-const dropRight = (arr, n = 1) => n && arr.slice(0, -n) || arr
+const dropRight = (arr, n = 1) => (n && arr.slice(0, -n)) || arr
 
 exports.simple = dropRight([1, 2, 3])
 // => [1, 2]

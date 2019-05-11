@@ -1,6 +1,6 @@
-import React, { Fragment } from "react";
-import { Head } from "react-static";
-import Content from "./ContentBlock";
+import React, { Fragment } from 'react'
+import { Head } from 'react-static'
+import Content from './ContentBlock'
 
 export default ({ content, title, children }) => (
   <Fragment>
@@ -10,4 +10,4 @@ export default ({ content, title, children }) => (
     <Content dangerouslySetInnerHTML={{ __html: content }} />
     {children}
   </Fragment>
-);
+)

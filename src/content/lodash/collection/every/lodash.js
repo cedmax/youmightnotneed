@@ -1,6 +1,6 @@
 import { every } from 'lodash'
 
-function isLargerThanTen (element) {
+function isLargerThanTen(element) {
   return element >= 10
 }
 

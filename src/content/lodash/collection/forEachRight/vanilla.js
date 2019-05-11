@@ -1,4 +1,4 @@
-function forEachRight (array, iteratee) {
+function forEachRight(array, iteratee) {
   array
     .slice()
     .reverse()
@@ -7,7 +7,7 @@ function forEachRight (array, iteratee) {
     })
 }
 
-function iteratee (item, index) {
+function iteratee(item, index) {
   console.log(item, index)
 }
 
