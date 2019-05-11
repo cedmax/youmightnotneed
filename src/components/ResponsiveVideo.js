@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Content from '../components/ContentBlock'
+import Content from './ContentBlock'
 
 const VideoContainer = styled.div`
   margin: auto;

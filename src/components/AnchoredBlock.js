@@ -1,15 +1,15 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
-import Heading from '../components/Heading'
+import Heading from './Heading'
 
 const Anchor = styled.a`
   text-decoration: none;
   cursor: pointer;
-  position:relative;
+  position: relative;
 
   &::before {
-    position:absolute;
-    left: -.7em;
+    position: absolute;
+    left: -0.7em;
     font-family: monospace;
     content: '  ';
     white-space: pre;

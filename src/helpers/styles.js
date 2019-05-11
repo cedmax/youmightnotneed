@@ -25,15 +25,25 @@ export default styled.div`
     }
 
     a:hover {
-      text-decoration: underline
+      text-decoration: underline;
     }
   }
 
-  h1 { margin-bottom: .5em; }
-  h2 { margin-bottom: .5em; }
-  h3 { margin-bottom: .5em; }
-  h4 { margin-bottom: .5em; }
-  h5 { margin-bottom: .5em; }
+  h1 {
+    margin-bottom: 0.5em;
+  }
+  h2 {
+    margin-bottom: 0.5em;
+  }
+  h3 {
+    margin-bottom: 0.5em;
+  }
+  h4 {
+    margin-bottom: 0.5em;
+  }
+  h5 {
+    margin-bottom: 0.5em;
+  }
 
   footer {
     text-align: right;

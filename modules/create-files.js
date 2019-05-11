@@ -1,5 +1,5 @@
-const templates = require('./templates')
 const fs = require('fs')
+const templates = require('./templates')
 
 module.exports = ({ base, project, section, method }) => {
   if (!fs.existsSync(`${base}/${project}/${section}`)) {

@@ -1,6 +1,6 @@
 import { forEach } from 'lodash'
 
-function iteratee (item, index) {
+function iteratee(item, index) {
   console.log(item, index)
 }
 

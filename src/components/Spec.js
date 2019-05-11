@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import Hightlight from 'react-highlight.js'
-import Heading from '../components/Heading'
+import Heading from './Heading'
 
 const Tests = styled.div`
-  padding-bottom: 4em
+  padding-bottom: 4em;
 `
 
 export default ({ code }) => (
