@@ -1,6 +1,6 @@
 import React from 'react'
 import footerContent from '../content/footer.md'
-import Content from '../components/ContentBlock'
+import Content from './ContentBlock'
 
 export default () => (
   <Content>

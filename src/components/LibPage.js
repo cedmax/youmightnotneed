@@ -1,24 +1,24 @@
 import React, { Fragment, Component } from 'react'
 import styled from 'styled-components'
 import debounce from 'debounce'
-import Content from '../components/ContentBlock'
-import AnchoredBlock from '../components/AnchoredBlock'
-import Search from '../components/Search'
-import CodeComparison from '../components/CodeComparison'
+import Content from './ContentBlock'
+import AnchoredBlock from './AnchoredBlock'
+import Search from './Search'
+import CodeComparison from './CodeComparison'
 import dataFilter from '../helpers/data-filter'
 import ShowTests from './ShowTests'
 
 const Row = styled.div`
   background: white;
   padding: 2em;
-  &:nth-child(odd){
+  &:nth-child(odd) {
     background: #fafafa;
     border-bottom: 1px solid #eee;
   }
 `
 
 export default class LibPage extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
 
     this.onChange = this.onChange.bind(this)
@@ -30,7 +30,7 @@ export default class LibPage extends Component {
     }
   }
 
-  onChange (e) {
+  onChange(e) {
     const { value } = e.target
 
     this.setState({
@@ -40,7 +40,7 @@ export default class LibPage extends Component {
     this.filter(value)
   }
 
-  filter (value) {
+  filter(value) {
     const { data } = this.props
 
     const newData = dataFilter(data, value)
@@ -50,7 +50,7 @@ export default class LibPage extends Component {
     })
   }
 
-  render () {
+  render() {
     const { data, value, showTests } = this.state
 
     return (

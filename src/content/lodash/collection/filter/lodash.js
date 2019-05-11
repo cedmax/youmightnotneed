@@ -1,6 +1,6 @@
 import { filter } from 'lodash'
 
-function isBigEnough (value) {
+function isBigEnough(value) {
   return value >= 10
 }
 

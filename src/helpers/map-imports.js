@@ -14,16 +14,17 @@ const parse = object => {
       .replace(/<a href=/gi, '<a target="_blank" href=')
       .replace(/(module.)?exports(\.(.+))? = /g, '')
 
-
     return cache
   }, {})
   return result
 }
 
-const map = r => parse(r.keys().reduce((cache, key) => {
-  cache[key] = r(key)
-  return cache
-}, {}))
+const map = r =>
+  parse(
+    r.keys().reduce((cache, key) => {
+      cache[key] = r(key)
+      return cache
+    }, {})
+  )
 
 export default map
-

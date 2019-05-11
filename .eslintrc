@@ -1,0 +1,12 @@
+{
+  "extends": ["eslint:recommended", "react-tools"],
+  "overrides": [
+    {
+      "files": ["**/**/spec.js"],
+      "env": { "jest": true }
+    }
+  ],
+  "rules": {
+    "import/no-extraneous-dependencies": 0
+  }
+}
