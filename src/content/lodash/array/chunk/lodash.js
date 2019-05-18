@@ -1,4 +1,10 @@
 import { chunk } from 'lodash'
 
-module.exports = chunk(['a', 'b', 'c', 'd', 'e', 'f', 'g'], 3)
+exports.simple = chunk(['a', 'b', 'c', 'd', 'e', 'f', 'g'], 3)
 // => [['a', 'b', 'c'], ['d', 'e', 'f'], ['g']]
+
+exports.chunkSizeZero = chunk(['a', 'b', 'c', 'd', 'e', 'f', 'g'], 0)
+// => []
+
+exports.chunkSizeNegative = chunk(['a', 'b', 'c', 'd', 'e', 'f', 'g'], -1)
+// => []
