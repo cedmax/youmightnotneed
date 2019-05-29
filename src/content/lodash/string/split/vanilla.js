@@ -1,7 +1,5 @@
-const all = 'a-b-c'.split('-')
-const justTwo = 'a-b-c'.split('-').slice(0, 2)
+exports.all = 'a-b-c'.split('-')
+// => ['a', 'b', 'c']
 
-module.exports = {
-  all,
-  justTwo,
-}
+exports.justTwo = 'a-b-c'.split('-').slice(0, 2)
+// => ['a', 'b']

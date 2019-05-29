@@ -1,9 +1,7 @@
 import { split } from 'lodash'
 
-const all = split('a-b-c', '-')
-const justTwo = split('a-b-c', '-', 2)
+exports.all = split('a-b-c', '-')
+// => ['a', 'b', 'c']
 
-module.exports = {
-  all,
-  justTwo,
-}
+exports.justTwo = split('a-b-c', '-', 2)
+// => ['a', 'b']
