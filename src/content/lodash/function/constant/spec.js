@@ -1,12 +1,9 @@
-const expected = {
-  a: 1,
-  c: 3,
-}
+const expected = 42
 
 const lodash = require('./lodash')
 const plain = require('./vanilla')
 
-test('pick', () => {
+test('constant', () => {
   expect(lodash).toEqual(expected)
   expect(plain).toEqual(lodash)
 })
