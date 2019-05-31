@@ -97,7 +97,7 @@
 [~~\_.map~~](https://lodash.com/docs/#map)  
 [~~\_.reduce~~](https://lodash.com/docs/#reduce)  
 [~~\_.reduceRight~~](https://lodash.com/docs/#reduceRight)  
-[~~\_.size~~](https://lodash.com/docs/#size)
+[~~\_.size~~](https://lodash.com/docs/#size)  
 [~~\_.some~~](https://lodash.com/docs/#some)
 
 ### Date
@@ -287,7 +287,7 @@
 [\_.unescape](https://lodash.com/docs/#unescape)  
 [\_.upperCase](https://lodash.com/docs/#upperCase)  
 [\_.upperFirst](https://lodash.com/docs/#upperFirst)  
-[\_.words](https://lodash.com/docs/#words)
+[\_.words](https://lodash.com/docs/#words)  
 [~~\_.endsWith~~](https://lodash.com/docs/#endsWith)  
 [~~\_.split~~](https://lodash.com/docs/#split)  
 [~~\_.startsWith~~](https://lodash.com/docs/#startsWith)
@@ -326,5 +326,5 @@
 [\_.stubTrue](https://lodash.com/docs/#stubTrue)  
 [\_.times](https://lodash.com/docs/#times)  
 [\_.toPath](https://lodash.com/docs/#toPath)  
-[\_.uniqueId](https://lodash.com/docs/#uniqueId)
+[\_.uniqueId](https://lodash.com/docs/#uniqueId)  
 [~~\_.constant~~](https://lodash.com/docs/#constant)
