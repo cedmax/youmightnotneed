@@ -9,7 +9,8 @@ test('${method}', () => {
 })
 `
 
-exports.lodash = method => `import { ${method} } from 'lodash'
+exports.lodash = method => `// https://lodash.com/docs/#${method}
+import { ${method} } from 'lodash'
 
 module.exports = ${method}()
 // =>
