@@ -27,6 +27,7 @@
     "react-highlight.js": "1.0.7",
     "react-hot-loader": "^4.12.15",
     "react-router-dom": "5.1.2",
+    "react-simple-linkify": "^1.0.3",
     "react-static": "7.2.2",
     "react-static-plugin-styled-components": "^7.2.2",
     "react-universal-component": "^4.0.0",
