@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#flattenDeep
 import { flattenDeep } from 'lodash'
 
 module.exports = flattenDeep([1, [2, [3, [4]], 5]])

@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#drop
 import { drop } from 'lodash'
 
 exports.simple = drop([1, 2, 3])

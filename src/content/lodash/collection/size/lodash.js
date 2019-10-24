@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#size
 import { size } from 'lodash'
 
 exports.array = size([1, 2, 3])

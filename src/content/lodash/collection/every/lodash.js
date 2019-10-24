@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#every
 import { every } from 'lodash'
 
 function isLargerThanTen(element) {

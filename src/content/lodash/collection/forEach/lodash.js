@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#forEach
 import { forEach } from 'lodash'
 
 function iteratee(item, index) {

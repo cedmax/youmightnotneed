@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#findIndex
 import { findIndex } from 'lodash'
 
 const users = [

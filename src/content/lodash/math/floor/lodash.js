@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#floor
 import { floor } from 'lodash'
 
 exports.floor = floor(4.006)

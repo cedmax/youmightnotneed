@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#fill
 import { fill } from 'lodash'
 
 exports.array = fill([1, 2, 3], 'a')

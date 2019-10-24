@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#dropRight
 import { dropRight } from 'lodash'
 
 exports.simple = dropRight([1, 2, 3])

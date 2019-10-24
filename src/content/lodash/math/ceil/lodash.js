@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#ceil
 import { ceil } from 'lodash'
 
 exports.ceil = ceil(4.006)
