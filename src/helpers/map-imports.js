@@ -10,7 +10,8 @@ const parse = object => {
 
     cache[area] = cache[area] || {}
     cache[area][method] = cache[area][method] || {}
-    cache[area][method][version] = object[file]
+
+    cache[area][method][version] = (object[file].default || object[file])
       .replace(/<a href=/gi, '<a target="_blank" href=')
       .replace(/(module.)?exports(\.(.+))? = /g, '')
 
