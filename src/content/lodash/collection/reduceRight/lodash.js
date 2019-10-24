@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#reduceRight
 import { reduceRight } from 'lodash'
 
 module.exports = reduceRight(

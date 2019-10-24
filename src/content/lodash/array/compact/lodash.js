@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#compact
 import { compact } from 'lodash'
 
 module.exports = compact([0, 1, 2])

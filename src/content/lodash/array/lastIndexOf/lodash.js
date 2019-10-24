@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#lastIndexOf
 import { lastIndexOf } from 'lodash'
 
 exports.simple = lastIndexOf([1, 2, 1, 2], 2)

@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#some
 import { some } from 'lodash'
 
 const isEven = n => n % 2 === 0

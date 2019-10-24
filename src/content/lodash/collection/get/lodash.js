@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#get
 import { get } from 'lodash'
 
 const simpleObject = { a: { b: 2 } }

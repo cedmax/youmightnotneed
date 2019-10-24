@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#reduce
 import { reduce } from 'lodash'
 
 exports.array = reduce([1, 2], (sum, n) => sum + n, 0)

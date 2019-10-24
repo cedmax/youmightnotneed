@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#chunk
 import { chunk } from 'lodash'
 
 exports.simple = chunk(['a', 'b', 'c', 'd', 'e', 'f', 'g'], 3)

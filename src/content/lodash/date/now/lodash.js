@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#now
 import { now } from 'lodash'
 
 module.exports = now()

@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#split
 import { split } from 'lodash'
 
 exports.all = split('a-b-c', '-')
