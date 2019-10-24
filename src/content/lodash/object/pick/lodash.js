@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#pick
 import { pick } from 'lodash'
 
 const object = {

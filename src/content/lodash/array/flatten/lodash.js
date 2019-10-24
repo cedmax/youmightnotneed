@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#flatten
 import { flatten } from 'lodash'
 
 module.exports = flatten([1, [2, [3, [4]], 5]])

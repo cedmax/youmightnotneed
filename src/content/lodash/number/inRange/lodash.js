@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#inRange
 import { inRange } from 'lodash'
 
 exports.example1 = inRange(3, 2, 4)

@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#filter
 import { filter } from 'lodash'
 
 function isBigEnough(value) {

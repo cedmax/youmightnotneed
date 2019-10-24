@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
+import Linkify from 'react-simple-linkify'
 import Hightlight from 'react-highlight.js'
 import Heading from './Heading'
 import Spec from './Spec'
@@ -42,6 +43,12 @@ const NotesLinks = styled.div`
   }
 `
 
+const Link = ({ url }) => (
+  <a href={url} rel="noopener noreferrer" target="_blank">
+    {url}
+  </a>
+)
+
 export default ({ methodData, showTests }) => (
   <Fragment>
     <LineBlock>
@@ -50,7 +57,9 @@ export default ({ methodData, showTests }) => (
         .map(variant => (
           <div key={variant}>
             <Heading hierarchy="4">{variant}</Heading>
-            <Hightlight className="javascript">{methodData[variant]}</Hightlight>
+            <Hightlight className="javascript">
+              <Linkify component={Link}>{methodData[variant]}</Linkify>
+            </Hightlight>
           </div>
         ))}
     </LineBlock>

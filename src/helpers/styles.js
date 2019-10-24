@@ -11,6 +11,11 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
+  .hljs a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
 `
 
 export default styled.div`

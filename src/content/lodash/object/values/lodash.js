@@ -1,3 +1,4 @@
+// https://lodash.com/docs/#values
 import { values } from 'lodash'
 
 const object = {
