@@ -1,7 +1,7 @@
 # YOU MIGHT NOT NEED CSS
 
-This might sound like a bold statement, and surely phrasing it like this is a provocation. 
+Sorry, this was a clickbait.
 
-But there's [a lot](https://github.com/MicheleBertoli/css-in-js) going on in the css-in-js space and, even if I wouldn't necessarily reccommend it for every project, it's interesting to keep up with what it's going on and why.
+This topic polarised the community in the last few years; you might have landed here either excited or frustrated. All I can offer is this talk, which helped me understand where some of the following [experiments](https://github.com/MicheleBertoli/css-in-js) came from.
 
-Here is an amazing talk about css modules (which is not a css in js specific solution), useful to understand the why part of it.
+Arguably, some of the solutions out there aren't suitable for most use cases. But having a sense of why people invested in them, what problems they were trying to solve, could prove helpful.
