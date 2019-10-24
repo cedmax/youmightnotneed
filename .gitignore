@@ -4,8 +4,10 @@ node_modules
 # testing
 coverage
 
-# production
+# react-static
 dist
+tmp
+artifacts 
 
 # misc
 .DS_Store
