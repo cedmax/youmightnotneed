@@ -1,8 +1,8 @@
 import 'highlight.js/styles/github-gist.css'
 import 'milligram/dist/milligram.css'
-import styled, { injectGlobal } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
-injectGlobal`
+export const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
       'Lucida Grande', sans-serif;

@@ -1,19 +1,23 @@
-import React from 'react'
-import Routes from 'react-static-routes' /* eslint-disable-line */
-import { hot } from 'react-hot-loader'
-import { Router } from 'react-static'
-import AppStyles from './helpers/styles'
+import React, { Suspense } from 'react'
+import { Root, Routes } from 'react-static'
+import { Router } from '@reach/router'
+import AppStyles, { GlobalStyle } from './helpers/styles'
 import Footer from './components/Footer'
 import Nav from './components/Nav'
 
 const App = () => (
-  <Router>
+  <Root>
+    <GlobalStyle />
     <AppStyles>
       <Nav />
-      <Routes />
+      <Suspense fallback={<div />}>
+        <Router>
+          <Routes path="*" />
+        </Router>
+      </Suspense>
       <Footer />
     </AppStyles>
-  </Router>
+  </Root>
 )
 
-export default hot(module)(App)
+export default App
