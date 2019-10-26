@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, memo } from 'react'
 import styled from 'styled-components'
 import Linkify from 'react-simple-linkify'
 import Hightlight from 'react-highlight.js'
@@ -49,21 +49,27 @@ const Link = ({ url }) => (
   </a>
 )
 
-export default ({ methodData, showTests }) => (
+const Variant = memo(({ variant, methodData }) => (
+  <div>
+    <Heading hierarchy="4">{variant}</Heading>
+    <Hightlight className="javascript">
+      <Linkify component={Link}>{methodData[variant]}</Linkify>
+    </Hightlight>
+  </div>
+))
+
+const Block = memo(({ methodData }) =>
+  Object.keys(methodData)
+    .filter(variant => variant !== 'notes' && variant !== 'spec')
+    .map(variant => <Variant key={variant} methodData={methodData} variant={variant} />)
+)
+
+export default memo(({ methodData, showTests }) => (
   <Fragment>
     <LineBlock>
-      {Object.keys(methodData)
-        .filter(variant => variant !== 'notes' && variant !== 'spec')
-        .map(variant => (
-          <div key={variant}>
-            <Heading hierarchy="4">{variant}</Heading>
-            <Hightlight className="javascript">
-              <Linkify component={Link}>{methodData[variant]}</Linkify>
-            </Hightlight>
-          </div>
-        ))}
+      <Block methodData={methodData} />
     </LineBlock>
     <NotesLinks dangerouslySetInnerHTML={{ __html: methodData.notes }} />
     {methodData.spec && showTests ? <Spec code={methodData.spec} /> : null}
   </Fragment>
-)
+))
