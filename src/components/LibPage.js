@@ -1,6 +1,5 @@
-import React, { Fragment, Component } from 'react'
+import React, { Fragment, useCallback, useState, memo } from 'react'
 import styled from 'styled-components'
-import debounce from 'debounce'
 import Content from './ContentBlock'
 import AnchoredBlock from './AnchoredBlock'
 import Search from './Search'
@@ -17,60 +16,46 @@ const Row = styled.div`
   }
 `
 
-export default class LibPage extends Component {
-  constructor(props) {
-    super(props)
+const Section = memo(({ method, section, showTests }) => (
+  <AnchoredBlock key={method} title={method} hierarchy="3">
+    <CodeComparison showTests={showTests} methodData={section[method]} />
+  </AnchoredBlock>
+))
 
-    this.onChange = this.onChange.bind(this)
-    this.filter = debounce(this.filter.bind(this), 50, true)
-    this.state = {
-      value: '',
-      showTests: false,
-      data: this.props.data,
-    }
-  }
+const Block = memo(({ data, showTests, section }) =>
+  Object.keys(data).map(method => (
+    <Section showTests={showTests} method={method} section={data} key={`${section}-${method}`} />
+  ))
+)
 
-  onChange(e) {
-    const { value } = e.target
+export default memo(({ data: initialData }) => {
+  const [showTests, setShowTests] = useState(false)
+  const [value, setValue] = useState('')
+  const [data, setData] = useState(initialData)
 
-    this.setState({
-      value,
-    })
+  const onChange = useCallback(
+    ({ target: { value } }) => {
+      setValue(value)
+      setData(dataFilter(initialData, value))
+    },
+    [initialData]
+  )
 
-    this.filter(value)
-  }
+  const showTestsToggle = useCallback(() => setShowTests(showTests => !showTests), [])
 
-  filter(value) {
-    const { data } = this.props
-
-    const newData = dataFilter(data, value)
-
-    this.setState({
-      data: newData,
-    })
-  }
-
-  render() {
-    const { data, value, showTests } = this.state
-
-    return (
-      <Fragment>
-        <Content>
-          <Search value={value} onChange={this.onChange} />
-          <ShowTests value={showTests} onChange={() => this.setState({ showTests: !showTests })} />
-        </Content>
-        {Object.keys(data).map(section => (
-          <Row key={section}>
-            <AnchoredBlock title={section} hierarchy="2">
-              {Object.keys(data[section]).map(method => (
-                <AnchoredBlock key={method} title={method} hierarchy="3">
-                  <CodeComparison showTests={showTests} methodData={data[section][method]} />
-                </AnchoredBlock>
-              ))}
-            </AnchoredBlock>
-          </Row>
-        ))}
-      </Fragment>
-    )
-  }
-}
+  return (
+    <Fragment>
+      <Content>
+        <Search value={value} onChange={onChange} />
+        <ShowTests value={showTests} onChange={showTestsToggle} />
+      </Content>
+      {Object.keys(data).map(section => (
+        <Row key={section}>
+          <AnchoredBlock title={section} hierarchy="2">
+            <Block section={section} showTests={showTests} data={data[section]} />
+          </AnchoredBlock>
+        </Row>
+      ))}
+    </Fragment>
+  )
+})

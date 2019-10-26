@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, memo } from 'react'
 import styled from 'styled-components'
 import Heading from './Heading'
 
@@ -20,7 +20,7 @@ const Anchor = styled.a`
   }
 `
 
-export default ({ title, hierarchy, children }) => (
+export default memo(({ title, hierarchy, children }) => (
   <Fragment>
     {title ? (
       <Heading hierarchy={hierarchy}>
@@ -31,4 +31,4 @@ export default ({ title, hierarchy, children }) => (
     ) : null}
     {children}
   </Fragment>
-)
+))
