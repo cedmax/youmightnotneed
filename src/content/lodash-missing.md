@@ -255,6 +255,5 @@
 [\_.stubObject](https://lodash.com/docs/#stubObject)  
 [\_.stubString](https://lodash.com/docs/#stubString)  
 [\_.stubTrue](https://lodash.com/docs/#stubTrue)  
-[\_.times](https://lodash.com/docs/#times)  
 [\_.toPath](https://lodash.com/docs/#toPath)  
 [\_.uniqueId](https://lodash.com/docs/#uniqueId)
