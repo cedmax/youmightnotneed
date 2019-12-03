@@ -240,7 +240,6 @@
 [\_.methodOf](https://lodash.com/docs/#methodOf)  
 [\_.mixin](https://lodash.com/docs/#mixin)  
 [\_.noConflict](https://lodash.com/docs/#noConflict)  
-[\_.noop](https://lodash.com/docs/#noop)  
 [\_.nthArg](https://lodash.com/docs/#nthArg)  
 [\_.over](https://lodash.com/docs/#over)  
 [\_.overEvery](https://lodash.com/docs/#overEvery)  
