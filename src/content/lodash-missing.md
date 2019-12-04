@@ -249,7 +249,6 @@
 [\_.range](https://lodash.com/docs/#range)  
 [\_.rangeRight](https://lodash.com/docs/#rangeRight)  
 [\_.runInContext](https://lodash.com/docs/#runInContext)  
-[\_.stubObject](https://lodash.com/docs/#stubObject)  
 [\_.stubString](https://lodash.com/docs/#stubString)  
 [\_.stubTrue](https://lodash.com/docs/#stubTrue)  
 [\_.toPath](https://lodash.com/docs/#toPath)  
