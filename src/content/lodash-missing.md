@@ -72,7 +72,6 @@
 ### Function
 
 [\_.after](https://lodash.com/docs/#after)  
-[\_.ary](https://lodash.com/docs/#ary)  
 [\_.before](https://lodash.com/docs/#before)  
 [\_.bind](https://lodash.com/docs/#bind)  
 [\_.bindKey](https://lodash.com/docs/#bindKey)  
@@ -92,7 +91,6 @@
 [\_.rest](https://lodash.com/docs/#rest)  
 [\_.spread](https://lodash.com/docs/#spread)  
 [\_.throttle](https://lodash.com/docs/#throttle)  
-[\_.unary](https://lodash.com/docs/#unary)  
 [\_.wrap](https://lodash.com/docs/#wrap)
 
 ### Lang
