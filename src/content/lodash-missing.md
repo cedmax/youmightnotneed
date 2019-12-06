@@ -72,7 +72,6 @@
 ### Function
 
 [\_.after](https://lodash.com/docs/#after)  
-[\_.ary](https://lodash.com/docs/#ary)  
 [\_.before](https://lodash.com/docs/#before)  
 [\_.bind](https://lodash.com/docs/#bind)  
 [\_.bindKey](https://lodash.com/docs/#bindKey)  
@@ -92,7 +91,6 @@
 [\_.rest](https://lodash.com/docs/#rest)  
 [\_.spread](https://lodash.com/docs/#spread)  
 [\_.throttle](https://lodash.com/docs/#throttle)  
-[\_.unary](https://lodash.com/docs/#unary)  
 [\_.wrap](https://lodash.com/docs/#wrap)
 
 ### Lang
@@ -240,7 +238,6 @@
 [\_.methodOf](https://lodash.com/docs/#methodOf)  
 [\_.mixin](https://lodash.com/docs/#mixin)  
 [\_.noConflict](https://lodash.com/docs/#noConflict)  
-[\_.noop](https://lodash.com/docs/#noop)  
 [\_.nthArg](https://lodash.com/docs/#nthArg)  
 [\_.over](https://lodash.com/docs/#over)  
 [\_.overEvery](https://lodash.com/docs/#overEvery)  
@@ -250,10 +247,5 @@
 [\_.range](https://lodash.com/docs/#range)  
 [\_.rangeRight](https://lodash.com/docs/#rangeRight)  
 [\_.runInContext](https://lodash.com/docs/#runInContext)  
-[\_.stubArray](https://lodash.com/docs/#stubArray)  
-[\_.stubFalse](https://lodash.com/docs/#stubFalse)  
-[\_.stubObject](https://lodash.com/docs/#stubObject)  
-[\_.stubString](https://lodash.com/docs/#stubString)  
-[\_.stubTrue](https://lodash.com/docs/#stubTrue)  
 [\_.toPath](https://lodash.com/docs/#toPath)  
 [\_.uniqueId](https://lodash.com/docs/#uniqueId)
