@@ -1,2 +1,2 @@
-module.exports = new Date().getTime()
+module.exports = Date.now()
 // => # milliseconds  elapsed since the Unix epoch
