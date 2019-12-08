@@ -183,7 +183,6 @@
 [\_.result](https://lodash.com/docs/#result)  
 [\_.set](https://lodash.com/docs/#set)  
 [\_.setWith](https://lodash.com/docs/#setWith)  
-[\_.toPairs](https://lodash.com/docs/#toPairs)  
 [\_.toPairsIn](https://lodash.com/docs/#toPairsIn)  
 [\_.transform](https://lodash.com/docs/#transform)  
 [\_.unset](https://lodash.com/docs/#unset)  
