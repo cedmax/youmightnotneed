@@ -202,7 +202,6 @@
 [\_.lowerCase](https://lodash.com/docs/#lowerCase)  
 [\_.lowerFirst](https://lodash.com/docs/#lowerFirst)  
 [\_.pad](https://lodash.com/docs/#pad)  
-[\_.padStart](https://lodash.com/docs/#padStart)  
 [\_.parseInt](https://lodash.com/docs/#parseInt)  
 [\_.replace](https://lodash.com/docs/#replace)  
 [\_.snakeCase](https://lodash.com/docs/#snakeCase)  
