@@ -205,7 +205,6 @@
 [\_.padEnd](https://lodash.com/docs/#padEnd)  
 [\_.padStart](https://lodash.com/docs/#padStart)  
 [\_.parseInt](https://lodash.com/docs/#parseInt)  
-[\_.repeat](https://lodash.com/docs/#repeat)  
 [\_.replace](https://lodash.com/docs/#replace)  
 [\_.snakeCase](https://lodash.com/docs/#snakeCase)  
 [\_.startCase](https://lodash.com/docs/#startCase)  
