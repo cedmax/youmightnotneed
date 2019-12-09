@@ -10,7 +10,7 @@ Please contribute on [github](https://github.com/cedmax/youmightnotneed)
 * [Css](/css)  
 
 ##### External Resources & Articles
-* [Javascript](http://youmightnotneedjs.com/)
+* [JavaScript](http://youmightnotneedjs.com/)
 * [jQuery](http://youmightnotneedjquery.com/)  
 * [That WP plugin](https://youmightnotneedthatwpplugin.com)  
 * [A Backend](https://github.com/anaibol/awesome-serverless/blob/master/README.md)  
