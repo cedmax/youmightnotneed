@@ -5,5 +5,6 @@ const plain = require('./vanilla')
 
 test('fromPairs', () => {
   expect(lodash).toEqual(expected)
-  expect(plain).toEqual(lodash)
+  expect(plain.legacy).toEqual(lodash)
+  expect(plain.modern).toEqual(lodash)
 })
