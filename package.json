@@ -2,9 +2,11 @@
   "name": "react-static-starter",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "https://github.com/cedmax/youmightnotneed",
   "license": "MIT",
   "scripts": {
     "new": "node modules/new",
+    "contributors": "node modules/contributors",
     "start": "react-static start",
     "stage": "react-static build --staging",
     "build": "react-static build",
@@ -35,6 +37,7 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "1.5.0",
+    "contributor-faces": "^1.0.3",
     "eslint-config-react-tools": "1.1.7",
     "husky": "3.0.9",
     "inquirer": "7.0.0",
