@@ -1,1 +1,1 @@
-[mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values)
+[mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/values)

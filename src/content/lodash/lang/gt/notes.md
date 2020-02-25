@@ -1,1 +1,1 @@
-[mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
+[mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
