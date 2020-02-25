@@ -1,9 +1,11 @@
 # How To Contribute
 
 Feel free to open a PR on the [github repository](https://github.com/cedmax/youmightnotneed).  
-If you want to suggest any othe framework or library please [open an issue](https://github.com/cedmax/youmightnotneed/issues/new), before the PR.  
-  
+If you want to suggest any othe framework or library please [open an issue](https://github.com/cedmax/youmightnotneed/issues/new), before the PR.
+
 Please note we have a [Code of Conduct](https://github.com/cedmax/youmightnotneed/blob/master/CODE_OF_CONDUCT.md), make sure you follow it in all your interactions with the project.
+
+Run `yarn contributors` to add yourself to the Readme.md
 
 ## How to add a method implementation
 
@@ -25,9 +27,9 @@ Please use the examples in the [lodash documentation](https://lodash.com/docs) f
 ##### ./lodash/array/chunk/lodash.js
 
 ```javascript
-import { chunk } from "lodash";
+import { chunk } from 'lodash'
 
-module.exports = chunk(["a", "b", "c", "d", "e", "f", "g"], 3);
+module.exports = chunk(['a', 'b', 'c', 'd', 'e', 'f', 'g'], 3)
 // => [['a', 'b', 'c'], ['d', 'e', 'f'], ['g']]
 ```
 
@@ -36,15 +38,15 @@ Note that both lodash and vanilla need to `module.exports` the result of their o
 ##### ./lodash/collection/find/spec.js
 
 ```javascript
-const expected = { user: "barney", age: 36, active: true };
+const expected = { user: 'barney', age: 36, active: true }
 
-const lodash = require("./lodash");
-const plain = require("./vanilla");
+const lodash = require('./lodash')
+const plain = require('./vanilla')
 
-test("find", () => {
-  expect(lodash).toEqual(expected);
-  expect(plain).toEqual(lodash);
-});
+test('find', () => {
+  expect(lodash).toEqual(expected)
+  expect(plain).toEqual(lodash)
+})
 ```
 
 The `notes.md` file is meant to contain external links relevant to the the vanilla implementation (where the implementation was found, if not original, mdn references or such).
