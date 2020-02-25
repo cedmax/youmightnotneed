@@ -1,4 +1,5 @@
 import React from 'react'
+// eslint-disable-next-line import/no-unresolved
 import { Link } from '@reach/router'
 
 export default () => (
