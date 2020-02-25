@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react'
 import { Root, Routes } from 'react-static'
+// eslint-disable-next-line import/no-unresolved
 import { Router } from '@reach/router'
 import AppStyles, { GlobalStyle } from './helpers/styles'
 import Footer from './components/Footer'
