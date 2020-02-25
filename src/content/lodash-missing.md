@@ -14,7 +14,6 @@
 [\_.intersection](https://lodash.com/docs/#intersection)  
 [\_.intersectionBy](https://lodash.com/docs/#intersectionBy)  
 [\_.intersectionWith](https://lodash.com/docs/#intersectionWith)  
-[\_.nth](https://lodash.com/docs/#nth)  
 [\_.pull](https://lodash.com/docs/#pull)  
 [\_.pullAll](https://lodash.com/docs/#pullAll)  
 [\_.pullAllBy](https://lodash.com/docs/#pullAllBy)  
