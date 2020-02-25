@@ -1,9 +1,4 @@
-/* eslint-disable no-plusplus */
-
-const uniqueId = (() => {
-  let counter = 0
-  return (str = '') => `${str}${++counter}`
-})()
+const uniqueId = (counter => (str = '') => `${str}${++counter}`)(0)
 
 exports.composed = uniqueId('contact_')
 // => 'contact_1'
