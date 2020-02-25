@@ -20,8 +20,6 @@
 [\_.pullAllBy](https://lodash.com/docs/#pullAllBy)  
 [\_.pullAllWith](https://lodash.com/docs/#pullAllWith)  
 [\_.pullAt](https://lodash.com/docs/#pullAt)  
-[\_.remove](https://lodash.com/docs/#remove)  
-[\_.reverse](https://lodash.com/docs/#reverse)  
 [\_.slice](https://lodash.com/docs/#slice)  
 [\_.sortedIndex](https://lodash.com/docs/#sortedIndex)  
 [\_.sortedIndexBy](https://lodash.com/docs/#sortedIndexBy)  
@@ -149,12 +147,10 @@
 
 ### Object
 
-[\_.assign](https://lodash.com/docs/#assign)  
 [\_.assignIn](https://lodash.com/docs/#assignIn)  
 [\_.assignInWith](https://lodash.com/docs/#assignInWith)  
 [\_.assignWith](https://lodash.com/docs/#assignWith)  
 [\_.at](https://lodash.com/docs/.at)  
-[\_.create](https://lodash.com/docs/#create)  
 [\_.defaults](https://lodash.com/docs/#defaults)  
 [\_.defaultsDeep](https://lodash.com/docs/#defaultsDeep)  
 [\_.findKey](https://lodash.com/docs/#findKey)  
@@ -171,7 +167,6 @@
 [\_.invert](https://lodash.com/docs/#invert)  
 [\_.invertBy](https://lodash.com/docs/#invertBy)  
 [\_.invoke](https://lodash.com/docs/#invoke)  
-[\_.keys](https://lodash.com/docs/#keys)  
 [\_.keysIn](https://lodash.com/docs/#keysIn)  
 [\_.mapKeys](https://lodash.com/docs/#mapKeys)  
 [\_.mapValues](https://lodash.com/docs/#mapValues)  
@@ -226,7 +221,6 @@
 [\_.defaultTo](https://lodash.com/docs/#defaultTo)  
 [\_.flow](https://lodash.com/docs/#flow)  
 [\_.flowRight](https://lodash.com/docs/#flowRight)  
-[\_.identity](https://lodash.com/docs/#identity)  
 [\_.iteratee](https://lodash.com/docs/#iteratee)  
 [\_.matches](https://lodash.com/docs/#matches)  
 [\_.matchesProperty](https://lodash.com/docs/#matchesProperty)  
