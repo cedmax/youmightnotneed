@@ -213,13 +213,9 @@
 
 ### Util
 
-[\_.attempt](https://lodash.com/docs/#attempt)  
 [\_.bindAll](https://lodash.com/docs/#bindAll)  
 [\_.cond](https://lodash.com/docs/#cond)  
 [\_.conforms](https://lodash.com/docs/#conforms)  
-[\_.defaultTo](https://lodash.com/docs/#defaultTo)  
-[\_.flow](https://lodash.com/docs/#flow)  
-[\_.flowRight](https://lodash.com/docs/#flowRight)  
 [\_.iteratee](https://lodash.com/docs/#iteratee)  
 [\_.matches](https://lodash.com/docs/#matches)  
 [\_.matchesProperty](https://lodash.com/docs/#matchesProperty)  

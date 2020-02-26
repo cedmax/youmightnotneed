@@ -50,3 +50,13 @@ exports.getMethod = async () => {
 
   return method
 }
+
+exports.runTest = async () => {
+  const { test } = await inquirer.prompt({
+    name: 'test',
+    type: 'confirm',
+    message: 'Run test?',
+  })
+
+  return test
+}
