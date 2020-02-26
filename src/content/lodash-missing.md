@@ -186,8 +186,7 @@
 
 ### String
 
-[\_.camelCase](https://lodash.com/docs/#camelCase)  
-[\_.capitalize](https://lodash.com/docs/#capitalize)  
+[\_.camelCase](https://lodash.com/docs/#camelCase)
 [\_.deburr](https://lodash.com/docs/#deburr)  
 [\_.escape](https://lodash.com/docs/#escape)  
 [\_.escapeRegExp](https://lodash.com/docs/#escapeRegExp)  
@@ -200,7 +199,6 @@
 [\_.snakeCase](https://lodash.com/docs/#snakeCase)  
 [\_.startCase](https://lodash.com/docs/#startCase)  
 [\_.template](https://lodash.com/docs/#template)  
-[\_.toLower](https://lodash.com/docs/#toLower)  
 [\_.toUpper](https://lodash.com/docs/#toUpper)  
 [\_.trim](https://lodash.com/docs/#trim)  
 [\_.trimEnd](https://lodash.com/docs/#trimEnd)  
@@ -208,7 +206,6 @@
 [\_.truncate](https://lodash.com/docs/#truncate)  
 [\_.unescape](https://lodash.com/docs/#unescape)  
 [\_.upperCase](https://lodash.com/docs/#upperCase)  
-[\_.upperFirst](https://lodash.com/docs/#upperFirst)  
 [\_.words](https://lodash.com/docs/#words)
 
 ### Util
