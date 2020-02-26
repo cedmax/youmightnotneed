@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "1.10.7",
+    "cheerio": "^1.0.0-rc.3",
     "contributor-faces": "1.0.3",
     "eslint-config-react-tools": "1.1.7",
     "husky": "4.2.3",
