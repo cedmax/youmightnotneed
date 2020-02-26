@@ -82,13 +82,10 @@
 [\_.negate](https://lodash.com/docs/#negate)  
 [\_.once](https://lodash.com/docs/#once)  
 [\_.overArgs](https://lodash.com/docs/#overArgs)  
-[\_.partial](https://lodash.com/docs/#partial)  
-[\_.partialRight](https://lodash.com/docs/#partialRight)  
 [\_.rearg](https://lodash.com/docs/#rearg)  
 [\_.rest](https://lodash.com/docs/#rest)  
 [\_.spread](https://lodash.com/docs/#spread)  
-[\_.throttle](https://lodash.com/docs/#throttle)  
-[\_.wrap](https://lodash.com/docs/#wrap)
+[\_.throttle](https://lodash.com/docs/#throttle)
 
 ### Lang
 
@@ -129,7 +126,7 @@
 [\_.isTypedArray](https://lodash.com/docs/#isTypedArray)  
 [\_.isWeakMap](https://lodash.com/docs/#isWeakMap)  
 [\_.isWeakSet](https://lodash.com/docs/#isWeakSet)  
-[\_.lt](https://lodash.com/docs/.lt)  
+[\_.lt](https://lodash.com/docs/#lt)  
 [\_.lte](https://lodash.com/docs/#lte)  
 [\_.toArray](https://lodash.com/docs/#toArray)  
 [\_.toFinite](https://lodash.com/docs/#toFinite)  
