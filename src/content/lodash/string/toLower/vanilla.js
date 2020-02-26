@@ -1,10 +1,10 @@
-const toUpper = str => str.toUpperCase()
+const toLower = str => str.toLowerCase()
 
-exports.dash = toUpper('--foo-bar--')
-// => '--FOO-BAR--'
+exports.dash = toLower('--foo-bar--')
+// => '--foo-bar--'
 
-exports.default = toUpper('fooBar')
-// => 'FOOBAR'
+exports.default = toLower('fooBar')
+// => 'foobar'
 
-exports.underscore = toUpper('__foo_bar__')
-// => '__FOO_BAR__'
+exports.underscore = toLower('__foo_bar__')
+// => '__foo_bar__'

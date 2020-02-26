@@ -9,6 +9,3 @@ exports.default = toLower('fooBar')
 
 exports.underscore = toLower('__FOO_BAR__')
 // => '__foo_bar__'
-
-module.exports = toLower()
-// =>

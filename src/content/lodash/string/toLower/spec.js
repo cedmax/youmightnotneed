@@ -1,7 +1,7 @@
 const expected = {
-  dash: '--FOO-BAR--',
-  default: 'FOOBAR',
-  underscore: '__FOO_BAR__',
+  dash: '--foo-bar--',
+  default: 'foobar',
+  underscore: '__foo_bar__',
 }
 
 const lodash = require('./lodash')
