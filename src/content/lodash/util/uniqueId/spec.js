@@ -6,12 +6,7 @@ const expected = {
 const lodash = require('./lodash')
 const plain = require('./vanilla')
 
-test('simple', () => {
-  expect(lodash.simple).toEqual(expected.simple)
-  expect(plain.simple).toEqual(lodash.simple)
-})
-
-test('composed', () => {
-  expect(lodash.composed).toEqual(expected.composed)
-  expect(plain.composed).toEqual(lodash.composed)
+test('uniqueId', () => {
+  expect(lodash).toEqual(expected)
+  expect(plain).toEqual(lodash)
 })

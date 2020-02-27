@@ -6,12 +6,7 @@ const expected = {
 const lodash = require('./lodash')
 const plain = require('./vanilla')
 
-test('arrays', () => {
-  expect(lodash.arrays).toEqual(expected.arrays)
-  expect(plain.arrays).toEqual(lodash.arrays)
-})
-
-test('objects', () => {
-  expect(lodash.objects).toEqual(expected.objects)
-  expect(plain.objects).toEqual(lodash.objects)
+test('differenceBy', () => {
+  expect(lodash).toEqual(expected)
+  expect(plain).toEqual(lodash)
 })

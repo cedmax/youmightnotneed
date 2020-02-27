@@ -6,12 +6,7 @@ const expected = {
 const lodash = require('./lodash')
 const plain = require('./vanilla')
 
-test('simple', () => {
-  expect(lodash.simple).toEqual(expected.simple)
-  expect(plain.simple).toEqual(lodash.simple)
-})
-
-test('map', () => {
-  expect(lodash.map).toEqual(expected.map)
-  expect(plain.map).toEqual(lodash.map)
+test('parseInt', () => {
+  expect(lodash).toEqual(expected)
+  expect(plain).toEqual(lodash)
 })

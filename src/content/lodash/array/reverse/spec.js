@@ -6,12 +6,7 @@ const expected = {
 const lodash = require('./lodash')
 const plain = require('./vanilla')
 
-test('original array', () => {
-  expect(lodash.mutated).toEqual(expected.mutated)
-  expect(plain.mutated).toEqual(lodash.mutated)
-})
-
-test('returned array', () => {
-  expect(lodash.return).toEqual(expected.return)
-  expect(plain.return).toEqual(lodash.return)
+test('reverse', () => {
+  expect(lodash).toEqual(expected)
+  expect(plain).toEqual(lodash)
 })

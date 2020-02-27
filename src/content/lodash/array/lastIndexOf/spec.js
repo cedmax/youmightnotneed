@@ -6,12 +6,7 @@ const expected = {
 const lodash = require('./lodash')
 const plain = require('./vanilla')
 
-test('findIndex', () => {
-  expect(lodash.simple).toEqual(expected.simple)
-  expect(plain.simple).toEqual(lodash.simple)
-})
-
-test('fromIndex', () => {
-  expect(lodash.fromIndex).toEqual(expected.fromIndex)
-  expect(plain.fromIndex).toEqual(lodash.fromIndex)
+test('lastIndexOf', () => {
+  expect(lodash).toEqual(expected)
+  expect(plain).toEqual(lodash)
 })
