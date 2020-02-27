@@ -1,6 +1,7 @@
 const expected = {
   simplePath: 2,
   complexPath: 3,
+  complexPathArray: 3,
   simpleDefault: 'default',
   complexDefault: 'default',
   falseCase: undefined,
