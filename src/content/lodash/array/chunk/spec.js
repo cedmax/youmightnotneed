@@ -7,17 +7,7 @@ const expected = {
 const lodash = require('./lodash')
 const plain = require('./vanilla')
 
-test('simple', () => {
-  expect(lodash.simple).toEqual(expected.simple)
-  expect(plain.simple).toEqual(lodash.simple)
-})
-
-test('chunkSizeZero', () => {
-  expect(lodash.chunkSizeZero).toEqual(expected.chunkSizeZero)
-  expect(plain.chunkSizeZero).toEqual(lodash.chunkSizeZero)
-})
-
-test('chunkSizeNegative', () => {
-  expect(lodash.chunkSizeNegative).toEqual(expected.chunkSizeNegative)
-  expect(plain.chunkSizeNegative).toEqual(lodash.chunkSizeNegative)
+test('chunk', () => {
+  expect(lodash).toEqual(expected)
+  expect(plain).toEqual(lodash)
 })

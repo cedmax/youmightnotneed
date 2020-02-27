@@ -1,12 +1,11 @@
-const expectedAll = ['a', 'b', 'c']
-const expectedJustTwo = ['a', 'b']
-
+const expected = {
+  all: ['a', 'b', 'c'],
+  justTwo: ['a', 'b'],
+}
 const lodash = require('./lodash')
 const plain = require('./vanilla')
 
 test('split', () => {
-  expect(lodash.all).toEqual(expectedAll)
-  expect(plain.all).toEqual(expectedAll)
-  expect(lodash.justTwo).toEqual(expectedJustTwo)
-  expect(plain.justTwo).toEqual(expectedJustTwo)
+  expect(lodash).toEqual(expected)
+  expect(plain).toEqual(lodash)
 })
