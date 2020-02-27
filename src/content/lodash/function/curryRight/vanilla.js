@@ -1,4 +1,3 @@
-// https://lodash.com/docs/#curryRight
 const curryRight = func => {
   const expectedArgs = func.length
   const curried = (...args) => {
