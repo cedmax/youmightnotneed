@@ -1,4 +1,3 @@
-// https://lodash.com/docs/#create
 function Shape() {
   this.x = 0
   this.y = 0
