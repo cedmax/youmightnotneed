@@ -1,4 +1,6 @@
-const min = nums => (nums.length ? Math.min(...nums) : undefined)
+const min = nums => {
+  if (nums.length) return Math.min(...nums)
+}
 
 exports.min = min([4, 2, 8, 6])
 // => 8

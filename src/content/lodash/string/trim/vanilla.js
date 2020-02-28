@@ -1,7 +1,7 @@
 // regex explained: https://regexr.com/4v6jg
 const trim = (str, c = '\\s') => str.replace(new RegExp(`^([${c}]*)(.*?)([${c}]*)$`), '$2')
 
-exports.simple = trim(' abc ')
+exports.simple = ' abc '.trim()
 // => 'abc'
 
 exports.custom = trim('-_-abc-_-', '_-')

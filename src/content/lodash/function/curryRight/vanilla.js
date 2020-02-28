@@ -1,3 +1,5 @@
+// the only difference from the curry method
+// implementation is how arguments gets concatenated
 const curryRight = func => {
   const expectedArgs = func.length
   const curried = (...args) => {
