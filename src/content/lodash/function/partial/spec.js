@@ -1,7 +1,4 @@
-const expected = {
-  default: 'hello fred',
-  placeholder: 'hi fred',
-}
+const expected = 'hello fred'
 
 const lodash = require('./lodash')
 const plain = require('./vanilla')

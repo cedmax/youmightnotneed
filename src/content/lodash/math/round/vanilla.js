@@ -1,9 +1,9 @@
 const round = (num, precision = 0) => {
   const modifier = 10 ** precision
-  return !modifier ? Math.round(num) : Math.round(num * modifier) / modifier
+  return Math.round(num * modifier) / modifier
 }
 
-exports.round = round(4.006)
+exports.round = Math.round(4.006)
 // => 4
 
 exports.precision = round(4.006, 2)

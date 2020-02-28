@@ -1,4 +1,4 @@
-const nth = (arr, idx) => arr[idx <= 0 ? arr.length + idx : idx]
+const nth = (arr, idx) => arr.slice(idx, idx + 1)[0]
 
 const array = ['a', 'b', 'c', 'd']
 

@@ -1,9 +1,9 @@
-const floor = (num, precision = 0) => {
+const floor = (num, precision) => {
   const modifier = 10 ** precision
-  return !modifier ? Math.floor(num) : Math.floor(num * modifier) / modifier
+  return Math.floor(num * modifier) / modifier
 }
 
-exports.floor = floor(4.006)
+exports.floor = Math.floor(4.006)
 // => 4
 
 exports.precision = floor(0.046, 2)

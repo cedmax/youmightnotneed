@@ -1,4 +1,6 @@
-const max = nums => (nums.length ? Math.max(...nums) : undefined)
+const max = nums => {
+  if (nums.length) return Math.max(...nums)
+}
 
 exports.max = max([4, 2, 8, 6])
 // => 8

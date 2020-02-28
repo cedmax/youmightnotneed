@@ -1,7 +1,4 @@
-const expected = {
-  function: 5,
-  shortHand: 5,
-}
+const expected = 5
 
 const lodash = require('./lodash')
 const plain = require('./vanilla')

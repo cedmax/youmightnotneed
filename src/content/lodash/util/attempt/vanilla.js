@@ -6,12 +6,8 @@ const attempt = (func, ...args) => {
   }
 }
 
-exports.success = attempt(item => {
-  return item.split('')
-}, 'string')
+exports.success = attempt(item => item.split(''), 'string')
 // => ["s", "t", "r", "i", "n", "g"]
 
-exports.failure = attempt(item => {
-  return item.split('')
-}, 1)
+exports.failure = attempt(item => item.split(''), 1)
 // => [TypeError: item.split is not a function]
