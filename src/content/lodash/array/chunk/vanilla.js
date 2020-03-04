@@ -5,6 +5,9 @@ const chunk = (arr, chunkSize = 1, cache = []) => {
   return cache
 }
 
+exports.noSize = chunk(['a', 'b', 'c', 'd', 'e', 'f', 'g'])
+// => [['a'], ['b'], ['c'], ['d'], ['e'], ['f'], ['g']]
+
 exports.simple = chunk(['a', 'b', 'c', 'd', 'e', 'f', 'g'], 3)
 // => [['a', 'b', 'c'], ['d', 'e', 'f'], ['g']]
 

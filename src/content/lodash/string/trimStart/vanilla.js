@@ -4,5 +4,8 @@ const trimStart = (str, c = '\\s') => str.replace(new RegExp(`^([${c}]*)(.*)$`),
 exports.simple = ' abc '.trimStart()
 // => 'abc '
 
+exports.simpleAlt = trimStart(' abc ')
+// => 'abc '
+
 exports.custom = trimStart('-_-abc-_-', '_-')
 // => 'abc-_-'
