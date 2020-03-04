@@ -11,10 +11,12 @@
     "stage": "react-static build --staging",
     "build": "react-static build",
     "serve": "serve dist -p 3000",
-    "test": "eslint src && jest --verbose"
+    "pretest": "eslint src && eslint modules",
+    "test": "jest --verbose",
+    "posttest": "codecov --disable=gcov"
   },
   "dependencies": {
-    "@reach/router": "^1.3.1",
+    "@reach/router": "^1.3.3",
     "axios": "0.19.2",
     "debounce": "1.2.0",
     "eslint-config-prettier": "6.10.0",
@@ -25,8 +27,8 @@
     "marked": "0.8.0",
     "milligram": "1.3.0",
     "moment": "2.24.0",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
     "react-highlight.js": "1.0.7",
     "react-hot-loader": "4.12.19",
     "react-router-dom": "5.1.2",
@@ -37,13 +39,14 @@
     "styled-components": "5.0.1"
   },
   "devDependencies": {
+    "codecov": "3.6.5",
     "babel-plugin-styled-components": "1.10.7",
     "cheerio": "^1.0.0-rc.3",
     "contributor-faces": "1.0.3",
     "eslint-config-react-tools": "1.1.7",
     "husky": "4.2.3",
-    "inquirer": "7.0.4",
-    "lint-staged": "10.0.7",
+    "inquirer": "7.0.5",
+    "lint-staged": "10.0.8",
     "prettier": "1.19.1",
     "serve": "11.3.0"
   },
@@ -58,5 +61,13 @@
       "pre-commit": "lint-staged",
       "pre-push": "yarn test"
     }
+  },
+  "jest": {
+    "coverageProvider": "v8",
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "./src/content/**/*.js"
+    ]
   }
 }
