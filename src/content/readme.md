@@ -12,7 +12,7 @@ a collection of `You might not need ${something}` resources, please contribute o
 
 - [You might not need JavaScript](http://youmightnotneedjs.com/)
 - [You don't need Moment.js](https://github.com/you-dont-need/You-Dont-Need-Momentjs)
-- [You might not need JavaScript jQuery](http://youmightnotneedjquery.com/)
+- [You might not need jQuery](http://youmightnotneedjquery.com/)
 - [You might not need that WordPress plugin](https://youmightnotneedthatwpplugin.com)
 - [You don't need Bootstrap](https://github.com/davidhartsough/you-dont-need-bootstrap)
 - [Awesome serverless](https://github.com/anaibol/awesome-serverless/blob/master/README.md)
