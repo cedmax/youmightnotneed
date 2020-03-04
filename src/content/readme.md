@@ -2,11 +2,11 @@
 
 a collection of `You might not need ${something}` resources, please contribute on [github](https://github.com/cedmax/youmightnotneed)
 
-<hr/>
+---
 
 ## You might not need [Lodash](/lodash)
 
-<hr/>
+---
 
 ##### External Resources
 
