@@ -1,4 +1,4 @@
-const round = (num, precision = 0) => {
+const round = (num, precision) => {
   const modifier = 10 ** precision
   return Math.round(num * modifier) / modifier
 }

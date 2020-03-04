@@ -1,4 +1,5 @@
 const expected = {
+  noSize: [['a'], ['b'], ['c'], ['d'], ['e'], ['f'], ['g']],
   simple: [['a', 'b', 'c'], ['d', 'e', 'f'], ['g']],
   chunkSizeZero: [],
   chunkSizeNegative: [],
