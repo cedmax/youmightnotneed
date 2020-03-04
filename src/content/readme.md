@@ -1,18 +1,20 @@
-# YOU MIGHT NOT NEED *
+# YOU MIGHT NOT NEED \*
 
-You might not need * is a collection of `You might not need ${something}` resources.  
+a collection of `You might not need ${something}` resources, please contribute on [github](https://github.com/cedmax/youmightnotneed)
 
-Please contribute on [github](https://github.com/cedmax/youmightnotneed)
+---
 
-## You might not need...
-* [Lodash](/lodash) 
-* [Moment.js](/momentjs)  
-* [Css](/css)  
+## You might not need [Lodash](/lodash)
 
-##### External Resources & Articles
-* [JavaScript](http://youmightnotneedjs.com/)
-* [jQuery](http://youmightnotneedjquery.com/)  
-* [That WP plugin](https://youmightnotneedthatwpplugin.com)  
-* [A Backend](https://github.com/anaibol/awesome-serverless/blob/master/README.md)  
-* [Redux](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367)  
-* [A CSS Framework](https://hacks.mozilla.org/2016/04/you-might-not-need-a-css-framework/)
+---
+
+##### External Resources
+
+- [You might not need JavaScript](http://youmightnotneedjs.com/)
+- [You don't need Moment.js](https://github.com/you-dont-need/You-Dont-Need-Momentjs)
+- [You might not need JavaScript jQuery](http://youmightnotneedjquery.com/)
+- [You might not need that WordPress plugin](https://youmightnotneedthatwpplugin.com)
+- [You don't need Bootstrap](https://github.com/davidhartsough/you-dont-need-bootstrap)
+- [Awesome serverless](https://github.com/anaibol/awesome-serverless/blob/master/README.md)
+- [You might not need Redux](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367)
+- [You might not need a CSS framework](https://hacks.mozilla.org/2016/04/you-might-not-need-a-css-framework/)
