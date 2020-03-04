@@ -5,7 +5,7 @@ exports.simple = ' abc '.trimEnd()
 // => ' abc'
 
 exports.simpleAlt = trimEnd(' abc ')
-// => ' cde'
+// => ' abc'
 
 exports.custom = trimEnd('-_-abc-_-', '_-')
 // => '-_-abc'
