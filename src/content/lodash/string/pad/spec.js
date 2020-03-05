@@ -1,4 +1,8 @@
-const expected = { defaultPadding: '  abc   ', customPadding: '_-abc_-_', noExtraPadding: 'abc' }
+const expected = {
+  defaultPadding: '  abc   ',
+  customPadding: '_-abc_-_',
+  noExtraPadding: 'abc',
+}
 
 const lodash = require('./lodash')
 const plain = require('./vanilla')

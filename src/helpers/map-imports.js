@@ -11,8 +11,16 @@ const parse = object => {
     cache[area] = cache[area] || {}
     cache[area][method] = cache[area][method] || {}
 
+    if (version === 'notes') {
+      const [description, resources] = object[file].split('Resources:')
+      cache[area][method].resources = resources
+        ? `Resources:${resources}`
+        : undefined
+      object[file] = description.replace(/^\s+|\s+$/g, '')
+    }
+
     cache[area][method][version] = (object[file].default || object[file])
-      .replace(/<a href=/gi, '<a target="_blank" href=')
+      .replace(/<a href="([^#])/gi, '<a target="_blank" href="$1')
       .replace(/(module.)?exports(\.(.+))? = /g, '')
 
     return cache

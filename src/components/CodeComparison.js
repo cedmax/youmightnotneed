@@ -6,7 +6,7 @@ import Heading from './Heading'
 import Spec from './Spec'
 
 const LineBlock = styled.div`
-  padding-bottom: 2rem;
+  padding-bottom: 7.5rem;
   margin: auto;
 
   code {
@@ -30,16 +30,20 @@ const LineBlock = styled.div`
 `
 
 const NotesLinks = styled.div`
-  text-align: center;
+  max-width: 768px;
 
   a {
     padding: 0 3px;
   }
+`
 
-  a::after {
-    content: ' ⏍';
-    display: inline-block;
-    white-space: pre;
+const Resources = styled.span`
+  font-size: 85%;
+
+  a {
+    margin-left: 0.5rem;
+    text-decoration: underline;
+    text-decoration-style: dotted;
   }
 `
 
@@ -51,25 +55,30 @@ const Link = ({ url }) => (
 
 const Variant = memo(({ variant, methodData }) => (
   <div>
-    <Heading hierarchy="4">{variant}</Heading>
+    <Heading hierarchy="4">{variant} </Heading>
     <Hightlight className="javascript">
       <Linkify component={Link}>{methodData[variant]}</Linkify>
     </Hightlight>
+    {variant === 'plain js' && methodData.resources && (
+      <Resources dangerouslySetInnerHTML={{ __html: methodData.resources }} />
+    )}
   </div>
 ))
 
 const Block = memo(({ methodData }) =>
   Object.keys(methodData)
-    .filter(variant => variant !== 'notes' && variant !== 'spec')
-    .map(variant => <Variant key={variant} methodData={methodData} variant={variant} />)
+    .filter(variant => !['notes', 'resources', 'spec'].includes(variant))
+    .map(variant => (
+      <Variant key={variant} methodData={methodData} variant={variant} />
+    ))
 )
 
 export default memo(({ methodData, showTests }) => (
   <Fragment>
+    <NotesLinks dangerouslySetInnerHTML={{ __html: methodData.notes }} />
     <LineBlock>
       <Block methodData={methodData} />
     </LineBlock>
-    <NotesLinks dangerouslySetInnerHTML={{ __html: methodData.notes }} />
     {methodData.spec && showTests ? <Spec code={methodData.spec} /> : null}
   </Fragment>
 ))

@@ -54,8 +54,9 @@ The `notes.md` file is meant to contain external links relevant to the the vanil
 ##### ./lodash/array/tail/notes.md
 
 ```md
-[source](https://www.sitepoint.com/lodash-features-replace-es6/)
-[mdn](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_operator)
+Description of the method
+
+Resources: [Spread syntax](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_syntax) [Source](https://www.sitepoint.com/lodash-features-replace-es6/)
 ```
 
 ## How it make it work on local

@@ -1,4 +1,5 @@
-const size = item => (item.constructor === Object ? Object.keys(item).length : item.length)
+const size = item =>
+  item.constructor === Object ? Object.keys(item).length : item.length
 
 exports.array = size([1, 2, 3])
 // => 3

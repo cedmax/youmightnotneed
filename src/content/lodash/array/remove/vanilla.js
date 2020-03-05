@@ -1,4 +1,5 @@
-const remove = (array, iteratee) => array.filter((item, i) => iteratee(item) && array.splice(i, 1))
+const remove = (array, iteratee) =>
+  array.filter((item, i) => iteratee(item) && array.splice(i, 1))
 
 const array = [1, 2, 3, 4]
 const evens = remove(array, n => {

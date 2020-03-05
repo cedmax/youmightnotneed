@@ -1,0 +1,3 @@
+Assigns own and inherited enumerable string keyed properties of source objects to the destination object for all destination properties that resolve to <code>undefined</code>. Source objects are applied from left to right. Once a property is set, additional values of the same property are ignored.
+
+Resources: [Spread syntax](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_syntax) [Array#reverse](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse) [Array#reduce](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)

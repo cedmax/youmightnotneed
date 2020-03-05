@@ -1,4 +1,4 @@
-// https://lodash.com/docs/#overSome
+// https://lodash.com/docs/#overEvery
 import { overEvery } from 'lodash'
 
 const func = overEvery([Boolean, isFinite])

@@ -1,1 +1,3 @@
-[learn-js](https://github.com/learn-javascript-courses/es6-curry)
+Creates a function that accepts arguments of <code>func</code> and either invokes <code>func</code> returning its result, if at least <code>arity</code> number of arguments have been provided, or returns a function that accepts the remaining <code>func</code> arguments, and so on. The arity of <code>func</code> may be specified if <code>func.length</code> is not sufficient.<br><br>The <code>_.curry.placeholder</code> value, which defaults to <code>_</code> in monolithic builds, may be used as a placeholder for provided arguments.
+
+Resources: [Spread syntax](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Spread_syntax) [learn-js](https://github.com/learn-javascript-courses/es6-curry)

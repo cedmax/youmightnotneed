@@ -1,4 +1,4 @@
-import 'highlight.js/styles/github-gist.css'
+import 'highlight.js/styles/xcode.css'
 import 'milligram/dist/milligram.css'
 import styled, { createGlobalStyle } from 'styled-components'
 

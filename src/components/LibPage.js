@@ -24,7 +24,12 @@ const Section = memo(({ method, section, showTests }) => (
 
 const Block = memo(({ data, showTests, section }) =>
   Object.keys(data).map(method => (
-    <Section showTests={showTests} method={method} section={data} key={`${section}-${method}`} />
+    <Section
+      showTests={showTests}
+      method={method}
+      section={data}
+      key={`${section}-${method}`}
+    />
   ))
 )
 
@@ -41,7 +46,10 @@ export default memo(({ data: initialData }) => {
     [initialData]
   )
 
-  const showTestsToggle = useCallback(() => setShowTests(showTests => !showTests), [])
+  const showTestsToggle = useCallback(
+    () => setShowTests(showTests => !showTests),
+    []
+  )
 
   return (
     <Fragment>
@@ -52,7 +60,11 @@ export default memo(({ data: initialData }) => {
       {Object.keys(data).map(section => (
         <Row key={section}>
           <AnchoredBlock title={section} hierarchy="2">
-            <Block section={section} showTests={showTests} data={data[section]} />
+            <Block
+              section={section}
+              showTests={showTests}
+              data={data[section]}
+            />
           </AnchoredBlock>
         </Row>
       ))}

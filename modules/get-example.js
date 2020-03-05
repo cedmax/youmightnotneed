@@ -8,18 +8,24 @@ module.exports = async ({ method, project }) => {
 
     const $ = cheerio.load(data)
 
-    return $(`#${method}`)
-      .siblings('.highlight')
-      .find('div')
-      .toArray()
-      .map(
-        item =>
-          `// ${$(item)
-            .text()
-            .replace(`_.${method}(`, `${method}(`)
-            .replace(/\s+/g, ' ')}`
-      )
-      .join('\n')
+    return {
+      description: $(`#${method}`)
+        .siblings('p')
+        .next()
+        .text(),
+      example: $(`#${method}`)
+        .siblings('.highlight')
+        .find('div')
+        .toArray()
+        .map(
+          item =>
+            `// ${$(item)
+              .text()
+              .replace(`_.${method}(`, `${method}(`)
+              .replace(/\s+/g, ' ')}`
+        )
+        .join('\n'),
+    }
   } catch (e) {
     console.log('Failed to fetch examples for', method)
   }
