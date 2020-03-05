@@ -1,4 +1,10 @@
-const { getProject, getSection, getSectionInput, getMethod, runTest } = require('./questions')
+const {
+  getProject,
+  getSection,
+  getSectionInput,
+  getMethod,
+  runTest,
+} = require('./questions')
 
 module.exports = async base => {
   const project = await getProject(base)

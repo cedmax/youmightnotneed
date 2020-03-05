@@ -13,7 +13,9 @@ const parse = object => {
 
     if (version === 'notes') {
       const [description, resources] = object[file].split('Resources:')
-      cache[area][method].resources = resources ? `Resources:${resources}` : undefined
+      cache[area][method].resources = resources
+        ? `Resources:${resources}`
+        : undefined
       object[file] = description.replace(/^\s+|\s+$/g, '')
     }
 

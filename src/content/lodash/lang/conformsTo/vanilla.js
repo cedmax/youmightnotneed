@@ -1,4 +1,5 @@
-const conformsTo = (obj, ruleSet) => Object.keys(ruleSet).every(key => ruleSet[key](obj[key]))
+const conformsTo = (obj, ruleSet) =>
+  Object.keys(ruleSet).every(key => ruleSet[key](obj[key]))
 
 const object = { a: 1, b: 2 }
 

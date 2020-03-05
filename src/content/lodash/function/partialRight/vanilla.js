@@ -1,4 +1,5 @@
-const partialRight = (func, ...cachedArgs) => (...args) => func(...args, ...cachedArgs)
+const partialRight = (func, ...cachedArgs) => (...args) =>
+  func(...args, ...cachedArgs)
 
 const greet = (greeting, name) => `${greeting} ${name}`
 

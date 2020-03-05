@@ -1,4 +1,5 @@
-const partial = (func, ...args) => (...furtherArgs) => func(...args, ...furtherArgs)
+const partial = (func, ...args) => (...furtherArgs) =>
+  func(...args, ...furtherArgs)
 
 const greet = (greeting, name) => `${greeting} ${name}`
 

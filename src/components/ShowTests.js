@@ -9,7 +9,12 @@ export default memo(({ onChange, checked }) => (
   <ShowTests>
     <label htmlFor="showTests">
       Show tests?
-      <input id="showTests" type="checkbox" onChange={onChange} checked={checked} />
+      <input
+        id="showTests"
+        type="checkbox"
+        onChange={onChange}
+        checked={checked}
+      />
     </label>
   </ShowTests>
 ))

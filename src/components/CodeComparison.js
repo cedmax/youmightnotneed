@@ -68,7 +68,9 @@ const Variant = memo(({ variant, methodData }) => (
 const Block = memo(({ methodData }) =>
   Object.keys(methodData)
     .filter(variant => !['notes', 'resources', 'spec'].includes(variant))
-    .map(variant => <Variant key={variant} methodData={methodData} variant={variant} />)
+    .map(variant => (
+      <Variant key={variant} methodData={methodData} variant={variant} />
+    ))
 )
 
 export default memo(({ methodData, showTests }) => (

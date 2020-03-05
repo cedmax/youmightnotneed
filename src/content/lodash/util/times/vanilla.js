@@ -1,4 +1,5 @@
-const times = (n, func = i => i) => Array.from({ length: n }).map((_, i) => func(i))
+const times = (n, func = i => i) =>
+  Array.from({ length: n }).map((_, i) => func(i))
 
 exports.simple = times(3)
 // => [0, 1, 2]

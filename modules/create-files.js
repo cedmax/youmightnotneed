@@ -14,8 +14,16 @@ module.exports = ({ base, project, section, method, example, description }) => {
     (template && template(method, example)) || '',
     'utf-8'
   )
-  fs.writeFileSync(`${base}/${project}/${section}/${method}/vanilla.js`, example || '', 'utf-8')
-  fs.writeFileSync(`${base}/${project}/${section}/${method}/notes.md`, description || '', 'utf-8')
+  fs.writeFileSync(
+    `${base}/${project}/${section}/${method}/vanilla.js`,
+    example || '',
+    'utf-8'
+  )
+  fs.writeFileSync(
+    `${base}/${project}/${section}/${method}/notes.md`,
+    description || '',
+    'utf-8'
+  )
   fs.writeFileSync(
     `${base}/${project}/${section}/${method}/spec.js`,
     templates.spec(method),
