@@ -1,7 +1,7 @@
 const fs = require('fs')
 const templates = require('./templates')
 
-module.exports = ({ base, project, section, method, example }) => {
+module.exports = ({ base, project, section, method, example, description }) => {
   if (!fs.existsSync(`${base}/${project}/${section}`)) {
     fs.mkdirSync(`${base}/${project}/${section}`)
   }
@@ -15,7 +15,7 @@ module.exports = ({ base, project, section, method, example }) => {
     'utf-8'
   )
   fs.writeFileSync(`${base}/${project}/${section}/${method}/vanilla.js`, example || '', 'utf-8')
-  fs.writeFileSync(`${base}/${project}/${section}/${method}/notes.md`, '', 'utf-8')
+  fs.writeFileSync(`${base}/${project}/${section}/${method}/notes.md`, description || '', 'utf-8')
   fs.writeFileSync(
     `${base}/${project}/${section}/${method}/spec.js`,
     templates.spec(method),

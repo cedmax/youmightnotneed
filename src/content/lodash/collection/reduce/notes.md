@@ -1,3 +1,3 @@
-[mdn - Object.entries](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
+Reduces <code>collection</code> to a value which is the accumulated result of running each element in <code>collection</code> thru <code>iteratee</code>, where each successive invocation is supplied the return value of the previous. If <code>accumulator</code> is not given, the first element of <code>collection</code> is used as the initial value. The iteratee is invoked with four arguments:<br><em>(accumulator, value, index|key, collection)</em>.
 
-[mdn - Array.reduce](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+Resources: [Object.entries](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) [Array#reduce](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)

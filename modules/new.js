@@ -7,7 +7,9 @@ const base = './src/content'
 
 ;(async () => {
   const data = await prompt(base)
-  data.example = await getExample(data)
+  const { example, description } = await getExample(data)
+  data.example = example
+  data.description = description
   createFiles(data)
 
   if (data.test) {

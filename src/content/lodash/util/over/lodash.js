@@ -1,4 +1,4 @@
-// https://lodash.com/docs/#overSome
+// https://lodash.com/docs/#over
 import { over } from 'lodash'
 
 const func = over([Math.max, Math.min])
