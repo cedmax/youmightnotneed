@@ -12,7 +12,7 @@ module.exports = async ({ method, project }) => {
       description: $(`#${method}`)
         .siblings('p')
         .next()
-        .text(),
+        .html(),
       example: $(`#${method}`)
         .siblings('.highlight')
         .find('div')
