@@ -1,13 +1,11 @@
 // https://lodash.com/docs/#forEach
 import { forEach } from 'lodash'
 
-function iteratee(item, index) {
-  console.log(item, index)
-}
-
 const array = ['a', 'b', 'c']
 
-forEach(array, iteratee)
+forEach(array, (item, index) => {
+  console.log(item, index)
+})
 // => a 0
 // => b 1
 // => c 2
