@@ -37,7 +37,10 @@ export default {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="msvalidate.01" content="0B159474AD5BF3967C81DAEA4C4F9F2B" />
-        <meta name="description" content='A collection of "You might not need" resources' />
+        <meta
+          name="description"
+          content='A collection of "You might not need" resources'
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Body>{children}</Body>

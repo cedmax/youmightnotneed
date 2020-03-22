@@ -9,10 +9,7 @@ module.exports = async ({ method, project }) => {
     const $ = cheerio.load(data)
 
     return {
-      description: $(`#${method}`)
-        .siblings('p')
-        .next()
-        .html(),
+      description: $(`#${method}`).siblings('p').next().html(),
       example: $(`#${method}`)
         .siblings('.highlight')
         .find('div')
