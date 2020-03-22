@@ -20,7 +20,7 @@
     "axios": "0.19.2",
     "debounce": "1.2.0",
     "eslint-config-prettier": "6.10.1",
-    "html-loader": "0.5.5",
+    "html-loader": "1.0.0",
     "jest": "25.1.0",
     "lodash": "4.17.15",
     "markdown-loader": "5.1.0",
