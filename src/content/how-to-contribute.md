@@ -1,7 +1,7 @@
 # How To Contribute
 
 Feel free to open a PR on the [github repository](https://github.com/cedmax/youmightnotneed).  
-If you want to suggest any othe framework or library please [open an issue](https://github.com/cedmax/youmightnotneed/issues/new), before the PR.
+If you want to suggest any other framework or library please [open an issue](https://github.com/cedmax/youmightnotneed/issues/new), before the PR.
 
 Please note we have a [Code of Conduct](https://github.com/cedmax/youmightnotneed/blob/master/CODE_OF_CONDUCT.md), make sure you follow it in all your interactions with the project.
 
