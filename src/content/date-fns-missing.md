@@ -20,8 +20,6 @@
 [formatRFC7231](https://date-fns.org/v2.13.0/docs/formatRFC7231)  
 [formatRelative](https://date-fns.org/v2.13.0/docs/formatRelative)  
 [intervalToDuration](https://date-fns.org/v2.13.0/docs/intervalToDuration)  
-[isAfter](https://date-fns.org/v2.13.0/docs/isAfter)  
-[isBefore](https://date-fns.org/v2.13.0/docs/isBefore)  
 [isDate](https://date-fns.org/v2.13.0/docs/isDate)  
 [isEqual](https://date-fns.org/v2.13.0/docs/isEqual)  
 [isExists](https://date-fns.org/v2.13.0/docs/isExists)  
