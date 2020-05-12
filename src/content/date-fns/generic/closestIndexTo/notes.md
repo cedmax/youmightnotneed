@@ -1,0 +1,1 @@
+Return an index of the closest date from the array comparing to the given date.

@@ -4,8 +4,6 @@
 
 ## Generic Helpers
 
-[closestIndexTo](https://date-fns.org/v2.13.0/docs/closestIndexTo)  
-[closestTo](https://date-fns.org/v2.13.0/docs/closestTo)  
 [compareAsc](https://date-fns.org/v2.13.0/docs/compareAsc)  
 [compareDesc](https://date-fns.org/v2.13.0/docs/compareDesc)  
 [format](https://date-fns.org/v2.13.0/docs/format)  
