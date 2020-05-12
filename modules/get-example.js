@@ -1,9 +1,8 @@
 const axios = require('axios')
 const cheerio = require('cheerio')
 
-module.exports = async ({ method, project }) => {
-  if (project !== 'lodash') return
-  try {
+const fetchers = {
+  lodash: async method => {
     const { data } = await axios.get('https://lodash.com/docs/4.17.15')
 
     const $ = cheerio.load(data)
@@ -23,7 +22,14 @@ module.exports = async ({ method, project }) => {
         )
         .join('\n'),
     }
+  },
+}
+
+module.exports = async ({ method, project }) => {
+  try {
+    return fetchers[project](method)
   } catch (e) {
     console.log('Failed to fetch examples for', method)
+    return {}
   }
 }

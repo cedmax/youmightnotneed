@@ -1,13 +1,17 @@
-exports.spec = method => `const expected = null
+exports.spec = (project, method) => {
+  const prjToVariable = project.replace(/-(.)/g, '$1')
 
-const lodash = require('./lodash')
+  return `const expected = null
+
+const ${prjToVariable} = require('./${project}')
 const plain = require('./vanilla')
 
 test('${method}', () => {
-  expect(lodash).toEqual(expected)
-  expect(plain).toEqual(lodash)
+  expect(${prjToVariable}).toEqual(expected)
+  expect(plain).toEqual(${prjToVariable})
 })
 `
+}
 
 exports.lodash = (method, example) => `// https://lodash.com/docs/#${method}
 import { ${method} } from 'lodash'

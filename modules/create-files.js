@@ -16,7 +16,9 @@ module.exports = ({ base, project, section, method, example, description }) => {
   )
   fs.writeFileSync(
     `${base}/${project}/${section}/${method}/vanilla.js`,
-    example || '',
+    `const ${method} = () => {}
+
+${example || ''}`,
     'utf-8'
   )
   fs.writeFileSync(
@@ -26,7 +28,7 @@ module.exports = ({ base, project, section, method, example, description }) => {
   )
   fs.writeFileSync(
     `${base}/${project}/${section}/${method}/spec.js`,
-    templates.spec(method),
+    templates.spec(project, method),
     'utf-8'
   )
 }

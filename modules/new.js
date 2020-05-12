@@ -13,6 +13,6 @@ const base = './src/content'
   createFiles(data)
 
   if (data.test) {
-    jest.run([`${data.section}/${data.method}`, '--watch'])
+    jest.run([`${data.section}/${data.method}`, '--watch', '--coverage=false'])
   }
 })()
