@@ -24,6 +24,14 @@ export default {
       template: 'src/containers/LodashMissing',
     },
     {
+      path: '/date-fns',
+      template: 'src/containers/DateFns',
+    },
+    {
+      path: '/date-fns/missing',
+      template: 'src/containers/DateFnsMissing',
+    },
+    {
       path: '/momentjs',
       template: 'src/containers/Moment',
     },
