@@ -21,3 +21,12 @@ ${example || ''}
 module.exports = ${method}()
 // =>
 `
+
+exports['date-fns'] = (
+  method,
+  example
+) => `// https://date-fns.org/v2.13.0/docs/${method}
+const ${method} = require('date-fns/${method}')
+
+${example || ''}
+`
