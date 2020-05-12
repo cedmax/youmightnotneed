@@ -4,8 +4,6 @@
 
 ## Generic Helpers
 
-[compareAsc](https://date-fns.org/v2.13.0/docs/compareAsc)  
-[compareDesc](https://date-fns.org/v2.13.0/docs/compareDesc)  
 [format](https://date-fns.org/v2.13.0/docs/format)  
 [formatDistance](https://date-fns.org/v2.13.0/docs/formatDistance)  
 [formatDistanceStrict](https://date-fns.org/v2.13.0/docs/formatDistanceStrict)  

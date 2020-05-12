@@ -1,0 +1,1 @@
+Compare the two dates and return -1, 0 or 1.
