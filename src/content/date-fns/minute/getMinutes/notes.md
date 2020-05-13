@@ -1,0 +1,1 @@
+Get the minutes of the given date.

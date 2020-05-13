@@ -1,0 +1,1 @@
+Subtract the specified number of minutes from the given date.

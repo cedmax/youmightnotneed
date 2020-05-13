@@ -17,8 +17,6 @@
 [formatRelative](https://date-fns.org/v2.13.0/docs/formatRelative)  
 [intervalToDuration](https://date-fns.org/v2.13.0/docs/intervalToDuration)  
 [lightFormat](https://date-fns.org/v2.13.0/docs/lightFormat)  
-[max](https://date-fns.org/v2.13.0/docs/max)  
-[min](https://date-fns.org/v2.13.0/docs/min)  
 [parse](https://date-fns.org/v2.13.0/docs/parse)  
 [parseISO](https://date-fns.org/v2.13.0/docs/parseISO)  
 [parseJSON](https://date-fns.org/v2.13.0/docs/parseJSON)  
@@ -43,38 +41,20 @@
 [getTime](https://date-fns.org/v2.13.0/docs/getTime)  
 [getUnixTime](https://date-fns.org/v2.13.0/docs/getUnixTime)
 
-## Millisecond Helpers
-
-[addMilliseconds](https://date-fns.org/v2.13.0/docs/addMilliseconds)  
-[differenceInMilliseconds](https://date-fns.org/v2.13.0/docs/differenceInMilliseconds)  
-[getMilliseconds](https://date-fns.org/v2.13.0/docs/getMilliseconds)  
-[setMilliseconds](https://date-fns.org/v2.13.0/docs/setMilliseconds)  
-[subMilliseconds](https://date-fns.org/v2.13.0/docs/subMilliseconds)
-
 ## Second Helpers
 
-[addSeconds](https://date-fns.org/v2.13.0/docs/addSeconds)  
-[differenceInSeconds](https://date-fns.org/v2.13.0/docs/differenceInSeconds)  
 [endOfSecond](https://date-fns.org/v2.13.0/docs/endOfSecond)  
-[getSeconds](https://date-fns.org/v2.13.0/docs/getSeconds)  
 [isSameSecond](https://date-fns.org/v2.13.0/docs/isSameSecond)  
 [isThisSecond](https://date-fns.org/v2.13.0/docs/isThisSecond)  
-[setSeconds](https://date-fns.org/v2.13.0/docs/setSeconds)  
-[startOfSecond](https://date-fns.org/v2.13.0/docs/startOfSecond)  
-[subSeconds](https://date-fns.org/v2.13.0/docs/subSeconds)
+[startOfSecond](https://date-fns.org/v2.13.0/docs/startOfSecond)
 
 ## Minute Helpers
 
-[addMinutes](https://date-fns.org/v2.13.0/docs/addMinutes)  
-[differenceInMinutes](https://date-fns.org/v2.13.0/docs/differenceInMinutes)  
-[endOfMinute](https://date-fns.org/v2.13.0/docs/endOfMinute)  
-[getMinutes](https://date-fns.org/v2.13.0/docs/getMinutes)  
+[endOfMinute](https://date-fns.org/v2.13.0/docs/endOfMinute)
 [isSameMinute](https://date-fns.org/v2.13.0/docs/isSameMinute)  
 [isThisMinute](https://date-fns.org/v2.13.0/docs/isThisMinute)  
-[roundToNearestMinutes](https://date-fns.org/v2.13.0/docs/roundToNearestMinutes)  
-[setMinutes](https://date-fns.org/v2.13.0/docs/setMinutes)  
-[startOfMinute](https://date-fns.org/v2.13.0/docs/startOfMinute)  
-[subMinutes](https://date-fns.org/v2.13.0/docs/subMinutes)
+[roundToNearestMinutes](https://date-fns.org/v2.13.0/docs/roundToNearestMinutes)
+[startOfMinute](https://date-fns.org/v2.13.0/docs/startOfMinute)
 
 ## Hour Helpers
 
@@ -116,8 +96,6 @@
 
 ## Weekday Helpers
 
-[getDay](https://date-fns.org/v2.13.0/docs/getDay)  
-[getISODay](https://date-fns.org/v2.13.0/docs/getISODay)  
 [setDay](https://date-fns.org/v2.13.0/docs/setDay)  
 [setISODay](https://date-fns.org/v2.13.0/docs/setISODay)
 

@@ -1,0 +1,1 @@
+Get the seconds of the given date.

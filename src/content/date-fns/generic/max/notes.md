@@ -1,0 +1,1 @@
+Return the latest of the given dates.

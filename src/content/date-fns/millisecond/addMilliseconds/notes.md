@@ -1,0 +1,1 @@
+Add the specified number of milliseconds to the given date.

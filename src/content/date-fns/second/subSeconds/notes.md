@@ -1,0 +1,1 @@
+Subtract the specified number of seconds from the given date.
