@@ -1,5 +1,5 @@
 const compareAsc = (dateA, dateB) => {
-  if (Date.parse(dateA) === Date.parse(dateB)) return 0
+  if (dateA.getTime() === dateB.getTime()) return 0
   return dateA > dateB ? 1 : -1
 }
 
