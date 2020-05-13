@@ -182,18 +182,10 @@
 
 ## Year Helpers
 
-[addYears](https://date-fns.org/v2.13.0/docs/addYears)  
-[differenceInCalendarYears](https://date-fns.org/v2.13.0/docs/differenceInCalendarYears)  
-[differenceInYears](https://date-fns.org/v2.13.0/docs/differenceInYears)  
 [eachWeekendOfYear](https://date-fns.org/v2.13.0/docs/eachWeekendOfYear)  
 [endOfYear](https://date-fns.org/v2.13.0/docs/endOfYear)  
 [getDaysInYear](https://date-fns.org/v2.13.0/docs/getDaysInYear)  
-[getYear](https://date-fns.org/v2.13.0/docs/getYear)  
-[isLeapYear](https://date-fns.org/v2.13.0/docs/isLeapYear)  
-[isSameYear](https://date-fns.org/v2.13.0/docs/isSameYear)  
-[isThisYear](https://date-fns.org/v2.13.0/docs/isThisYear)  
 [lastDayOfYear](https://date-fns.org/v2.13.0/docs/lastDayOfYear)  
-[setYear](https://date-fns.org/v2.13.0/docs/setYear)  
 [startOfYear](https://date-fns.org/v2.13.0/docs/startOfYear)  
 [subYears](https://date-fns.org/v2.13.0/docs/subYears)
 

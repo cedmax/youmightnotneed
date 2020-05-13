@@ -1,0 +1,1 @@
+Get the year of the given date.

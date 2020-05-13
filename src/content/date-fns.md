@@ -6,4 +6,4 @@ It's a great library, battle tested and with a strong team, also dates in javasc
 
 Some of the implementations have been simplified to make them more digestible, and they might miss edge cases covered in the original.
 
-There are also [some methods yet to be ported](/date-fns/missing); if you want to help please [contribute on github](https://github.com/cedmax/youmightnotneed/blob/master/src/content/how-to-contribute.md).
+This is also a recent addition and there are [a lot of methods yet to be ported](/date-fns/missing); please [contribute on github](https://github.com/cedmax/youmightnotneed/blob/master/src/content/how-to-contribute.md).
