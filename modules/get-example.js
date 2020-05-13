@@ -33,7 +33,11 @@ const fetchers = {
     return {
       description: page.description,
       example: page.content.examples
-        .map(str => str.replace('var result =', 'module.exports ='))
+        .map(str =>
+          str
+            .replace('var result =', 'module.exports =')
+            .replace(/\/\/=>/g, '// =>')
+        )
         .join('\n'),
     }
   },
