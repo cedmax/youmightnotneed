@@ -1,4 +1,7 @@
-const expected = true
+const expected = {
+  past: true,
+  future: false,
+}
 
 const datefns = require('./date-fns')
 const plain = require('./vanilla')

@@ -1,0 +1,1 @@
+Return the start of a minute for the given date.

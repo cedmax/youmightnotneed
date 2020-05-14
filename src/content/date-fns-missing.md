@@ -35,27 +35,6 @@
 [getOverlappingDaysInIntervals](https://date-fns.org/v2.13.0/docs/getOverlappingDaysInIntervals)  
 [isWithinInterval](https://date-fns.org/v2.13.0/docs/isWithinInterval)
 
-## Timestamp Helpers
-
-[fromUnixTime](https://date-fns.org/v2.13.0/docs/fromUnixTime)  
-[getTime](https://date-fns.org/v2.13.0/docs/getTime)  
-[getUnixTime](https://date-fns.org/v2.13.0/docs/getUnixTime)
-
-## Second Helpers
-
-[endOfSecond](https://date-fns.org/v2.13.0/docs/endOfSecond)  
-[isSameSecond](https://date-fns.org/v2.13.0/docs/isSameSecond)  
-[isThisSecond](https://date-fns.org/v2.13.0/docs/isThisSecond)  
-[startOfSecond](https://date-fns.org/v2.13.0/docs/startOfSecond)
-
-## Minute Helpers
-
-[endOfMinute](https://date-fns.org/v2.13.0/docs/endOfMinute)
-[isSameMinute](https://date-fns.org/v2.13.0/docs/isSameMinute)  
-[isThisMinute](https://date-fns.org/v2.13.0/docs/isThisMinute)  
-[roundToNearestMinutes](https://date-fns.org/v2.13.0/docs/roundToNearestMinutes)
-[startOfMinute](https://date-fns.org/v2.13.0/docs/startOfMinute)
-
 ## Hour Helpers
 
 [addHours](https://date-fns.org/v2.13.0/docs/addHours)  

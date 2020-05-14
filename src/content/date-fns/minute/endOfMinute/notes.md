@@ -1,0 +1,1 @@
+Return the end of a minute for the given date.

@@ -1,4 +1,7 @@
-const expected = 3
+const expected = {
+  day: 3,
+  sunday: 0,
+}
 
 const datefns = require('./date-fns')
 const plain = require('./vanilla')

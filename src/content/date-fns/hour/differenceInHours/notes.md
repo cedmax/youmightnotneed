@@ -1,0 +1,1 @@
+Get the number of hours between the given dates.

@@ -1,0 +1,1 @@
+Rounds the given date to the nearest minute

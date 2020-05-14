@@ -1,4 +1,7 @@
-const expected = true
+const expected = {
+  leap: true,
+  notLeap: false,
+}
 
 const datefns = require('./date-fns')
 const plain = require('./vanilla')

@@ -1,2 +1,2 @@
-module.exports = () => Date.now()
+module.exports = Date.now()
 // => # milliseconds  elapsed since the Unix epoch

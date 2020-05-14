@@ -44,10 +44,11 @@ const fetchers = {
 }
 
 module.exports = async ({ method, project }) => {
+  let data = {}
   try {
-    return fetchers[project](method)
+    data = await fetchers[project](method)
   } catch (e) {
     console.log('Failed to fetch examples for', method)
-    return {}
   }
+  return data
 }
