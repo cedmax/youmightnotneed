@@ -1,3 +1,4 @@
+const fs = require('fs')
 const jest = require('jest')
 const getExample = require('./get-example')
 const createFiles = require('./create-files')
@@ -24,6 +25,10 @@ const getList = () => {
     data.example = example
     data.description = description
     createFiles(data)
+  }
+
+  if (data.methods.length > 1) {
+    fs.writeFileSync('./list.json', '[]', 'utf-8')
   }
 
   if (data.test) {
