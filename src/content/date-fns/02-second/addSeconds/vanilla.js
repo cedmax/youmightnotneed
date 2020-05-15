@@ -1,7 +1,6 @@
 const addSeconds = (date, s) => {
-  const newDate = new Date(date.getTime())
-  newDate.setSeconds(date.getSeconds() + s)
-  return newDate
+  date.setSeconds(date.getSeconds() + s)
+  return date
 }
 
 // Add 30 seconds to 10 July 2014 12:45:00:

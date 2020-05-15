@@ -1,7 +1,6 @@
 const subDays = (date, d) => {
-  const newDate = new Date(date.getTime())
-  newDate.setDate(date.getDate() - d)
-  return newDate
+  date.setDate(date.getDate() - d)
+  return date
 }
 
 // Subtract 10 days from 1 September 2014:

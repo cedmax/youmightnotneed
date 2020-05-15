@@ -1,7 +1,6 @@
 const setMonth = (date, m) => {
-  const newDate = new Date(date.getTime())
-  newDate.setMonth(m)
-  return newDate
+  date.setMonth(m)
+  return date
 }
 
 // Set February to 1 September 2014:

@@ -1,7 +1,6 @@
 const addMinutes = (date, m) => {
-  const newDate = new Date(date.getTime())
-  newDate.setMinutes(date.getMinutes() + m)
-  return newDate
+  date.setMinutes(date.getMinutes() + m)
+  return date
 }
 
 // Add 30 minutes to 10 July 2014 12:00:00:

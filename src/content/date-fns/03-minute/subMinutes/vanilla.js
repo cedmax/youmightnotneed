@@ -1,7 +1,6 @@
 const subMinutes = (date, m) => {
-  const newDate = new Date(date.getTime())
-  newDate.setMinutes(date.getMinutes() - m)
-  return newDate
+  date.setMinutes(date.getMinutes() - m)
+  return date
 }
 
 // Subtract 30 minutes from 10 July 2014 12:00:00:

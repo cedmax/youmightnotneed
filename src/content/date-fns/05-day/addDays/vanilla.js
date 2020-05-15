@@ -1,7 +1,6 @@
 const addDays = (date, d) => {
-  const newDate = new Date(date.getTime())
-  newDate.setDate(date.getDate() + d)
-  return newDate
+  date.setDate(date.getDate() + d)
+  return date
 }
 
 // Add 10 days to 1 September 2014:

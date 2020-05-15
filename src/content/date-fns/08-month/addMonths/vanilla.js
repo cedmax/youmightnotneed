@@ -1,7 +1,6 @@
 const addMonths = (date, m) => {
-  const newDate = new Date(date.getTime())
-  newDate.setMonth(newDate.getMonth() + m)
-  return newDate
+  date.setMonth(date.getMonth() + m)
+  return date
 }
 
 // Add 5 months to 1 September 2014:

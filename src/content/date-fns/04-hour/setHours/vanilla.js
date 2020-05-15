@@ -1,7 +1,6 @@
 const setHours = (date, h) => {
-  const newDate = new Date(date.getTime())
-  newDate.setHours(h)
-  return newDate
+  date.setHours(h)
+  return date
 }
 
 // Set 4 hours to 1 September 2014 11:30:00:

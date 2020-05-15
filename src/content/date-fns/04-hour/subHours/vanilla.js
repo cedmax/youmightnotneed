@@ -1,7 +1,6 @@
 const subHours = (date, h) => {
-  const newDate = new Date(date.getTime())
-  newDate.setHours(date.getHours() - h)
-  return newDate
+  date.setHours(date.getHours() - h)
+  return date
 }
 
 // Subtract 2 hours from 11 July 2014 01:00:00:

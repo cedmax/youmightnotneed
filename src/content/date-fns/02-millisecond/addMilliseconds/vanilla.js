@@ -1,7 +1,6 @@
 const addMilliseconds = (date, ms) => {
-  const newDate = new Date(date.getTime())
-  newDate.setMilliseconds(date.getMilliseconds() + ms)
-  return newDate
+  date.setMilliseconds(date.getMilliseconds() + ms)
+  return date
 }
 
 // Add 750 milliseconds to 10 July 2014 12:45:30.000:
