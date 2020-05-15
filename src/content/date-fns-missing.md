@@ -35,18 +35,6 @@
 [getOverlappingDaysInIntervals](https://date-fns.org/v2.13.0/docs/getOverlappingDaysInIntervals)  
 [isWithinInterval](https://date-fns.org/v2.13.0/docs/isWithinInterval)
 
-## Hour Helpers
-
-[addHours](https://date-fns.org/v2.13.0/docs/addHours)  
-[differenceInHours](https://date-fns.org/v2.13.0/docs/differenceInHours)  
-[endOfHour](https://date-fns.org/v2.13.0/docs/endOfHour)  
-[getHours](https://date-fns.org/v2.13.0/docs/getHours)  
-[isSameHour](https://date-fns.org/v2.13.0/docs/isSameHour)  
-[isThisHour](https://date-fns.org/v2.13.0/docs/isThisHour)  
-[setHours](https://date-fns.org/v2.13.0/docs/setHours)  
-[startOfHour](https://date-fns.org/v2.13.0/docs/startOfHour)  
-[subHours](https://date-fns.org/v2.13.0/docs/subHours)
-
 ## Day Helpers
 
 [addBusinessDays](https://date-fns.org/v2.13.0/docs/addBusinessDays)  
@@ -96,21 +84,13 @@
 
 ## Month Helpers
 
-[addMonths](https://date-fns.org/v2.13.0/docs/addMonths)  
 [differenceInCalendarMonths](https://date-fns.org/v2.13.0/docs/differenceInCalendarMonths)  
 [differenceInMonths](https://date-fns.org/v2.13.0/docs/differenceInMonths)  
 [eachWeekendOfMonth](https://date-fns.org/v2.13.0/docs/eachWeekendOfMonth)  
 [endOfMonth](https://date-fns.org/v2.13.0/docs/endOfMonth)  
 [getDaysInMonth](https://date-fns.org/v2.13.0/docs/getDaysInMonth)  
-[getMonth](https://date-fns.org/v2.13.0/docs/getMonth)  
-[isFirstDayOfMonth](https://date-fns.org/v2.13.0/docs/isFirstDayOfMonth)  
-[isLastDayOfMonth](https://date-fns.org/v2.13.0/docs/isLastDayOfMonth)  
-[isSameMonth](https://date-fns.org/v2.13.0/docs/isSameMonth)  
-[isThisMonth](https://date-fns.org/v2.13.0/docs/isThisMonth)  
 [lastDayOfMonth](https://date-fns.org/v2.13.0/docs/lastDayOfMonth)  
-[setMonth](https://date-fns.org/v2.13.0/docs/setMonth)  
-[startOfMonth](https://date-fns.org/v2.13.0/docs/startOfMonth)  
-[subMonths](https://date-fns.org/v2.13.0/docs/subMonths)
+[startOfMonth](https://date-fns.org/v2.13.0/docs/startOfMonth)
 
 ## Quarter Helpers
 

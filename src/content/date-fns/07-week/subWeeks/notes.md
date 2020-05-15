@@ -1,0 +1,1 @@
+Subtract the specified number of weeks from the given date.
