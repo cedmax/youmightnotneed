@@ -13,7 +13,9 @@
     "serve": "serve dist -p 3000",
     "pretest": "eslint src && eslint modules",
     "test": "jest --verbose",
-    "posttest": "codecov --disable=gcov"
+    "posttest": "codecov --disable=gcov",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@reach/router": "^1.3.3",
@@ -36,7 +38,8 @@
     "react-static": "7.2.3",
     "react-static-plugin-styled-components": "7.2.2",
     "react-universal-component": "4.0.1",
-    "styled-components": "5.1.0"
+    "styled-components": "5.1.0",
+    "snyk": "^1.321.0"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "1.10.7",
@@ -75,5 +78,6 @@
     "setupFiles": [
       "./jest.setup.js"
     ]
-  }
+  },
+  "snyk": true
 }
