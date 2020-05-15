@@ -1,7 +1,6 @@
 const subWeeks = (date, w) => {
-  const newDate = new Date(date.getTime())
-  newDate.setDate(date.getDate() - w * 7)
-  return newDate
+  date.setDate(date.getDate() - w * 7)
+  return date
 }
 
 // Subtract 4 weeks from 1 September 2014:

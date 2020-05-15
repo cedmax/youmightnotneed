@@ -1,7 +1,6 @@
 const setMilliseconds = (date, ms) => {
-  const newDate = new Date(date.getTime())
-  newDate.setMilliseconds(ms)
-  return newDate
+  date.setMilliseconds(ms)
+  return date
 }
 
 // Set 300 milliseconds to 1 September 2014 11:30:40.500:

@@ -1,7 +1,6 @@
 const addHours = (date, h) => {
-  const newDate = new Date(date.getTime())
-  newDate.setHours(date.getHours() + h)
-  return newDate
+  date.setHours(date.getHours() + h)
+  return date
 }
 
 // Add 2 hours to 10 July 2014 23:00:00:

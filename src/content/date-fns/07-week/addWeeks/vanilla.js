@@ -1,7 +1,6 @@
 const addWeeks = (date, w) => {
-  const newDate = new Date(date.getTime())
-  newDate.setDate(date.getDate() + w * 7)
-  return newDate
+  date.setDate(date.getDate() + w * 7)
+  return date
 }
 
 // Add 4 weeks to 1 September 2014:

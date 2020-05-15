@@ -1,7 +1,6 @@
 const subSeconds = (date, s) => {
-  const newDate = new Date(date.getTime())
-  newDate.setSeconds(date.getSeconds() - s)
-  return newDate
+  date.setSeconds(date.getSeconds() - s)
+  return date
 }
 
 // Subtract 30 seconds from 10 July 2014 12:45:00:

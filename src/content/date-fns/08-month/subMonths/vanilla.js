@@ -1,7 +1,6 @@
 const subMonths = (date, m) => {
-  const newDate = new Date(date.getTime())
-  newDate.setMonth(newDate.getMonth() - m)
-  return newDate
+  date.setMonth(date.getMonth() - m)
+  return date
 }
 
 // Subtract 5 months from 1 February 2015:

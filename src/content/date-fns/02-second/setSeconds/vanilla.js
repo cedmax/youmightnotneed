@@ -1,7 +1,6 @@
 const setSeconds = (date, s) => {
-  const newDate = new Date(date.getTime())
-  newDate.setSeconds(s)
-  return newDate
+  date.setSeconds(s)
+  return date
 }
 
 // Set 45 seconds to 1 September 2014 11:30:40:

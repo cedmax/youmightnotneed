@@ -1,7 +1,6 @@
 const addYears = (date, yearsToAdd) => {
-  const newDate = new Date(date.getTime())
-  newDate.setFullYear(date.getFullYear() + yearsToAdd)
-  return newDate
+  date.setFullYear(date.getFullYear() + yearsToAdd)
+  return date
 }
 
 // Add 5 years to 1 September 2014:

@@ -1,7 +1,6 @@
 const setYear = (date, year) => {
-  const newDate = new Date(date.getTime())
-  newDate.setFullYear(year)
-  return newDate
+  date.setFullYear(year)
+  return date
 }
 
 // Set year 2013 to 1 September 2014:

@@ -1,7 +1,6 @@
 const setDate = (date, d) => {
-  const newDate = new Date(date.getTime())
-  newDate.setDate(d)
-  return newDate
+  date.setDate(d)
+  return date
 }
 
 // Set the 30th day of the month to 1 September 2014:
