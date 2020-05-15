@@ -1,0 +1,1 @@
+Subtract the specified number of hours from the given date.

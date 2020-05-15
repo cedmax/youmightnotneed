@@ -1,0 +1,1 @@
+Return the earliest of the given dates.

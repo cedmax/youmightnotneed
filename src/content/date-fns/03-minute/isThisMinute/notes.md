@@ -1,0 +1,1 @@
+Is the given date in the same minute as the current date?

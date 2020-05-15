@@ -1,0 +1,1 @@
+Get the day of the month of the given date.

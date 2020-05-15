@@ -1,0 +1,1 @@
+Subtract the specified number of months from the given date.

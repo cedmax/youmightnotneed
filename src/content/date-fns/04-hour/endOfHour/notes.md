@@ -1,0 +1,1 @@
+Return the end of an hour for the given date.

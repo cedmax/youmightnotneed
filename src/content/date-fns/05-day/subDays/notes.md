@@ -1,0 +1,1 @@
+Subtract the specified number of days from the given date.

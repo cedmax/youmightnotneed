@@ -1,0 +1,9 @@
+const subSeconds = (date, s) => {
+  const newDate = new Date(date.getTime())
+  newDate.setSeconds(date.getSeconds() - s)
+  return newDate
+}
+
+// Subtract 30 seconds from 10 July 2014 12:45:00:
+module.exports = subSeconds(new Date(2014, 6, 10, 12, 45, 0), 30)
+// => Thu Jul 10 2014 12:44:30

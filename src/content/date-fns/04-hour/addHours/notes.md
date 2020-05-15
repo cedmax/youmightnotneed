@@ -1,0 +1,1 @@
+Add the specified number of hours to the given date.

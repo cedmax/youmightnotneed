@@ -1,0 +1,1 @@
+Is the given date in the same second as the current date?

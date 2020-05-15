@@ -1,0 +1,1 @@
+Return the start of a second for the given date.

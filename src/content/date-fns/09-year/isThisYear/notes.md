@@ -1,0 +1,1 @@
+Is the given date in the same year as the current date?

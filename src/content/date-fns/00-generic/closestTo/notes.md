@@ -1,0 +1,1 @@
+Return a date from the array closest to the given date.

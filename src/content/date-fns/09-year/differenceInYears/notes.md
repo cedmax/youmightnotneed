@@ -1,0 +1,1 @@
+Get the number of full years between the given dates.

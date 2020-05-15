@@ -1,0 +1,1 @@
+Add the specified number of seconds to the given date.

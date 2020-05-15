@@ -1,0 +1,1 @@
+Get the number of milliseconds between the given dates.

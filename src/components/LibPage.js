@@ -1,4 +1,4 @@
-import React, { Fragment, useCallback, useState, memo } from 'react'
+import React, { Fragment, useCallback, useState, memo, useEffect } from 'react'
 import styled from 'styled-components'
 import Content from './ContentBlock'
 import AnchoredBlock from './AnchoredBlock'
@@ -45,6 +45,12 @@ export default memo(({ data: initialData }) => {
     },
     [initialData]
   )
+
+  useEffect(() => {
+    setShowTests(false)
+    setValue('')
+    setData(initialData)
+  }, [initialData])
 
   const showTestsToggle = useCallback(
     () => setShowTests(showTests => !showTests),

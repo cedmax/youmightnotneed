@@ -28,12 +28,4 @@ const parse = object => {
   return result
 }
 
-const map = r =>
-  parse(
-    r.keys().reduce((cache, key) => {
-      cache[key] = r(key)
-      return cache
-    }, {})
-  )
-
-export default map
+export default parse

@@ -1,0 +1,1 @@
+Is the given date in the same hour as the current date?

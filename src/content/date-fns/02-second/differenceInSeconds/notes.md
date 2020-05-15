@@ -1,0 +1,1 @@
+Get the number of seconds between the given dates.

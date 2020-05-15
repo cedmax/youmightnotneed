@@ -1,0 +1,1 @@
+Get the milliseconds of the given date.
