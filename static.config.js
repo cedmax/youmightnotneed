@@ -1,6 +1,26 @@
 import React from 'react'
+import glob from 'glob'
+import fs from 'fs'
+import requireMarkdownC from 'require-markdown'
+import mapImports from './src/helpers/map-imports'
+
+const requireMarkdown = requireMarkdownC({
+  typographer: true,
+})
+
+const fetchContent = prj => {
+  const obj = {}
+  glob.sync(`./src/content/${prj}/**/*.*`).forEach(file => {
+    const fileKey = file.replace(`src/content/${prj}/`, '')
+    obj[fileKey] = file.endsWith('.md')
+      ? requireMarkdown(file)
+      : fs.readFileSync(file, 'utf-8')
+  })
+  return mapImports(obj)
+}
 
 const envConfig = {}
+
 if (process.env.PULL_REQUEST) {
   envConfig.siteRoot = (process.env.PULL_REQUEST === 'true'
     ? process.env.DEPLOY_PRIME_URL
@@ -13,15 +33,28 @@ export default {
   getRoutes: async () => [
     {
       path: '/',
-      template: 'src/containers/Home',
+      template: 'src/containers/Page',
+      getData: async () => ({
+        content: requireMarkdown('src/content/readme.md'),
+        title: 'You Might Not Need *',
+      }),
     },
     {
       path: '/lodash',
-      template: 'src/containers/Lodash',
+      template: 'src/containers/LibPage',
+      getData: async () => ({
+        content: requireMarkdown('./src/content/lodash.md'),
+        title: 'You Might Not Need Lodash',
+        data: fetchContent('lodash'),
+      }),
     },
     {
       path: '/lodash/missing',
-      template: 'src/containers/LodashMissing',
+      template: 'src/containers/Page',
+      getData: async () => ({
+        content: requireMarkdown('src/content/lodash-missing.md'),
+        title: 'You Might Not Need Lodash',
+      }),
     },
     {
       path: '/date-fns',
@@ -33,11 +66,19 @@ export default {
     },
     {
       path: '/momentjs',
-      template: 'src/containers/Moment',
+      template: 'src/containers/Page',
+      getData: async () => ({
+        content: requireMarkdown('src/content/moment.md'),
+        title: 'You Might Not Need Moment.js',
+      }),
     },
     {
       path: '/css',
       template: 'src/containers/Css',
+      getData: async () => ({
+        content: requireMarkdown('src/content/css.md'),
+        title: 'You Might Not Need Css',
+      }),
     },
   ],
   Document: ({ Html, Head, Body, children }) => (
