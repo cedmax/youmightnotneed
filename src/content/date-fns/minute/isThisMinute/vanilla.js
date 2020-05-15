@@ -1,5 +1,5 @@
 const isThisMinute = (dateA, dateB = new Date()) =>
-  Math.abs(dateA.getTime() - dateB.getTime()) < 1000 * 60 &&
+  Math.abs(dateA - dateB) < 1000 * 60 &&
   dateA.getMinutes() === dateB.getMinutes()
 
 // If now is 25 September 2014 18:30:15.500,

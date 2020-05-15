@@ -50,28 +50,17 @@
 ## Day Helpers
 
 [addBusinessDays](https://date-fns.org/v2.13.0/docs/addBusinessDays)  
-[addDays](https://date-fns.org/v2.13.0/docs/addDays)  
 [differenceInBusinessDays](https://date-fns.org/v2.13.0/docs/differenceInBusinessDays)  
 [differenceInCalendarDays](https://date-fns.org/v2.13.0/docs/differenceInCalendarDays)  
-[differenceInDays](https://date-fns.org/v2.13.0/docs/differenceInDays)  
 [endOfDay](https://date-fns.org/v2.13.0/docs/endOfDay)  
-[endOfToday](https://date-fns.org/v2.13.0/docs/endOfToday)  
 [endOfTomorrow](https://date-fns.org/v2.13.0/docs/endOfTomorrow)  
 [endOfYesterday](https://date-fns.org/v2.13.0/docs/endOfYesterday)  
-[getDate](https://date-fns.org/v2.13.0/docs/getDate)  
-[getDayOfYear](https://date-fns.org/v2.13.0/docs/getDayOfYear)  
-[isSameDay](https://date-fns.org/v2.13.0/docs/isSameDay)  
-[isToday](https://date-fns.org/v2.13.0/docs/isToday)  
-[isTomorrow](https://date-fns.org/v2.13.0/docs/isTomorrow)  
-[isYesterday](https://date-fns.org/v2.13.0/docs/isYesterday)  
-[setDate](https://date-fns.org/v2.13.0/docs/setDate)  
 [setDayOfYear](https://date-fns.org/v2.13.0/docs/setDayOfYear)  
 [startOfDay](https://date-fns.org/v2.13.0/docs/startOfDay)  
 [startOfToday](https://date-fns.org/v2.13.0/docs/startOfToday)  
 [startOfTomorrow](https://date-fns.org/v2.13.0/docs/startOfTomorrow)  
 [startOfYesterday](https://date-fns.org/v2.13.0/docs/startOfYesterday)  
-[subBusinessDays](https://date-fns.org/v2.13.0/docs/subBusinessDays)  
-[subDays](https://date-fns.org/v2.13.0/docs/subDays)
+[subBusinessDays](https://date-fns.org/v2.13.0/docs/subBusinessDays)
 
 ## Weekday Helpers
 

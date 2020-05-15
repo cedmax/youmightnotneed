@@ -1,5 +1,4 @@
-const differenceInSeconds = (dateA, dateB) =>
-  Math.trunc((dateA.getTime() - dateB.getTime()) / 1000)
+const differenceInSeconds = (dateA, dateB) => Math.trunc((dateA - dateB) / 1000)
 
 // How many seconds are between
 // 2 July 2014 12:30:07.999 and 2 July 2014 12:30:20.000?

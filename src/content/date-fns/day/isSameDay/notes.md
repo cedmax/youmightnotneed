@@ -1,0 +1,1 @@
+Are the given dates in the same day?

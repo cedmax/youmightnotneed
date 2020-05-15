@@ -1,5 +1,4 @@
-const differenceInMilliseconds = (dateA, dateB) =>
-  dateA.getTime() - dateB.getTime()
+const differenceInMilliseconds = (dateA, dateB) => dateA - dateB
 
 // How many milliseconds are between
 // 2 July 2014 12:30:20.600 and 2 July 2014 12:30:21.700?

@@ -1,5 +1,5 @@
 const isSameMinute = (dateA, dateB) =>
-  Math.abs(dateA.getTime() - dateB.getTime()) < 1000 * 60 &&
+  Math.abs(dateA - dateB) < 1000 * 60 &&
   dateA.getMinutes() === dateB.getMinutes()
 
 // Are 4 September 2014 06:30:00 and 4 September 2014 06:30:15

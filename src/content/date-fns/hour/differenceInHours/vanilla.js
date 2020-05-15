@@ -1,7 +1,7 @@
 const HOUR_IN_MS = 1000 * 60 * 60
 
 const differenceInHours = (dateA, dateB) =>
-  Math.trunc((dateA.getTime() - dateB.getTime()) / HOUR_IN_MS)
+  Math.trunc((dateA - dateB) / HOUR_IN_MS)
 
 // How many hours are between 2 July 2014 06:50:00 and 2 July 2014 19:00:00?
 module.exports = differenceInHours(

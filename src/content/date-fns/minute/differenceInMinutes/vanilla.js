@@ -1,5 +1,5 @@
 const differenceInMinutes = (dateA, dateB) =>
-  Math.trunc((dateA.getTime() - dateB.getTime()) / (1000 * 60))
+  Math.trunc((dateA - dateB) / (1000 * 60))
 
 // How many minutes are between 2 July 2014 12:07:59 and 2 July 2014 12:20:00?
 exports.positive = differenceInMinutes(
