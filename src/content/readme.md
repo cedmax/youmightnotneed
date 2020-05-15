@@ -4,7 +4,15 @@ a collection of `You might not need ${something}` resources, please contribute o
 
 ---
 
-## You might not need [Lodash](/lodash)
+#### [You might not need Lodash](/lodash)
+
+The most comprehensive unit tested collection of lodash methods re-implemented in vanilla js
+
+---
+
+#### [You might not need date-fns](/date-fns)
+
+A unit tested collection of date-fns methods re-implemented in vanilla js
 
 ---
 
