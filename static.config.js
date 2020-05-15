@@ -58,11 +58,20 @@ export default {
     },
     {
       path: '/date-fns',
-      template: 'src/containers/DateFns',
+      template: 'src/containers/LibPage',
+      getData: async () => ({
+        content: requireMarkdown('./src/content/date-fns.md'),
+        title: 'You Might Not Need date-fns',
+        data: fetchContent('date-fns'),
+      }),
     },
     {
       path: '/date-fns/missing',
-      template: 'src/containers/DateFnsMissing',
+      template: 'src/containers/Page',
+      getData: async () => ({
+        content: requireMarkdown('src/content/date-fns-missing.md'),
+        title: 'You Might Not Need date-fns',
+      }),
     },
     {
       path: '/momentjs',
