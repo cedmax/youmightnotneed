@@ -1,11 +1,9 @@
 const set = (obj, path, value) => {
-  if (typeof path === 'string') {
-    path = path.match(/([^[.\]])/g)
-  }
+  const pathArray = Array.isArray(path) ? path : path.match(/([^[.\]])/g)
 
-  path.reduce((acc, key, i) => {
+  pathArray.reduce((acc, key, i) => {
     if (acc[key] === undefined) acc[key] = {}
-    if (i === path.length - 1) acc[key] = value
+    if (i === pathArray.length - 1) acc[key] = value
     return acc[key]
   }, obj)
 }

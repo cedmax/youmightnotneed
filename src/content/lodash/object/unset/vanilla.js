@@ -1,10 +1,8 @@
 const unset = (obj, path) => {
-  if (typeof path === 'string') {
-    path = path.match(/([^[.\]])/g)
-  }
+  const pathArray = Array.isArray(path) ? path : path.match(/([^[.\]])/g)
 
-  path.reduce((acc, key, i) => {
-    if (i === path.length - 1) delete acc[key]
+  pathArray.reduce((acc, key, i) => {
+    if (i === pathArray.length - 1) delete acc[key]
     return acc[key]
   }, obj)
 }

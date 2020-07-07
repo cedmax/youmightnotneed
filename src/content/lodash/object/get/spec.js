@@ -1,7 +1,10 @@
 const expected = {
-  string: 0,
-  array: 0,
-  default: 'default',
+  simplePath: 2,
+  complexPath: 3,
+  complexPathArray: 3,
+  simpleDefault: 'default',
+  complexDefault: 'default',
+  falseCase: undefined,
 }
 
 const lodash = require('./lodash')

@@ -1,10 +1,7 @@
 const has = (obj, path) => {
-  if (typeof path === 'string') {
-    path = path.match(/([^[.\]])/g)
-  }
+  const pathArray = Array.isArray(path) ? path : path.match(/([^[.\]])/g)
 
-  const result = path.reduce((acc, key) => (acc ? acc[key] : undefined), obj)
-  return result !== undefined
+  return !!pathArray.reduce((prevObj, key) => prevObj && prevObj[key], obj)
 }
 
 const object = { a: { b: 2 } }
