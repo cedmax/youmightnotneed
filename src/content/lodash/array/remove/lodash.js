@@ -11,3 +11,11 @@ exports.array = array
 
 exports.evens = evens
 // => [2, 4]
+
+const newArray = [1, 2, 3, 4, 5]
+
+exports.all = remove(newArray, () => newArray.length > 0)
+// => [1, 2, 3, 4, 5]
+
+exports.newArray = newArray
+// => []
