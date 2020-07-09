@@ -1,0 +1,3 @@
+Sets the value at <code>path</code> of <code>object</code>. If a portion of <code>path</code> doesn&apos;t exist, it&apos;s created. Arrays are created for missing index properties while objects are created for all other missing properties. Use <a href="#setWith"><code>\_.setWith</code></a> to customize <code>path</code> creation.<br><br><strong>Note:</strong> This method mutates <code>object</code>.
+
+Resources: [Array.isArray](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray) [Array#reduce](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) [xkcd](https://xkcd.com/1171/)
