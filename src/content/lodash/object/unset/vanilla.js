@@ -1,13 +1,14 @@
 const unset = (obj, path) => {
-  const pathArray = Array.isArray(path) ? path : path.match(/([^[.\]])/g)
+  // Regex explained: https://regexr.com/58j0k
+  const pathArray = Array.isArray(path) ? path : path.match(/([^[.\]])+/g)
 
   pathArray.reduce((acc, key, i) => {
     if (i === pathArray.length - 1) delete acc[key]
     return acc[key]
   }, obj)
 }
-const object = { a: [{ b: { c: 7, d: 6 } }] }
+const object = { a: [{ bar: { c: 7, d: 6 } }] }
 
-unset(object, 'a[0].b.c')
+unset(object, 'a[0].bar.c')
 module.exports = object
-// => { 'a': [{ 'b': { 'd': 6 } }] };
+// => { 'a': [{ 'bar': { 'd': 6 } }] };

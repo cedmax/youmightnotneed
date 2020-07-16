@@ -1,4 +1,4 @@
-const expected = { a: [{ b: { d: 6 } }] }
+const expected = { a: [{ bar: { d: 6 } }] }
 
 const lodash = require('./lodash')
 const plain = require('./vanilla')
