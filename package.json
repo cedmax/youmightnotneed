@@ -11,7 +11,7 @@
     "stage": "react-static build --staging",
     "build": "react-static build",
     "serve": "serve dist -p 3000",
-    "pretest": "eslint src modules",
+    "lint": "eslint src modules",
     "test": "NODE_OPTIONS=--max_old_space_size=4096 jest --verbose",
     "codeconv": "codecov --disable=gcov"
   },
@@ -62,7 +62,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "yarn eslint && yarn test"
+      "pre-push": "yarn lint && yarn test"
     }
   },
   "jest": {
