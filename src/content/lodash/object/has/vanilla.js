@@ -1,18 +1,18 @@
 const has = (obj, path) => {
-  const pathArray = Array.isArray(path) ? path : path.match(/([^[.\]])/g)
+  const pathArray = Array.isArray(path) ? path : path.match(/([^[.\]])+/g)
 
   return !!pathArray.reduce((prevObj, key) => prevObj && prevObj[key], obj)
 }
 
-const object = { a: { b: 2 } }
+const object = { a: { bar: 2 } }
 
 exports.simple = has(object, 'a')
 // => true
 
-exports.nested = has(object, 'a.b')
+exports.nested = has(object, 'a.bar')
 // => true
 
-exports.array = has(object, ['a', 'b'])
+exports.array = has(object, ['a', 'bar'])
 // => true
 
 exports.missing = has(object, ['a', 'c'])
