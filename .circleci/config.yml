@@ -10,10 +10,30 @@ jobs:
       - node/with-cache:
           steps:
             - run: yarn --frozen-lockfile
-            - run: yarn test
-      - store_test_results:
-          path: coverage
+            - run:
+                name: Linting
+                command: |
+                  mkdir -p ./coverage
+                  mkdir -p ./coverage/eslint
+                  yarn lint --format junit --output-file ./coverage/eslint/eslint.xml
+                when: always
+            - run:
+                name: Install JUnit coverage reporter
+                command: yarn add --dev jest-junit
+
+            - run:
+                name: Run unit tests
+                command: yarn test --ci --reporters=default --reporters=jest-junit
+                environment:
+                  JEST_JUNIT_OUTPUT_DIR: ./coverage/unit/
+            - run:
+                name: Codecov
+                command: yarn codecov
+            - store_test_results:
+                path: ./coverage/
+            - store_artifacts:
+                path: ./coverage/
 workflows:
-  test:
+  build:
     jobs:
       - test
