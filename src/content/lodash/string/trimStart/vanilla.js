@@ -1,4 +1,4 @@
-// regex explained: https://regexr.com/4v6j7
+// Regex explained: https://regexr.com/4v6j7
 const trimStart = (str, c = '\\s') =>
   str.replace(new RegExp(`^([${c}]*)(.*)$`), '$2')
 

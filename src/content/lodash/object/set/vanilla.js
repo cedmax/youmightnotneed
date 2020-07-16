@@ -1,4 +1,5 @@
 const set = (obj, path, value) => {
+  // Regex explained: https://regexr.com/58j0k
   const pathArray = Array.isArray(path) ? path : path.match(/([^[.\]])+/g)
 
   pathArray.reduce((acc, key, i) => {

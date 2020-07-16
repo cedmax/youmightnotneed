@@ -1,4 +1,4 @@
-// regex explained: https://regexr.com/4v6iu
+// Regex explained: https://regexr.com/4v6iu
 const trimEnd = (str, c = '\\s') =>
   str.replace(new RegExp(`^(.*?)([${c}]*)$`), '$1')
 
