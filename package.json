@@ -43,7 +43,7 @@
     "cheerio": "^1.0.0-rc.3",
     "codecov": "3.7.0",
     "contributor-faces": "1.0.3",
-    "eslint-config-react-tools": "1.1.7",
+    "eslint-config-react-tools": "1.2.5",
     "glob": "^7.1.6",
     "husky": "4.2.5",
     "inquirer": "7.3.2",
