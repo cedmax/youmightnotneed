@@ -9,7 +9,6 @@ Please read [how to contribute](./src/content/how-to-contribute.md) if you want 
 ## Contributors
 
 [//]: contributor-faces
-
 <a href="https://github.com/cedmax"><img src="https://avatars1.githubusercontent.com/u/415593?v=4" title="cedmax" width="80" height="80"></a>
 <a href="https://github.com/102"><img src="https://avatars1.githubusercontent.com/u/5839225?v=4" title="102" width="80" height="80"></a>
 <a href="https://github.com/sirLisko"><img src="https://avatars0.githubusercontent.com/u/435399?v=4" title="sirLisko" width="80" height="80"></a>
