@@ -41,7 +41,7 @@
   "devDependencies": {
     "babel-plugin-styled-components": "1.10.7",
     "cheerio": "1.0.0-rc.3",
-    "codecov": "3.7.1",
+    "codecov": "3.7.2",
     "contributor-faces": "1.0.3",
     "eslint-config-react-tools": "1.1.7",
     "glob": "7.1.6",
