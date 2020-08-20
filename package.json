@@ -11,9 +11,9 @@
     "stage": "react-static build --staging",
     "build": "react-static build",
     "serve": "serve dist -p 3000",
-    "lint": "eslint src modules",
+    "pretest": "eslint src modules",
     "test": "NODE_OPTIONS=--max_old_space_size=4096 node ./node_modules/.bin/jest --verbose",
-    "codeconv": "codecov --disable=gcov"
+    "posttest": "codecov --disable=gcov"
   },
   "dependencies": {
     "@reach/router": "1.3.4",
@@ -62,7 +62,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "yarn lint && yarn test"
+      "pre-push": "yarn test"
     }
   },
   "jest": {
