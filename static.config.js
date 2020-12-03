@@ -6,6 +6,7 @@ import mapImports from './src/helpers/map-imports'
 
 const requireMarkdown = requireMarkdownC({
   typographer: true,
+  html: true,
 })
 
 const fetchContent = prj => {
