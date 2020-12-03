@@ -16,6 +16,7 @@ const parse = object => {
       cache[area][method].resources = resources
         ? `Resources:${resources}`
         : undefined
+
       object[file] = description.replace(/^\s+|\s+$/g, '')
     }
 
