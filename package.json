@@ -18,7 +18,6 @@
   "dependencies": {
     "@reach/router": "1.3.4",
     "axios": "0.20.0",
-    "core-js": "^3.8.3",
     "date-fns": "2.15.0",
     "debounce": "1.2.0",
     "eslint-config-prettier": "6.11.0",
@@ -74,8 +73,7 @@
       "./src/content/**/*.js"
     ],
     "setupFiles": [
-      "./jest.setup.js",
-      "core-js"
+      "./jest.setup.js"
     ]
   }
 }
