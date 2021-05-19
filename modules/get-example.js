@@ -48,6 +48,7 @@ module.exports = async ({ method, project }) => {
   try {
     data = await fetchers[project](method)
   } catch (e) {
+    // eslint-disable-next-line no-console
     console.log('Failed to fetch examples for', method)
   }
   return data

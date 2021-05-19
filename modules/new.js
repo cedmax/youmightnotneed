@@ -28,7 +28,7 @@ const getList = () => {
   }
 
   if (data.methods.length > 1) {
-    fs.writeFileSync('./list.json', '[]', 'utf-8')
+    fs.writeFileSync('./list.json', '[]', 'utf8')
   }
 
   if (data.test) {

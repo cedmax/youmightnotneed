@@ -15,7 +15,7 @@ const fetchContent = prj => {
     const fileKey = file.replace(`src/content/${prj}/`, '')
     obj[fileKey] = file.endsWith('.md')
       ? requireMarkdown(file)
-      : fs.readFileSync(file, 'utf-8')
+      : fs.readFileSync(file, 'utf8')
   })
   return mapImports(obj)
 }
@@ -23,9 +23,10 @@ const fetchContent = prj => {
 const envConfig = {}
 
 if (process.env.PULL_REQUEST) {
-  envConfig.siteRoot = (process.env.PULL_REQUEST === 'true'
-    ? process.env.DEPLOY_PRIME_URL
-    : process.env.URL
+  envConfig.siteRoot = (
+    process.env.PULL_REQUEST === 'true'
+      ? process.env.DEPLOY_PRIME_URL
+      : process.env.URL
   ).replace('http://', 'https://')
 }
 

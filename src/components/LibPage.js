@@ -9,7 +9,8 @@ import ShowTests from './ShowTests'
 
 const Row = styled.div`
   background: white;
-  padding: 2em;
+  padding: 3em;
+
   &:nth-child(2n) {
     background: #fafafa;
     border-bottom: 1px solid #eee;

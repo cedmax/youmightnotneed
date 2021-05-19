@@ -21,10 +21,11 @@ export const GlobalStyle = createGlobalStyle`
 export default styled.div`
   nav {
     width: 100%;
-    background: #108db8;
+    padding: 0 1.5rem;
+    background: #f4f5f6;
+    border-bottom: 0.1rem solid #d1d1d1;
 
     a {
-      color: white;
       padding: 1rem;
       display: inline-block;
     }
@@ -34,18 +35,10 @@ export default styled.div`
     }
   }
 
-  h1 {
-    margin-bottom: 0.5em;
-  }
-  h2 {
-    margin-bottom: 0.5em;
-  }
-  h3 {
-    margin-bottom: 0.5em;
-  }
-  h4 {
-    margin-bottom: 0.5em;
-  }
+  h1,
+  h2,
+  h3,
+  h4,
   h5 {
     margin-bottom: 0.5em;
   }
