@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Hightlight from 'react-highlight.js'
+import Hightlight from 'react-highlight/lib/optimized'
 import Heading from './Heading'
 
 const Tests = styled.div`
