@@ -35,7 +35,7 @@
     "react-simple-linkify": "1.0.3",
     "react-static": "7.5.3",
     "react-static-plugin-styled-components": "7.5.0",
-    "react-universal-component": "4.5.0",
+    "react-universal-component": "4.0.1",
     "styled-components": "5.3.0"
   },
   "devDependencies": {

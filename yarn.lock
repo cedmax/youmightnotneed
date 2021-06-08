@@ -9770,15 +9770,7 @@ react-static@7.5.3:
     webpack-flush-chunks "^2.0.3"
     webpack-node-externals "^1.7.2"
 
-react-universal-component@4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/react-universal-component/-/react-universal-component-4.5.0.tgz#8722db134e0297bca879321df9d76ce0b2d830b4"
-  integrity sha512-dBUC6afvSAQhDcE4oh1eTmfU29W0O2eZhcGXnfGUTulXkU8ejuWqlJWXXrSMx5iV1H6LNgj2NJMj3BtBMfBNhA==
-  dependencies:
-    hoist-non-react-statics "^3.3.0"
-    prop-types "^15.7.2"
-
-react-universal-component@^4.0.0:
+react-universal-component@4.0.1, react-universal-component@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/react-universal-component/-/react-universal-component-4.0.1.tgz#01eec19dafda55ee7cf71f3aeb996c924718cc19"
   integrity sha512-dm3HT1ITlony+8Mb7m8i6jTD2cpStRGErMdHxYTdIFw1aBiGbuFOwZ1U13bgGT4gssANLRz0KrmjgarBuy+QJQ==
