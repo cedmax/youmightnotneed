@@ -14,8 +14,8 @@ const App = () => (
         <Router>
           <Routes path="*" />
         </Router>
+        <Footer />
       </Suspense>
-      <Footer />
     </AppStyles>
   </Root>
 )

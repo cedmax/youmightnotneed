@@ -4,9 +4,6 @@
   "main": "index.js",
   "repository": "https://github.com/cedmax/youmightnotneed",
   "license": "MIT",
-  "resolutions": {
-    "**/react-universal-component": "4.0.1"
-  },
   "scripts": {
     "new": "node modules/new",
     "contributors": "node modules/contributors",
