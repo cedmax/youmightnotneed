@@ -5,6 +5,9 @@ const expected = {
   simpleDefault: 'default',
   complexDefault: 'default',
   falseCase: undefined,
+  nullCase: null,
+  zeroCase: 0,
+  undefinedCase: 'default'
 }
 
 const lodash = require('./lodash')
