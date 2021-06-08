@@ -2,7 +2,6 @@ import React, { Suspense } from 'react'
 import { Root, Routes } from 'react-static'
 import { Router } from '@reach/router'
 import AppStyles, { GlobalStyle } from './helpers/styles'
-import Footer from './components/Footer'
 import Nav from './components/Nav'
 
 const App = () => (
@@ -10,11 +9,10 @@ const App = () => (
     <GlobalStyle />
     <AppStyles>
       <Nav />
-      <Suspense fallback={<div />}>
+      <Suspense fallback={null}>
         <Router>
           <Routes path="*" />
         </Router>
-        <Footer />
       </Suspense>
     </AppStyles>
   </Root>
