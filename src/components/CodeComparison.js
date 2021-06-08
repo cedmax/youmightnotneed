@@ -1,7 +1,7 @@
 import React, { Fragment, memo } from 'react'
 import styled from 'styled-components'
 import Linkify from 'react-simple-linkify'
-import Hightlight from 'react-highlight.js'
+import Hightlight from 'react-highlight/lib/optimized'
 import Heading from './Heading'
 import Spec from './Spec'
 
