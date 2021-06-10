@@ -22,7 +22,6 @@ A unit tested collection of date-fns methods re-implemented in vanilla js
 - [You don't need Moment.js](https://github.com/you-dont-need/You-Dont-Need-Momentjs)
 - [You may not need Axios](https://danlevy.net/you-may-not-need-axios/)
 - [You might not need jQuery](http://youmightnotneedjquery.com/)
-- [You might not need that WordPress plugin](https://youmightnotneedthatwpplugin.com)
 - [You don't need Bootstrap](https://github.com/davidhartsough/you-dont-need-bootstrap)
 - [Awesome serverless](https://github.com/anaibol/awesome-serverless/blob/master/README.md)
 - [You might not need Redux](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367)
