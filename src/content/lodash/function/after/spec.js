@@ -3,7 +3,7 @@ const fns = {
   plain: require('./vanilla'),
 }
 
-describe('before', () => {
+describe('after', () => {
   Object.entries(fns).forEach(([key, method]) => {
     describe(key, () => {
       let fn
