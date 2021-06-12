@@ -11,7 +11,7 @@ describe('after', () => {
         fn = jest.fn(a => a)
       })
 
-      test('it should call the fn only the first n-1 times and then return the result of the last operation', () => {
+      test('it should call the fn only from the nth invocation and subsequents', () => {
         const befored = method(5, fn)
 
         for (let i = 0; i < 100; i++) {

@@ -1,10 +1,10 @@
 const once = fn => {
-  let counter = 0
+  let called = false
   let result
   return (...args) => {
-    if (counter === 0) {
-      counter++
+    if (!called) {
       result = fn(...args)
+      called = true
       return result
     } else {
       return result
