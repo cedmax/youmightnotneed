@@ -59,8 +59,9 @@
 [\_.bindKey](https://lodash.com/docs/#bindKey)  
 [\_.defer](https://lodash.com/docs/#defer)  
 [\_.memoize](https://lodash.com/docs/#memoize)  
-[\_.overArgs](https://lodash.com/docs/#overArgs)  
-[\_.rest](https://lodash.com/docs/#rest)  
+[\_.rest](https://lodash.com/docs/#rest)
+[\_.spread](https://lodash.com/docs/#spread)  
+[\_.throttle](https://lodash.com/docs/#throttle)
 
 ### Lang
 
