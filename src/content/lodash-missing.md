@@ -56,15 +56,9 @@
 
 ### Function
 
-[\_.after](https://lodash.com/docs/#after)  
-[\_.before](https://lodash.com/docs/#before)  
-[\_.bind](https://lodash.com/docs/#bind)  
 [\_.bindKey](https://lodash.com/docs/#bindKey)  
-[\_.debounce](https://lodash.com/docs/#debounce)  
 [\_.defer](https://lodash.com/docs/#defer)  
-[\_.delay](https://lodash.com/docs/#delay)  
 [\_.memoize](https://lodash.com/docs/#memoize)  
-[\_.once](https://lodash.com/docs/#once)  
 [\_.overArgs](https://lodash.com/docs/#overArgs)  
 [\_.rearg](https://lodash.com/docs/#rearg)  
 [\_.rest](https://lodash.com/docs/#rest)  
