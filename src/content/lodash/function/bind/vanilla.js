@@ -1,9 +1,4 @@
-const bind = (fn, ctx, ...boundArgs) => {
-  return (...args) => {
-    const jointArgs = [...boundArgs, ...args]
-    return fn.call(ctx, ...jointArgs)
-  }
-}
+const bind = (fn, ctx, ...boundArgs) => fn.bind(ctx, ...boundArgs)
 
 function greet(greeting, punctuation) {
   return greeting + ' ' + this.user + punctuation
