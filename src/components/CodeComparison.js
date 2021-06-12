@@ -63,7 +63,7 @@ const ForceShowTestLink = memo(({ children, setForceShowTest }) => {
 
   if (code.includes(showTestStr)) {
     const splitCode = code.replace(`\n// => ${showTestStr}`, '')
-    const onClick = useCallback(() => setForceShowTest(true))
+    const onClick = useCallback(() => setForceShowTest(true), [])
 
     return (
       <>
