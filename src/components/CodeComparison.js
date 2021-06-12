@@ -1,4 +1,4 @@
-import React, { Fragment, memo } from 'react'
+import React, { Fragment, memo, useState, useCallback } from 'react'
 import styled from 'styled-components'
 import Linkify from 'react-simple-linkify'
 import Hightlight from 'react-highlight/lib/optimized'
@@ -47,38 +47,75 @@ const Resources = styled.span`
   }
 `
 
+const LookAtTestButton = styled.button`
+  margin: 1em 0 2em;
+`
+
 const Link = ({ url }) => (
   <a href={url} rel="noopener noreferrer" target="_blank">
     {url}
   </a>
 )
 
-const Variant = memo(({ variant, methodData }) => (
+const showTestStr = 'look at the tests for more details'
+const ForceShowTestLink = memo(({ children, setForceShowTest }) => {
+  const { children: code } = children.props.children.props
+
+  if (code.includes(showTestStr)) {
+    const splitCode = code.replace(`\n// => ${showTestStr}`, '')
+    const onClick = useCallback(() => setForceShowTest(true))
+
+    return (
+      <>
+        <Hightlight className="javascript">
+          <Linkify component={Link}>{splitCode}</Linkify>
+        </Hightlight>
+        <LookAtTestButton onClick={onClick}>{showTestStr}</LookAtTestButton>
+      </>
+    )
+  }
+
+  return children
+})
+
+const Variant = memo(({ variant, methodData, setForceShowTest }) => (
   <div>
     <Heading hierarchy="4">{variant} </Heading>
-    <Hightlight className="javascript">
-      <Linkify component={Link}>{methodData[variant]}</Linkify>
-    </Hightlight>
+    <ForceShowTestLink setForceShowTest={setForceShowTest}>
+      <Hightlight className="javascript">
+        <Linkify component={Link}>{methodData[variant]}</Linkify>
+      </Hightlight>
+    </ForceShowTestLink>
     {variant === 'plain js' && methodData.resources && (
       <Resources dangerouslySetInnerHTML={{ __html: methodData.resources }} />
     )}
   </div>
 ))
 
-const Block = memo(({ methodData }) =>
+const Block = memo(({ methodData, setForceShowTest }) =>
   Object.keys(methodData)
     .filter(variant => !['notes', 'resources', 'spec'].includes(variant))
     .map(variant => (
-      <Variant key={variant} methodData={methodData} variant={variant} />
+      <Variant
+        setForceShowTest={setForceShowTest}
+        key={variant}
+        methodData={methodData}
+        variant={variant}
+      />
     ))
 )
 
-export default memo(({ methodData, showTests }) => (
-  <Fragment>
-    <NotesLinks dangerouslySetInnerHTML={{ __html: methodData.notes }} />
-    <LineBlock>
-      <Block methodData={methodData} />
-    </LineBlock>
-    {methodData.spec && showTests ? <Spec code={methodData.spec} /> : null}
-  </Fragment>
-))
+export default memo(({ methodData, showTests }) => {
+  const [forceShowTest, setForceShowTest] = useState(false)
+  return (
+    <Fragment>
+      <NotesLinks dangerouslySetInnerHTML={{ __html: methodData.notes }} />
+      <LineBlock>
+        <Block setForceShowTest={setForceShowTest} methodData={methodData} />
+      </LineBlock>
+      {methodData.spec && (showTests || forceShowTest) ? (
+        <Spec code={methodData.spec} />
+      ) : null}
+    </Fragment>
+  )
+})

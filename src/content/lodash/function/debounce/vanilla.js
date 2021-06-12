@@ -12,4 +12,3 @@ const debounce = (func, delay, { leading } = {}) => {
 }
 
 module.exports = (...args) => debounce(...args)
-// => look at the tests for more details

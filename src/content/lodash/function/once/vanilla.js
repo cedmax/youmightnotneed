@@ -11,4 +11,3 @@ const once = fn => {
 }
 
 module.exports = fn => once(fn)
-// => look at the tests for more details
