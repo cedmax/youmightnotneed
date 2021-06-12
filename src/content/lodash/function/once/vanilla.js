@@ -5,10 +5,8 @@ const once = fn => {
     if (!called) {
       result = fn(...args)
       called = true
-      return result
-    } else {
-      return result
     }
+    return result
   }
 }
 
