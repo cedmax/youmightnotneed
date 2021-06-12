@@ -1,0 +1,1 @@
+Converts <code>string</code>, as a whole, to upper case just like <a href="https://mdn.io/toUpperCase">String#toUpperCase</a>.

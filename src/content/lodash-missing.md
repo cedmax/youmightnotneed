@@ -60,10 +60,7 @@
 [\_.defer](https://lodash.com/docs/#defer)  
 [\_.memoize](https://lodash.com/docs/#memoize)  
 [\_.overArgs](https://lodash.com/docs/#overArgs)  
-[\_.rearg](https://lodash.com/docs/#rearg)  
 [\_.rest](https://lodash.com/docs/#rest)  
-[\_.spread](https://lodash.com/docs/#spread)  
-[\_.throttle](https://lodash.com/docs/#throttle)
 
 ### Lang
 
@@ -145,14 +142,12 @@
 
 [\_.camelCase](https://lodash.com/docs/#camelCase)
 [\_.deburr](https://lodash.com/docs/#deburr)  
-[\_.escape](https://lodash.com/docs/#escape)  
 [\_.escapeRegExp](https://lodash.com/docs/#escapeRegExp)  
 [\_.kebabCase](https://lodash.com/docs/#kebabCase)  
 [\_.lowerCase](https://lodash.com/docs/#lowerCase)  
 [\_.snakeCase](https://lodash.com/docs/#snakeCase)  
 [\_.startCase](https://lodash.com/docs/#startCase)  
 [\_.template](https://lodash.com/docs/#template)  
-[\_.toUpper](https://lodash.com/docs/#toUpper)  
 [\_.truncate](https://lodash.com/docs/#truncate)  
 [\_.unescape](https://lodash.com/docs/#unescape)  
 [\_.upperCase](https://lodash.com/docs/#upperCase)  
@@ -172,7 +167,4 @@
 [\_.noConflict](https://lodash.com/docs/#noConflict)  
 [\_.property](https://lodash.com/docs/#property)  
 [\_.propertyOf](https://lodash.com/docs/#propertyOf)  
-[\_.range](https://lodash.com/docs/#range)  
-[\_.rangeRight](https://lodash.com/docs/#rangeRight)  
-[\_.runInContext](https://lodash.com/docs/#runInContext)  
-[\_.toPath](https://lodash.com/docs/#toPath)
+[\_.runInContext](https://lodash.com/docs/#runInContext)
