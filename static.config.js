@@ -99,7 +99,8 @@ export default {
         <meta name="msvalidate.01" content="0B159474AD5BF3967C81DAEA4C4F9F2B" />
         <meta
           name="description"
-          content='A collection of "You might not need ${something}" resources'
+          property="og:description"
+          content="A collection of `You might not need ${something}` resources, including the most comprehensive unit tested collection of lodash methods implemented in vanilla js"
         />
         <meta property="og:image" content={`${envConfig.siteRoot}/share.jpg`} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
