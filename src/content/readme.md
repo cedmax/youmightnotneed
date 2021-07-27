@@ -1,12 +1,12 @@
-# YOU MIGHT NOT NEED \*
+# YOU MIGHT NOT NEED&nbsp;\*
 
-a collection of `You might not need ${something}` resources, please contribute on [github](https://github.com/cedmax/youmightnotneed)
+#### a collection of `You might not need ${something}` resources
 
 ---
 
 #### [You might not need Lodash](/lodash)
 
-The most comprehensive unit tested collection of lodash methods re-implemented in vanilla js
+The most comprehensive, unit tested collection of lodash methods re-implemented in vanilla js
 
 ---
 
@@ -16,7 +16,7 @@ A unit tested collection of date-fns methods re-implemented in vanilla js
 
 ---
 
-##### External Resources
+#### External Resources
 
 - [You might not need JavaScript](http://youmightnotneedjs.com/)
 - [You don't need Moment.js](https://github.com/you-dont-need/You-Dont-Need-Momentjs)

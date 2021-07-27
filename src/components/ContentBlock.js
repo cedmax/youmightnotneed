@@ -5,20 +5,25 @@ const Content = styled.div`
   max-width: 50em;
   margin: auto;
 
-  & + & {
-    padding-top: 0;
+  h1 {
+    font-size: 2.6rem;
+    strong {
+      font-size: 5.6rem;
+      display: block;
+    }
   }
 
-  h1 {
-    background: #414141;
-    padding: 0.2em;
-    color: white;
-    text-align: center;
+  & + & {
+    padding-top: 0;
   }
 
   a del {
     font-size: 85%;
     color: #606c76;
+  }
+
+  p {
+    line-height: 1.8;
   }
 `
 

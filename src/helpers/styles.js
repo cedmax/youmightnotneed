@@ -21,16 +21,48 @@ export const GlobalStyle = createGlobalStyle`
 export default styled.div`
   nav {
     width: 100%;
-    padding: 0 1.5rem;
-    background: #f4f5f6;
-    border-bottom: 0.1rem solid #d1d1d1;
+    padding: 1rem;
+
+    @media screen and (min-width: 30em) {
+      padding: 2rem;
+    }
+
+    a:first-child {
+      color: #000;
+      font-weight: bold;
+    }
+
+    a:first-child[aria-current]::after {
+      content: ' *';
+    }
 
     a {
-      padding: 1rem;
       display: inline-block;
+      text-decoration: none;
+      transition: color 0.15s ease-in;
+      color: #777;
+      opacity: 1;
+      transition: opacity 0.15s ease-in;
+      margin-right: 1rem;
+    }
+
+    a[aria-current] {
+      font-weight: bold;
+      color: black;
+    }
+
+    a:last-child {
+      margin-right: 0;
+    }
+
+    a:active {
+      opacity: 0.8;
+      transition: opacity 0.15s ease-out;
     }
 
     a:hover {
+      opacity: 0.5;
+      transition: opacity 0.15s ease-in;
       text-decoration: underline;
     }
   }
