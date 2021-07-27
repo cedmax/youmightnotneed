@@ -1,6 +1,6 @@
-# YOU MIGHT NOT NEED DATE-FNS
+# YOU MIGHT NOT NEED **DATE-FNS**
 
-Just to be clear: **you should use date-fns**.
+But **you should use date-fns**.
 
 Not only it's a great library, battle tested and with a strong team, but also dates in javascript are a pain to work with, no point in dealing with them at a low level when there are such well crafted libraries around. **The goal of this project is _NOT_ to provide drop in replacements**, but to show how achieve similar functionalities in plain Javascript, to understand how things work behind the hood.
 
