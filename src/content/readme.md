@@ -4,13 +4,13 @@
 
 ---
 
-### [You might not need Lodash](/lodash)
+#### [You might not need Lodash](/lodash)
 
 The most comprehensive, unit tested collection of lodash methods re-implemented in vanilla js
 
 ---
 
-### [You might not need date-fns](/date-fns)
+#### [You might not need date-fns](/date-fns)
 
 A unit tested collection of date-fns methods re-implemented in vanilla js
 
