@@ -40,7 +40,6 @@
 
 [\_.countBy](https://lodash.com/docs/#countBy)  
 [\_.findLast](https://lodash.com/docs/#findLast)  
-[\_.flatMap](https://lodash.com/docs/#flatMap)  
 [\_.flatMapDeep](https://lodash.com/docs/#flatMapDeep)  
 [\_.flatMapDepth](https://lodash.com/docs/#flatMapDepth)  
 [\_.groupBy](https://lodash.com/docs/#groupBy)  
