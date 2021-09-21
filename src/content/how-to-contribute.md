@@ -61,7 +61,7 @@ Resources: [Spread syntax](https://developer.mozilla.org/docs/Web/JavaScript/Ref
 
 ## How it make it work on local
 
-Launch `yarn` to install dependencies.  
+`yarn` to install dependencies.  
 `yarn start` to launch the watch mode.  
-`yarn test` to launch the tests.
+`yarn test` to launch the tests.  
 `yarn build` to create the built version in the `dist` folder.

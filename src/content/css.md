@@ -1,4 +1,4 @@
-# YOU MIGHT NOT NEED CSS
+# YOU MIGHT NOT NEED **CSS**
 
 Sorry, this was clickbait.
 
