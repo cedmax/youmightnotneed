@@ -21,6 +21,8 @@ Please read [how to contribute](./src/content/how-to-contribute.md) if you want 
 <a href="https://github.com/harshit-sinha-developer"><img src="https://avatars.githubusercontent.com/u/12970743?v=4" title="harshit-sinha-developer" width="80" height="80"></a>
 <a href="https://github.com/jeromelachaud"><img src="https://avatars.githubusercontent.com/u/456474?v=4" title="jeromelachaud" width="80" height="80"></a>
 <a href="https://github.com/jpbriggs408"><img src="https://avatars.githubusercontent.com/u/8880358?v=4" title="jpbriggs408" width="80" height="80"></a>
+<a href="https://github.com/SgtPooki"><img src="https://avatars.githubusercontent.com/u/1173416?v=4" title="SgtPooki" width="80" height="80"></a>
+<a href="https://github.com/martingjaldbaek"><img src="https://avatars.githubusercontent.com/u/752617?v=4" title="martingjaldbaek" width="80" height="80"></a>
 <a href="https://github.com/ryanosaur"><img src="https://avatars.githubusercontent.com/u/5642293?v=4" title="ryanosaur" width="80" height="80"></a>
 <a href="https://github.com/shubhamV123"><img src="https://avatars.githubusercontent.com/u/29898106?v=4" title="shubhamV123" width="80" height="80"></a>
 <a href="https://github.com/tombiju"><img src="https://avatars.githubusercontent.com/u/11186044?v=4" title="tombiju" width="80" height="80"></a>
