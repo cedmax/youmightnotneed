@@ -1,4 +1,7 @@
-const over = arr => (...args) => arr.map(func => func(...args))
+const over =
+  arr =>
+  (...args) =>
+    arr.map(func => func(...args))
 
 const func = over([Math.max, Math.min])
 

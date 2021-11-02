@@ -5,12 +5,12 @@ const expected = {
   fiveMinusZero: 5,
   oneMinusZero: 1,
   twoMinusTwo: 0,
-};
+}
 
-const lodash = require('./lodash');
-const plain = require('./vanilla');
+const lodash = require('./lodash')
+const plain = require('./vanilla')
 
 test('cond', () => {
-  expect(lodash).toEqual(expected);
-  expect(plain).toEqual(lodash);
-});
+  expect(lodash).toEqual(expected)
+  expect(plain).toEqual(lodash)
+})

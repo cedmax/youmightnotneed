@@ -1,4 +1,7 @@
-const negate = func => (...args) => !func(...args)
+const negate =
+  func =>
+  (...args) =>
+    !func(...args)
 
 const isEven = n => n % 2 === 0
 

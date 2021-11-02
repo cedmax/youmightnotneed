@@ -1,5 +1,7 @@
-const flow = funcs => (...args) =>
-  funcs.reduce((prev, fnc) => [fnc(...prev)], args)[0]
+const flow =
+  funcs =>
+  (...args) =>
+    funcs.reduce((prev, fnc) => [fnc(...prev)], args)[0]
 
 const add = (a, b) => a + b
 

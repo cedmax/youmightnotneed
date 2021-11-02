@@ -7,7 +7,7 @@ const expected = {
   falseCase: undefined,
   nullCase: null,
   zeroCase: 0,
-  undefinedCase: 'default'
+  undefinedCase: 'default',
 }
 
 const lodash = require('./lodash')

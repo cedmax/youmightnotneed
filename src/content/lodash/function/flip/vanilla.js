@@ -1,4 +1,7 @@
-const flip = func => (...args) => func(...args.reverse())
+const flip =
+  func =>
+  (...args) =>
+    func(...args.reverse())
 
 const flipped = flip((...args) => args)
 

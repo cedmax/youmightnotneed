@@ -49,7 +49,7 @@
     "inquirer": "7.3.3",
     "jest-date-mock": "1.0.8",
     "lint-staged": "11.0.0",
-    "prettier": "2.3.1",
+    "prettier": "2.4.1",
     "require-markdown": "1.2.0",
     "serve": "11.3.2"
   },

@@ -1,5 +1,7 @@
-const flowRight = funcs => (...args) =>
-  funcs.reverse().reduce((prev, fnc) => [fnc(...prev)], args)[0]
+const flowRight =
+  funcs =>
+  (...args) =>
+    funcs.reverse().reduce((prev, fnc) => [fnc(...prev)], args)[0]
 
 const add = (a, b) => a + b
 
