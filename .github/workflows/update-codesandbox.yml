@@ -17,10 +17,10 @@ jobs:
     needs: triage
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{needs.triage.changes.output}}
+      - run: echo ${{needs.triage.changes.outputs}}
   codesandbox:
     needs: triage
-    if: ${{needs.triage.changes.output.content}}
+    if: ${{needs.triage.changes.outputs.content == 'true'}}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
