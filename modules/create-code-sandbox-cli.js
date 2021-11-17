@@ -21,9 +21,14 @@ const getNestedFolders = (path, level) => {
 ;(async () => {
   const currentRefs = require('../src/code-sandbox-refs.json')
   const currentUrls = require('../src/code-sandbox.json')
-  const contentFolder = './src/content'
-  const files = getNestedFolders(contentFolder, 3)
-  const newRefs = files.reduce(
+  const contentFolder = 'src/content'
+  const folders = process.argv[2]
+    ? process.argv
+        .slice(2)
+        .map(file => file.substring(0, file.lastIndexOf('/')))
+    : getNestedFolders(contentFolder, 3)
+
+  const newRefs = folders.reduce(
     (acc, path) => ({
       ...acc,
       [path.replace(`${contentFolder}/`, '')]: createCodeSandbox(path),

@@ -7,12 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       content: ${{ steps.changes.outputs.content }}
+      files: ${{ steps.changes.outputs.content_files }}
     steps:
       - uses: actions/checkout@v2
       - uses: dorny/paths-filter@v2
         id: changes
         with:
           base: ${{ github.ref }}
+          list-files: shell
           filters: |
             content:
               - 'src/content/**/*.js'
@@ -30,7 +32,7 @@ jobs:
           cache: 'yarn'
       - run: yarn install --prefer-offline --frozen-lockfile
       - run: |-
-          node ./modules/create-code-sandbox-cli
+          node ./modules/create-code-sandbox-cli ${{ needs.triage.outputs.files }}
       - uses: swinton/commit@v2.x
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
