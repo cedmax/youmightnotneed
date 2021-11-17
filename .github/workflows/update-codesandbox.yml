@@ -12,6 +12,7 @@ jobs:
       - uses: dorny/paths-filter@v2
         id: changes
         with:
+          base: ${{ github.ref }}
           filters: |
             content:
               - 'src/content/**/*.js'
