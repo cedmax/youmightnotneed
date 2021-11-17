@@ -15,11 +15,6 @@ jobs:
           filters: |
             content:
               - 'src/content/**/*.js'
-  is_it_working:
-    needs: triage
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo ${{needs.triage.outputs}}
   codesandbox:
     needs: triage
     if: ${{ needs.triage.outputs.content == 'true' }}
