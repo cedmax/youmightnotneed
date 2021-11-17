@@ -5,6 +5,8 @@ on: push
 jobs:
   triage:
     runs-on: ubuntu-latest
+    outputs:
+      content: ${{ steps.changes.outputs.content }}
     steps:
       - uses: actions/checkout@v2
       - uses: dorny/paths-filter@v2
@@ -17,10 +19,10 @@ jobs:
     needs: triage
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{needs.triage.changes.outputs}}
+      - run: echo ${{needs.triage.outputs}}
   codesandbox:
     needs: triage
-    if: ${{needs.triage.changes.outputs.content == 'true'}}
+    if: ${{ needs.triage.outputs.content == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
