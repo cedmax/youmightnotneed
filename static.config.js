@@ -45,6 +45,7 @@ export default {
       path: '/lodash',
       template: 'src/containers/LibPage',
       getData: async () => ({
+        frw: 'lodash',
         content: requireMarkdown('./src/content/lodash.md'),
         title: 'You Might Not Need Lodash',
         data: fetchContent('lodash'),
@@ -62,6 +63,7 @@ export default {
       path: '/date-fns',
       template: 'src/containers/LibPage',
       getData: async () => ({
+        frw: 'date-fns',
         content: requireMarkdown('./src/content/date-fns.md'),
         title: 'You Might Not Need date-fns',
         data: fetchContent('date-fns'),
@@ -123,7 +125,10 @@ export default {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <Body>{children}</Body>
+      <Body>
+        {children}
+        <div id="modal-root" />
+      </Body>
     </Html>
   ),
   plugins: ['react-static-plugin-styled-components', 'custom-raw-loader'],

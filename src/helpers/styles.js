@@ -12,6 +12,10 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+  .ReactModal__Body--open {
+    overflow: hidden;
+  }
+
   .hljs a {
     text-decoration: underline;
     text-decoration-style: dotted;

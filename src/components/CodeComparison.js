@@ -78,25 +78,38 @@ const ForceShowTestLink = memo(({ children, setForceShowTest }) => {
   return children
 })
 
-const Variant = memo(({ variant, methodData, setForceShowTest }) => (
-  <div>
-    <Heading hierarchy="4">{variant} </Heading>
-    <ForceShowTestLink setForceShowTest={setForceShowTest}>
-      <Hightlight className="javascript">
-        <Linkify component={Link}>{methodData[variant]}</Linkify>
-      </Hightlight>
-    </ForceShowTestLink>
-    {variant === 'plain js' && methodData.resources && (
-      <Resources dangerouslySetInnerHTML={{ __html: methodData.resources }} />
-    )}
-  </div>
-))
+const Variant = memo(
+  ({ variant, methodData, setForceShowTest, id, openModal }) => (
+    <div>
+      <Heading hierarchy="4">
+        {variant}
+        {variant == 'plain js' ? (
+          <button className="button button-clear" onClick={() => openModal(id)}>
+            see on codesandbox.io
+          </button>
+        ) : (
+          ''
+        )}
+      </Heading>
+      <ForceShowTestLink setForceShowTest={setForceShowTest}>
+        <Hightlight className="javascript">
+          <Linkify component={Link}>{methodData[variant]}</Linkify>
+        </Hightlight>
+      </ForceShowTestLink>
+      {variant === 'plain js' && methodData.resources && (
+        <Resources dangerouslySetInnerHTML={{ __html: methodData.resources }} />
+      )}
+    </div>
+  )
+)
 
-const Block = memo(({ methodData, setForceShowTest }) =>
+const Block = memo(({ methodData, setForceShowTest, id, openModal }) =>
   Object.keys(methodData)
     .filter(variant => !['notes', 'resources', 'spec'].includes(variant))
     .map(variant => (
       <Variant
+        id={id}
+        openModal={openModal}
         setForceShowTest={setForceShowTest}
         key={variant}
         methodData={methodData}
@@ -105,13 +118,18 @@ const Block = memo(({ methodData, setForceShowTest }) =>
     ))
 )
 
-export default memo(({ methodData, showTests }) => {
+export default memo(({ methodData, showTests, id, openModal }) => {
   const [forceShowTest, setForceShowTest] = useState(false)
   return (
     <Fragment>
       <NotesLinks dangerouslySetInnerHTML={{ __html: methodData.notes }} />
       <LineBlock>
-        <Block setForceShowTest={setForceShowTest} methodData={methodData} />
+        <Block
+          id={id}
+          openModal={openModal}
+          setForceShowTest={setForceShowTest}
+          methodData={methodData}
+        />
       </LineBlock>
       {methodData.spec && (showTests || forceShowTest) ? (
         <Spec code={methodData.spec} />
