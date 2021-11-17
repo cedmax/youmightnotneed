@@ -87,7 +87,7 @@
   "lodash/array/flatten": "https://codesandbox.io/s/hkvzr?previewwindow=tests&file=/array/flatten/vanilla.js",
   "lodash/array/flattenDeep": "https://codesandbox.io/s/f18t6?previewwindow=tests&file=/array/flattenDeep/vanilla.js",
   "lodash/array/fromPairs": "https://codesandbox.io/s/tex9b?previewwindow=tests&file=/array/fromPairs/vanilla.js",
-  "lodash/array/head": "https://codesandbox.io/s/q4fuq?previewwindow=tests&file=/array/head/vanilla.js",
+  "lodash/array/head": "https://codesandbox.io/s/2t5sx?previewwindow=tests&file=/array/head/vanilla.js",
   "lodash/array/indexOf": "https://codesandbox.io/s/c5eqk?previewwindow=tests&file=/array/indexOf/vanilla.js",
   "lodash/array/initial": "https://codesandbox.io/s/hzv21?previewwindow=tests&file=/array/initial/vanilla.js",
   "lodash/array/intersection": "https://codesandbox.io/s/58ypc?previewwindow=tests&file=/array/intersection/vanilla.js",
