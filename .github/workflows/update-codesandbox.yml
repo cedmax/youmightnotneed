@@ -13,6 +13,11 @@ jobs:
           filters: |
             content:
               - 'src/content/**/*.js'
+  is_it_working:
+    needs: triage
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{needs.triage.changes.output.content}}
   codesandbox:
     needs: triage
     if: needs.triage.changes.output.content == 'true'
