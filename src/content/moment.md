@@ -1,3 +1,3 @@
-# YOU MIGHT NOT NEED MOMENTJS
+# YOU MIGHT NOT NEED MOMENT.JS
 
-This page has been deprecated in favour of [You don't need Momentjs](https://github.com/you-dont-need/You-Dont-Need-Momentjs)
+This page has been deprecated, please refer to [You don't need Moment.js](https://github.com/you-dont-need/You-Dont-Need-Momentjs)

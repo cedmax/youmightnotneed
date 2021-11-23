@@ -1,0 +1,44 @@
+name: Update codesandbox references
+
+on: push
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    outputs:
+      content: ${{ steps.changes.outputs.content }}
+      files: ${{ steps.changes.outputs.content_files }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          base: ${{ github.ref }}
+          list-files: shell
+          filters: |
+            content:
+              - 'src/content/**/*.js'
+  codesandbox:
+    needs: triage
+    if: ${{ needs.triage.outputs.content == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: browniebroke/read-nvmrc-action@v1
+        id: nvmrc
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '${{ steps.nvmrc.outputs.node_version }}'
+          cache: 'yarn'
+      - run: yarn install --prefer-offline --frozen-lockfile
+      - run: |-
+          node ./modules/create-code-sandbox-cli ${{ needs.triage.outputs.files }}
+      - uses: swinton/commit@v2.x
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            src/code-sandbox-refs.json
+            src/code-sandbox.json
+          commit-message: Updating codesandbox references
+          ref: ${{ github.ref }}
