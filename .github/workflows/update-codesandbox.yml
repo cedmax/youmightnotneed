@@ -1,6 +1,9 @@
 name: Update codesandbox references
 
-on: push
+on:
+  push:
+    branches-ignore:
+      - production
 
 jobs:
   triage:
