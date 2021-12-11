@@ -12,7 +12,7 @@
     "build": "react-static build",
     "serve": "serve dist -p 3000",
     "pretest": "eslint src modules",
-    "test": "NODE_OPTIONS=--max_old_space_size=4096 node ./node_modules/.bin/jest --verbose",
+    "test": "jest",
     "posttest": "codecov --disable=gcov"
   },
   "dependencies": {
