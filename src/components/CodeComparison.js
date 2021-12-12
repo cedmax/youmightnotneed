@@ -6,12 +6,15 @@ import Heading from './Heading'
 import Spec from './Spec'
 
 const LineBlock = styled.div`
-  padding-bottom: 7.5rem;
+  padding-bottom: 5.5rem;
   margin: auto;
 
   code {
     padding: 15px;
-    background: #f0f0f0;
+    background: var(--custom-bk-code);
+    border: 0;
+    border-left: 3px solid var(--nc-lk-1);
+    border-radius: 0;
   }
 
   @media (min-width: 800px) {
@@ -34,6 +37,13 @@ const NotesLinks = styled.div`
 
   a {
     padding: 0 3px;
+  }
+
+  code {
+    color: black;
+    background: var(--custom-bk-code);
+    border-radius: 7px;
+    padding: 3px 5px;
   }
 `
 

@@ -5,6 +5,14 @@ import Heading from './Heading'
 
 const Tests = styled.div`
   padding-bottom: 4em;
+
+  code {
+    padding: 15px;
+    background: var(--custom-bk-code);
+    border: 0;
+    border-left: 3px solid var(--nc-lk-1);
+    border-radius: 0;
+  }
 `
 
 export default ({ code }) => (

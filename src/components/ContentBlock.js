@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 const Content = styled.div`
-  padding: 3em;
+  padding: 3em 3em 1em;
   max-width: 50em;
   margin: auto;
 
   h1 {
     font-size: 2.6rem;
     strong {
-      font-size: 5.6rem;
+      font-size: 4.6rem;
       display: block;
     }
   }
@@ -19,7 +19,7 @@ const Content = styled.div`
 
   a del {
     font-size: 85%;
-    color: #606c76;
+    color: var(--nc-tx-2);
   }
 
   p {
