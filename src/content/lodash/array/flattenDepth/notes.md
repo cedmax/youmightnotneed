@@ -1,0 +1,1 @@
+Recursively flatten <code>array</code> up to <code>depth</code> times.

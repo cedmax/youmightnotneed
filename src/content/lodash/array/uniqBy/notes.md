@@ -1,0 +1,1 @@
+This method is like <a href="#uniq"><code>_.uniq</code></a> except that it accepts <code>iteratee</code> which is invoked for each element in <code>array</code> to generate the criterion by which uniqueness is computed. The order of result values is determined by the order they occur in the array. The iteratee is invoked with one argument:<br><em>(value)</em>.

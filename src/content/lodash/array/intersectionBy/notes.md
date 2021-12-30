@@ -1,0 +1,1 @@
+This method is like <a href="#intersection"><code>_.intersection</code></a> except that it accepts <code>iteratee</code> which is invoked for each element of each <code>arrays</code> to generate the criterion by which they're compared. The order and references of result values are determined by the first array. The iteratee is invoked with one argument:<br><em>(value)</em>.
