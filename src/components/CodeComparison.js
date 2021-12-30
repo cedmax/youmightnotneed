@@ -88,9 +88,18 @@ const ForceShowTestLink = memo(({ children, setForceShowTest }) => {
   return children
 })
 
+const handleCopyEvent = e => {
+  const text = `// WARNING: This is not a drop in replacement solution and
+// it might not work for some edge cases. Test your code! 
+${window.getSelection().toString()}`
+
+  e.clipboardData.setData('text/plain', text)
+  e.preventDefault()
+}
+
 const Variant = memo(
   ({ variant, methodData, setForceShowTest, id, openModal }) => (
-    <div>
+    <div onCopy={variant == 'plain js' ? e => handleCopyEvent(e) : () => {}}>
       <Heading hierarchy="4">
         {variant}
         {variant == 'plain js' ? (
