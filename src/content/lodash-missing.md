@@ -117,7 +117,6 @@
 [\_.functions](https://lodash.com/docs/#functions)  
 [\_.functionsIn](https://lodash.com/docs/#functionsIn)  
 [\_.hasIn](https://lodash.com/docs/#hasIn)  
-[\_.invert](https://lodash.com/docs/#invert)  
 [\_.invertBy](https://lodash.com/docs/#invertBy)  
 [\_.invoke](https://lodash.com/docs/#invoke)  
 [\_.keysIn](https://lodash.com/docs/#keysIn)  
