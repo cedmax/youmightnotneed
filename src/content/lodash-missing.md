@@ -32,7 +32,6 @@
 [\_.xor](https://lodash.com/docs/#xor)  
 [\_.xorBy](https://lodash.com/docs/#xorBy)  
 [\_.xorWith](https://lodash.com/docs/#xorWith)  
-[\_.zipObject](https://lodash.com/docs/#zipObject)  
 [\_.zipObjectDeep](https://lodash.com/docs/#zipObjectDeep)  
 [\_.zipWith](https://lodash.com/docs/#zipWith)
 
