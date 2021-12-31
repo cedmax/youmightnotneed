@@ -32,7 +32,6 @@
 [\_.xor](https://lodash.com/docs/#xor)  
 [\_.xorBy](https://lodash.com/docs/#xorBy)  
 [\_.xorWith](https://lodash.com/docs/#xorWith)  
-[\_.zipObject](https://lodash.com/docs/#zipObject)  
 [\_.zipObjectDeep](https://lodash.com/docs/#zipObjectDeep)  
 [\_.zipWith](https://lodash.com/docs/#zipWith)
 
@@ -122,7 +121,6 @@
 [\_.functions](https://lodash.com/docs/#functions)  
 [\_.functionsIn](https://lodash.com/docs/#functionsIn)  
 [\_.hasIn](https://lodash.com/docs/#hasIn)  
-[\_.invert](https://lodash.com/docs/#invert)  
 [\_.invertBy](https://lodash.com/docs/#invertBy)  
 [\_.invoke](https://lodash.com/docs/#invoke)  
 [\_.keysIn](https://lodash.com/docs/#keysIn)  
