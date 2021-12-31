@@ -131,5 +131,9 @@ export default {
       </Body>
     </Html>
   ),
-  plugins: ['react-static-plugin-styled-components', 'custom-raw-loader'],
+  plugins: [
+    'react-static-plugin-styled-components',
+    'react-static-plugin-reach-router',
+    'custom-raw-loader',
+  ],
 }

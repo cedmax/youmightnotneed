@@ -10437,6 +10437,11 @@ react-simple-linkify@1.0.3:
   resolved "https://registry.yarnpkg.com/react-simple-linkify/-/react-simple-linkify-1.0.3.tgz#b987594dc160d8364631e62cbd820fdae4d782fb"
   integrity sha512-rTYVHvyhDYnsaqNiDdWSHUU03IeY97e6N/6vZn1ZZurZiMqNzBe0rfUeyCqO5mY3rg1X7fpnWkwQxIOifejKKw==
 
+react-static-plugin-reach-router@^7.6.2:
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/react-static-plugin-reach-router/-/react-static-plugin-reach-router-7.6.2.tgz#4813ec998e98491fc8a43540a5e7fcebe74b10b5"
+  integrity sha512-Jv4Rf5J01HsyUIyiW5vm6PHsp/QrjpxwHhCs0qAU3P3xAcCe4ccxD5jQjzy+F2t79iq9Cr6DhDoOJCnCPdAcnQ==
+
 react-static-plugin-styled-components@7.5.0:
   version "7.5.0"
   resolved "https://registry.yarnpkg.com/react-static-plugin-styled-components/-/react-static-plugin-styled-components-7.5.0.tgz#2d03f77cf2a12429788797310b6e6625f0dd7835"
