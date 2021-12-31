@@ -1,3 +1,6 @@
+// This is a simplified implementation
+// of https://youmightnotneed.com/lodash#unionBy
+// which would work with only one array
 const uniqBy = (arr, iteratee) => {
   if (typeof iteratee === 'string') {
     const prop = iteratee
