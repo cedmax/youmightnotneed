@@ -231,5 +231,9 @@
   "lodash/util/stubTrue": "https://codesandbox.io/s/5w26j?previewwindow=tests&file=/util/stubTrue/vanilla.js",
   "lodash/util/times": "https://codesandbox.io/s/ph2lp?previewwindow=tests&file=/util/times/vanilla.js",
   "lodash/util/toPath": "https://codesandbox.io/s/kte0s?previewwindow=tests&file=/util/toPath/vanilla.js",
-  "lodash/util/uniqueId": "https://codesandbox.io/s/k6zki?previewwindow=tests&file=/util/uniqueId/vanilla.js"
+  "lodash/util/uniqueId": "https://codesandbox.io/s/k6zki?previewwindow=tests&file=/util/uniqueId/vanilla.js",
+  "lodash/array/flattenDepth": "https://codesandbox.io/s/dm13m?previewwindow=tests&file=/array/flattenDepth/vanilla.js",
+  "lodash/array/intersectionBy": "https://codesandbox.io/s/wrnsh?previewwindow=tests&file=/array/intersectionBy/vanilla.js",
+  "lodash/array/unionBy": "https://codesandbox.io/s/023uv?previewwindow=tests&file=/array/unionBy/vanilla.js",
+  "lodash/array/uniqBy": "https://codesandbox.io/s/zmpt6?previewwindow=tests&file=/array/uniqBy/vanilla.js"
 }
