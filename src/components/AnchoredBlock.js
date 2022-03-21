@@ -14,6 +14,7 @@ const Anchor = styled.a`
     left: -0.7em;
     font-family: monospace;
     content: '  ';
+    line-height: initial;
     white-space: pre;
   }
 
