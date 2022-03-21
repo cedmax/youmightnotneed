@@ -9,12 +9,12 @@ import ShowTests from './ShowTests'
 import Modal from './Modal'
 
 const Row = styled.div`
-  background: white;
+  background: var(--nc-bg-1);
   padding: 3em;
 
   &:nth-child(2n) {
-    background: #fafafa;
-    border-bottom: 1px solid #eee;
+    background: var(--nc-bg-2);
+    border-bottom: 1px solid var(--nc-bg-2);
   }
 `
 

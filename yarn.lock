@@ -1244,6 +1244,11 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
+"@exampledev/new.css@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@exampledev/new.css/-/new.css-1.1.3.tgz#fcc1f15629db8cd105ad2e8c649095ca10623007"
+  integrity sha512-qhbGfqBRwUlM6MCSaJdUfjq86opNCMvM+6kVvs6S0kYhy0V8dKbe4rDMIklEJGuMc5QH5OuPjdCReu9I0tim2w==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -2253,12 +2258,12 @@ axe-core@^3.5.4:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-3.5.5.tgz#84315073b53fa3c0c51676c588d59da09a192227"
   integrity sha512-5P0QZ6J5xGikH780pghEdbEKijCTrruK9KxtPZCFWUpef0f6GipO+xEZ5GKCb020mmqgbiNO6TcA55CriL784Q==
 
-axios@0.21.1, axios@^0.21.1:
-  version "0.21.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
-  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
+axios@0.24.0:
+  version "0.24.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.24.0.tgz#804e6fa1e4b9c5288501dd9dff56a7a0940d20d6"
+  integrity sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA==
   dependencies:
-    follow-redirects "^1.10.0"
+    follow-redirects "^1.14.4"
 
 axios@^0.18.1:
   version "0.18.1"
@@ -2267,6 +2272,13 @@ axios@^0.18.1:
   dependencies:
     follow-redirects "1.5.10"
     is-buffer "^2.0.2"
+
+axios@^0.21.1:
+  version "0.21.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
+  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
+  dependencies:
+    follow-redirects "^1.10.0"
 
 axobject-query@^2.1.2:
   version "2.2.0"
@@ -2984,9 +2996,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001219:
-  version "1.0.30001237"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001237.tgz#4b7783661515b8e7151fc6376cfd97f0e427b9e5"
-  integrity sha512-pDHgRndit6p1NR2GhzMbQ6CkRrp4VKuSsqbcLeOQppYPKOYkKT/6ZvZDvKJUqcmtyWIAHuZq3SVS2vc1egCZzw==
+  version "1.0.30001286"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001286.tgz"
+  integrity sha512-zaEMRH6xg8ESMi2eQ3R4eZ5qw/hJiVsO/HlLwniIwErij0JDr9P+8V4dtx1l+kLq6j3yy8l8W4fst1lBnat5wQ==
 
 capture-stack-trace@^1.0.0:
   version "1.0.1"
@@ -5518,6 +5530,11 @@ follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
   integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
+
+follow-redirects@^1.14.4:
+  version "1.14.5"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.5.tgz#f09a5848981d3c772b5392309778523f8d85c381"
+  integrity sha512-wtphSXy7d4/OR+MvIFbCVBDzZ5520qV8XfPklSN5QtxuMUJZ+b0Wnst1e1lCDocfzuCkHqj8k0FpZqO+UIaKNA==
 
 for-in@^1.0.1, for-in@^1.0.2:
   version "1.0.2"
@@ -8416,13 +8433,6 @@ miller-rabin@^4.0.0:
     bn.js "^4.0.0"
     brorand "^1.0.1"
 
-milligram@1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/milligram/-/milligram-1.4.1.tgz#6c8c781541b0d994ccca784c60f0aca1f7104b42"
-  integrity sha512-RCgh/boHhcXWOUfKJWm3RJRoUeaEguoipDg0mJ31G0tFfvcpWMUlO1Zlqqr12K4kAXfDlllaidu0x7PaL2PTFg==
-  dependencies:
-    normalize.css "~8.0.1"
-
 mime-db@1.44.0, "mime-db@>= 1.43.0 < 2", mime-db@^1.28.0:
   version "1.44.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.44.0.tgz#fa11c5eb0aca1334b4233cb4d52f10c5a6272f92"
@@ -8844,11 +8854,6 @@ normalize-url@^4.1.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-4.5.0.tgz#453354087e6ca96957bd8f5baf753f5982142129"
   integrity sha512-2s47yzUxdexf1OhyRi4Em83iQk0aPvwTddtFz4hnSSw9dCEsLEGf6SwIO8ss/19S9iBb5sJaOuTvTGDeZI00BQ==
-
-normalize.css@~8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
-  integrity sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==
 
 npm-conf@^1.1.0:
   version "1.1.3"
@@ -10431,6 +10436,11 @@ react-simple-linkify@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/react-simple-linkify/-/react-simple-linkify-1.0.3.tgz#b987594dc160d8364631e62cbd820fdae4d782fb"
   integrity sha512-rTYVHvyhDYnsaqNiDdWSHUU03IeY97e6N/6vZn1ZZurZiMqNzBe0rfUeyCqO5mY3rg1X7fpnWkwQxIOifejKKw==
+
+react-static-plugin-reach-router@^7.6.2:
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/react-static-plugin-reach-router/-/react-static-plugin-reach-router-7.6.2.tgz#4813ec998e98491fc8a43540a5e7fcebe74b10b5"
+  integrity sha512-Jv4Rf5J01HsyUIyiW5vm6PHsp/QrjpxwHhCs0qAU3P3xAcCe4ccxD5jQjzy+F2t79iq9Cr6DhDoOJCnCPdAcnQ==
 
 react-static-plugin-styled-components@7.5.0:
   version "7.5.0"
