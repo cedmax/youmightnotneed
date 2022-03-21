@@ -8,7 +8,7 @@ const ShowTests = styled.div`
 export default memo(({ onChange, checked }) => (
   <ShowTests>
     <label htmlFor="showTests">
-      Show tests?
+      Show tests?{' '}
       <input
         id="showTests"
         type="checkbox"
