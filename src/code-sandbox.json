@@ -235,5 +235,10 @@
   "lodash/array/flattenDepth": "https://codesandbox.io/s/dm13m?previewwindow=tests&file=/array/flattenDepth/vanilla.js",
   "lodash/array/intersectionBy": "https://codesandbox.io/s/wrnsh?previewwindow=tests&file=/array/intersectionBy/vanilla.js",
   "lodash/array/unionBy": "https://codesandbox.io/s/023uv?previewwindow=tests&file=/array/unionBy/vanilla.js",
-  "lodash/array/uniqBy": "https://codesandbox.io/s/zmpt6?previewwindow=tests&file=/array/uniqBy/vanilla.js"
+  "lodash/array/uniqBy": "https://codesandbox.io/s/zmpt6?previewwindow=tests&file=/array/uniqBy/vanilla.js",
+  "lodash/lang/isSet": "https://codesandbox.io/s/vmdh2h?previewwindow=tests&file=/lang/isSet/vanilla.js",
+  "lodash/lang/isSymbol": "https://codesandbox.io/s/2c9fnb?previewwindow=tests&file=/lang/isSymbol/vanilla.js",
+  "lodash/lang/isTypedArray": "https://codesandbox.io/s/7hrz1n?previewwindow=tests&file=/lang/isTypedArray/vanilla.js",
+  "lodash/lang/isWeakMap": "https://codesandbox.io/s/7952ft?previewwindow=tests&file=/lang/isWeakMap/vanilla.js",
+  "lodash/lang/isWeakSet": "https://codesandbox.io/s/cqlso9?previewwindow=tests&file=/lang/isWeakSet/vanilla.js"
 }
