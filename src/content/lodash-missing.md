@@ -150,7 +150,6 @@
 ### Util
 
 [\_.bindAll](https://lodash.com/docs/#bindAll)  
-[\_.cond](https://lodash.com/docs/#cond)  
 [\_.conforms](https://lodash.com/docs/#conforms)  
 [\_.iteratee](https://lodash.com/docs/#iteratee)  
 [\_.matches](https://lodash.com/docs/#matches)  
