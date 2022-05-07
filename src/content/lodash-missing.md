@@ -65,7 +65,6 @@
 [\_.cloneWith](https://lodash.com/docs/#cloneWith)  
 [\_.eq](https://lodash.com/docs/.eq)  
 [\_.isArguments](https://lodash.com/docs/#isArguments)  
-[\_.isArrayBuffer](https://lodash.com/docs/#isArrayBuffer)  
 [\_.isArrayLike](https://lodash.com/docs/#isArrayLike)  
 [\_.isArrayLikeObject](https://lodash.com/docs/#isArrayLikeObject)  
 [\_.isBuffer](https://lodash.com/docs/#isBuffer)  
