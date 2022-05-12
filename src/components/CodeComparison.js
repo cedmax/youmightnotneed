@@ -67,7 +67,7 @@ const Link = ({ url }) => (
   </a>
 )
 
-const showTestStr = 'look at the tests for more details'
+const showTestStr = 'check the tests for more details'
 const ForceShowTestLink = memo(({ children, setForceShowTest }) => {
   const { children: code } = children.props.children.props
 
