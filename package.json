@@ -26,7 +26,7 @@
     "jest": "27.0.4",
     "lodash": "4.17.21",
     "markdown-loader": "5.1.0",
-    "marked": "2.0.7",
+    "marked": "4.0.10",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-highlight": "0.12.0",
