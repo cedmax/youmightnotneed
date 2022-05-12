@@ -1,3 +1,3 @@
-Checks if <code>value</code> is an instance of <code>TypedArray</code>.
+Checks if <code>value</code> is classified as a typed array.
 
-Resources: [Node.js documentation](https://nodejs.org/dist/latest-v16.x/docs/api/util.html#utiltypesistypedarrayvalue)
+Resources: [Node.js](https://nodejs.org/api/util.html#utiltypesistypedarrayvalue) [underscore.js](https://underscorejs.org/docs/modules/isTypedArray.html)

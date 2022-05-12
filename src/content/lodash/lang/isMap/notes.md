@@ -1,0 +1,1 @@
+Checks if <code>value</code> is classified as a <code>Map</code> object.

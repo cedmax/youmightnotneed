@@ -74,7 +74,6 @@
 [\_.isEqualWith](https://lodash.com/docs/#isEqualWith)  
 [\_.isFunction](https://lodash.com/docs/#isFunction)  
 [\_.isLength](https://lodash.com/docs/#isLength)  
-[\_.isMap](https://lodash.com/docs/#isMap)  
 [\_.isMatch](https://lodash.com/docs/#isMatch)  
 [\_.isMatchWith](https://lodash.com/docs/#isMatchWith)  
 [\_.isNative](https://lodash.com/docs/#isNative)  
