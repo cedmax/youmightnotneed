@@ -15,4 +15,3 @@ const before = (times, fn) => {
 }
 
 module.exports = (times, fn) => before(times, fn)
-// => check the tests for more details
