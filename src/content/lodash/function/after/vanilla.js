@@ -11,4 +11,3 @@ const after = (times, fn) => {
 }
 
 module.exports = (times, fn) => after(times, fn)
-// => check the tests for more details
