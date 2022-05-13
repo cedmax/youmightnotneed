@@ -1,3 +1,3 @@
 Checks if <code>value</code> is an instance of <code>ArrayBuffer</code>.
 
-Resources: [Node.js documentation](https://nodejs.org/dist/latest-v16.x/docs/api/util.html#utiltypesisarraybuffervalue)
+Resources: [Node.js](https://nodejs.org/api/util.html#utiltypesisarraybuffervalue) [node-util](https://github.com/browserify/node-util/)
