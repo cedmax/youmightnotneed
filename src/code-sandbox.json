@@ -211,7 +211,7 @@
   "lodash/string/trimStart": "https://codesandbox.io/s/ikhew?previewwindow=tests&file=/string/trimStart/vanilla.js",
   "lodash/string/upperFirst": "https://codesandbox.io/s/jztw1?previewwindow=tests&file=/string/upperFirst/vanilla.js",
   "lodash/util/attempt": "https://codesandbox.io/s/k4049?previewwindow=tests&file=/util/attempt/vanilla.js",
-  "lodash/util/cond": "https://codesandbox.io/s/zflo5?previewwindow=tests&file=/util/cond/vanilla.js",
+  "lodash/util/cond": "https://codesandbox.io/s/9ccnpk?previewwindow=tests&file=/util/cond/vanilla.js",
   "lodash/util/constant": "https://codesandbox.io/s/97bs0?previewwindow=tests&file=/util/constant/vanilla.js",
   "lodash/util/defaultTo": "https://codesandbox.io/s/u1hhw?previewwindow=tests&file=/util/defaultTo/vanilla.js",
   "lodash/util/flow": "https://codesandbox.io/s/71hoj?previewwindow=tests&file=/util/flow/vanilla.js",
