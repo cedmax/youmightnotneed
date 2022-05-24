@@ -12,7 +12,9 @@ const readFolderList = path =>
 const getNestedFolders = (path, level) => {
   const list = readFolderList(path)
   if (level > 0) {
-    return list.map(item => getNestedFolders(`${path}/${item}`, --level)).flat()
+    return list
+      .map(item => getNestedFolders(`${path}/${item}`, level - 1))
+      .flat()
   } else {
     return list.map(item => `${path}/${item}`)
   }
@@ -26,7 +28,7 @@ const getNestedFolders = (path, level) => {
     ? process.argv
         .slice(2)
         .map(file => file.substring(0, file.lastIndexOf('/')))
-    : getNestedFolders(contentFolder, 3)
+    : getNestedFolders(contentFolder, 2)
 
   const newRefs = folders.reduce(
     (acc, path) => ({
