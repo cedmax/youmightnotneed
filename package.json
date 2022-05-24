@@ -7,14 +7,12 @@
   "scripts": {
     "new": "node modules/new",
     "contributors": "node modules/contributors",
-    "stage": "react-static build --staging",
     "serve": "serve dist -p 3000",
     "pretest": "eslint src modules",
     "test": "jest",
     "posttest": "codecov --disable=gcov",
-    "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start"
+    "start": "next dev",
+    "build": "next build && next export -o dist/"
   },
   "dependencies": {
     "axios": "0.27.2",
