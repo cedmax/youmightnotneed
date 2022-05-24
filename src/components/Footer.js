@@ -1,9 +1,8 @@
 import React from 'react'
-import footerContent from '../content/footer.md'
 import Content from './ContentBlock'
 
-export default () => (
+export default ({ footer }) => (
   <footer>
-    <Content dangerouslySetInnerHTML={{ __html: footerContent }} />
+    <Content dangerouslySetInnerHTML={{ __html: footer }} />
   </footer>
 )

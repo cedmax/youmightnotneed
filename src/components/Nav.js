@@ -1,11 +1,11 @@
 import React, { memo } from 'react'
-import { Link } from '@reach/router'
+import Link from 'next/link'
 
 export default memo(() => (
   <nav>
-    <Link to="/">You Might Not Need</Link>
-    <Link to="/lodash">lodash</Link>
-    <Link to="/date-fns">date-fns</Link>
-    <Link to="/css">css</Link>
+    <Link href="/">You Might Not Need</Link>
+    <Link href="/lodash">lodash</Link>
+    <Link href="/date-fns">date-fns</Link>
+    <Link href="/css">css</Link>
   </nav>
 ))

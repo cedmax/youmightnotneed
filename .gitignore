@@ -22,3 +22,5 @@ yarn-error.log*
 
 list.json
 .dccache
+out
+.next
