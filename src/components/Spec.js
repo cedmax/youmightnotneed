@@ -7,6 +7,7 @@ const Tests = styled.div`
   padding-bottom: 4em;
 
   code {
+    display: inline-block;
     padding: 15px;
     background: var(--custom-bk-code);
     border: 0;

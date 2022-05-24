@@ -10,6 +10,7 @@ const LineBlock = styled.div`
   margin: auto;
 
   code {
+    display: inline-block;
     padding: 15px;
     background: var(--custom-bk-code);
     border: 0;
