@@ -30,7 +30,7 @@ if (process.env.PULL_REQUEST) {
   ).replace('http://', 'https://')
 }
 
-const config = {
+const staticProps = {
   footer: requireMarkdown(path.resolve('src/content/footer.md')),
   index: {
     content: requireMarkdown(
@@ -66,6 +66,6 @@ const config = {
   },
 }
 
-export const getConfigProps = key => ({
-  props: { ...config[key], footer: config.footer },
+export const getStaticProps = key => ({
+  props: { ...staticProps[key], footer: staticProps.footer },
 })

@@ -3,9 +3,9 @@ import Page from '../components/Page'
 import ResponsiveVideo from '../components/ResponsiveVideo'
 
 export async function getStaticProps() {
-  const { getConfigProps } = require('../helpers/config')
+  const { getStaticProps } = require('../helpers/static-props')
 
-  return getConfigProps('css')
+  return getStaticProps('css')
 }
 
 export default props => (

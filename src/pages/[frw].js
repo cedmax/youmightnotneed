@@ -3,9 +3,9 @@ import Page from '../components/Page'
 import LibPage from '../components/LibPage'
 
 export async function getStaticProps({ params: { frw } }) {
-  const { getConfigProps } = require('../helpers/config')
+  const { getStaticProps } = require('../helpers/static-props')
 
-  return getConfigProps(frw)
+  return getStaticProps(frw)
 }
 
 export async function getStaticPaths() {
