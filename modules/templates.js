@@ -1,6 +1,5 @@
 exports.spec = (project, method) => {
   const prjToVariable = project.replace(/-(.)/g, '$1')
-
   return `const expected = null
 
 const ${prjToVariable} = require('./${project}')
