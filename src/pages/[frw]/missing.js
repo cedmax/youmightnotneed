@@ -2,8 +2,9 @@ import React from 'react'
 import Page from '../../components/Page'
 
 export async function getStaticProps({ params: { frw } }) {
-  const { config } = require('../../server/config')
-  return { props: { ...config[`${frw}/missing`], footer: config.footer } }
+  const { getConfigProps } = require('../helpers/config')
+
+  return getConfigProps(`${frw}/missing`)
 }
 
 export async function getStaticPaths() {

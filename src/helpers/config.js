@@ -2,7 +2,7 @@ import glob from 'glob'
 import fs from 'fs'
 import path from 'path'
 import requireMarkdownC from 'require-markdown'
-import mapImports from '../helpers/map-imports'
+import mapImports from './map-imports'
 
 const requireMarkdown = requireMarkdownC({
   typographer: true,
@@ -30,7 +30,7 @@ if (process.env.PULL_REQUEST) {
   ).replace('http://', 'https://')
 }
 
-export const config = {
+const config = {
   footer: requireMarkdown(path.resolve('src/content/footer.md')),
   index: {
     content: requireMarkdown(
@@ -65,3 +65,7 @@ export const config = {
     title: 'You Might Not Need Css',
   },
 }
+
+export const getConfigProps = key => ({
+  props: { ...config[key], footer: config.footer },
+})

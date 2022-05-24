@@ -2,11 +2,9 @@ import React from 'react'
 import Page from '../components/Page'
 
 export async function getStaticProps() {
-  const {
-    config: { index, footer },
-  } = require('../server/config')
+  const { getConfigProps } = require('../helpers/config')
 
-  return { props: { ...index, footer } }
+  return getConfigProps('index')
 }
 
 export default props => <Page {...props} />
