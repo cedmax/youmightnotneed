@@ -57,7 +57,6 @@
     ]
   },
   "jest": {
-    "coverageProvider": "v8",
     "coverageDirectory": "./coverage/",
     "collectCoverage": true,
     "collectCoverageFrom": [

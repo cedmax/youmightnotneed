@@ -24,15 +24,15 @@ exports.noMatch = func({ 'a': '1', 'b': '2' })
 // => 'no match'
 
 const multiArgCondition = cond([
-  [(x, y) => x > y, (x, y) => x - y],
+  [(x, y) => x > y, (x, y) => x - y * 2],
   [() => true, (x, y) => y - x],
 ])
 
 exports.fiveMinusZero = multiArgCondition(0, 5)
 // => (y - x) === (5 - 0) === 5
 
-exports.oneMinusZero = multiArgCondition(0, 1)
-// => (y - x) === (1 - 0) === 1
+exports.twoMinusOneByTwo = multiArgCondition(2, 1)
+// => (x - y * 2) === (2 - 2) === 0
 
 exports.twoMinusTwo = multiArgCondition(2, 2)
 // => (y - x) === (2 - 2) === 0
