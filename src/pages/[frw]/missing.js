@@ -2,7 +2,7 @@ import React from 'react'
 import Page from '../../components/Page'
 
 export async function getStaticProps({ params: { frw } }) {
-  const { getStaticProps } = require('../helpers/static-props')
+  const { getStaticProps } = require('../../helpers/static-props')
 
   return getStaticProps(`${frw}/missing`)
 }
