@@ -14,7 +14,6 @@
 [\_.pullAll](https://lodash.com/docs/#pullAll)  
 [\_.pullAllBy](https://lodash.com/docs/#pullAllBy)  
 [\_.pullAllWith](https://lodash.com/docs/#pullAllWith)  
-[\_.slice](https://lodash.com/docs/#slice)  
 [\_.sortedIndex](https://lodash.com/docs/#sortedIndex)  
 [\_.sortedIndexBy](https://lodash.com/docs/#sortedIndexBy)  
 [\_.sortedLastIndex](https://lodash.com/docs/#sortedLastIndex)  

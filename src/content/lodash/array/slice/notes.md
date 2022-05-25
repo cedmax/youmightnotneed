@@ -1,0 +1,1 @@
+Creates a slice of <code>array</code> from <code>start</code> up to, but not including, <code>end</code>.<br><br><strong>Note:</strong> This method is used instead of <a href="https://mdn.io/Array/slice"><code>Array#slice</code></a> to ensure dense arrays are returned.
