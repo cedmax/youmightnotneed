@@ -257,5 +257,7 @@
   "date-fns/00-generic/isPast": "https://codesandbox.io/s/pct43t?previewwindow=tests&file=/00-generic/isPast/vanilla.js",
   "date-fns/00-generic/isValid": "https://codesandbox.io/s/ytiq4m?previewwindow=tests&file=/00-generic/isValid/vanilla.js",
   "date-fns/00-generic/max": "https://codesandbox.io/s/qu3t56?previewwindow=tests&file=/00-generic/max/vanilla.js",
-  "date-fns/00-generic/min": "https://codesandbox.io/s/h5ekz9?previewwindow=tests&file=/00-generic/min/vanilla.js"
+  "date-fns/00-generic/min": "https://codesandbox.io/s/h5ekz9?previewwindow=tests&file=/00-generic/min/vanilla.js",
+  "lodash/array/slice": "https://codesandbox.io/s/swzxve?previewwindow=tests&file=/array/slice/vanilla.js",
+  "lodash/array/xor": "https://codesandbox.io/s/u59hmp?previewwindow=tests&file=/array/xor/vanilla.js"
 }
