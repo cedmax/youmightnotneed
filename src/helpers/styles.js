@@ -74,6 +74,7 @@ export const GlobalStyle = createGlobalStyle`
 
 export default styled.div`
   nav {
+    box-sizing: border-box;
     width: 100%;
     padding: 1rem;
 
