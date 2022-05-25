@@ -76,8 +76,8 @@
   "lodash/array/chunk": "https://codesandbox.io/s/t9j2k?previewwindow=tests&file=/array/chunk/vanilla.js",
   "lodash/array/compact": "https://codesandbox.io/s/nqx5k?previewwindow=tests&file=/array/compact/vanilla.js",
   "lodash/array/concat": "https://codesandbox.io/s/wzn0f?previewwindow=tests&file=/array/concat/vanilla.js",
-  "lodash/array/difference": "https://codesandbox.io/s/lv8l9?previewwindow=tests&file=/array/difference/vanilla.js",
-  "lodash/array/differenceBy": "https://codesandbox.io/s/8vigf?previewwindow=tests&file=/array/differenceBy/vanilla.js",
+  "lodash/array/difference": "https://codesandbox.io/s/eg1jyg?previewwindow=tests&file=/array/difference/vanilla.js",
+  "lodash/array/differenceBy": "https://codesandbox.io/s/lzufb2?previewwindow=tests&file=/array/differenceBy/vanilla.js",
   "lodash/array/drop": "https://codesandbox.io/s/nl553?previewwindow=tests&file=/array/drop/vanilla.js",
   "lodash/array/dropRight": "https://codesandbox.io/s/9o71b?previewwindow=tests&file=/array/dropRight/vanilla.js",
   "lodash/array/fill": "https://codesandbox.io/s/zpkl0?previewwindow=tests&file=/array/fill/vanilla.js",
@@ -257,5 +257,7 @@
   "date-fns/00-generic/isPast": "https://codesandbox.io/s/pct43t?previewwindow=tests&file=/00-generic/isPast/vanilla.js",
   "date-fns/00-generic/isValid": "https://codesandbox.io/s/ytiq4m?previewwindow=tests&file=/00-generic/isValid/vanilla.js",
   "date-fns/00-generic/max": "https://codesandbox.io/s/qu3t56?previewwindow=tests&file=/00-generic/max/vanilla.js",
-  "date-fns/00-generic/min": "https://codesandbox.io/s/h5ekz9?previewwindow=tests&file=/00-generic/min/vanilla.js"
+  "date-fns/00-generic/min": "https://codesandbox.io/s/h5ekz9?previewwindow=tests&file=/00-generic/min/vanilla.js",
+  "lodash/array/slice": "https://codesandbox.io/s/swzxve?previewwindow=tests&file=/array/slice/vanilla.js",
+  "lodash/array/xor": "https://codesandbox.io/s/349vb8?previewwindow=tests&file=/array/xor/vanilla.js"
 }
