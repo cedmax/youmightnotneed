@@ -1,4 +1,4 @@
-const expected = [1, 3]
+const expected = [1, 4, 3, 6]
 
 const lodash = require('./lodash')
 const plain = require('./vanilla')
