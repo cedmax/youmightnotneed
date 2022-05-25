@@ -8,7 +8,7 @@ const Content = styled.div`
   h1 {
     font-size: 2.6rem;
     strong {
-      font-size: 4.6rem;
+      font-size: clamp(3.9rem, -0.875rem + 8.333vw, 5.2rem);
       display: block;
     }
   }
