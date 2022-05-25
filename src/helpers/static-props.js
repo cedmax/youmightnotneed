@@ -67,5 +67,5 @@ const staticProps = {
 }
 
 export const getStaticProps = key => ({
-  props: { ...staticProps[key], footer: staticProps.footer },
+  props: { ...staticProps[key], footer: staticProps.footer, configKey: key },
 })

@@ -10,6 +10,7 @@ const Embed = styled.iframe`
 `
 
 export default ({ id }) => {
+  console.log(id)
   const url = codesandboxUrls[id]
   return (
     <Embed

@@ -23,6 +23,6 @@ export async function getStaticPaths() {
   }
 }
 
-export default ({ data, frw, ...props }) => (
-  <Page {...props}>{data && <LibPage data={data} frw={frw} />}</Page>
+export default ({ data, configKey, ...props }) => (
+  <Page {...props}>{data && <LibPage data={data} frw={configKey} />}</Page>
 )
