@@ -25,7 +25,6 @@
 [\_.unionWith](https://lodash.com/docs/#unionWith)  
 [\_.uniqWith](https://lodash.com/docs/#uniqWith)  
 [\_.unzipWith](https://lodash.com/docs/#unzipWith)  
-[\_.xor](https://lodash.com/docs/#xor)  
 [\_.xorBy](https://lodash.com/docs/#xorBy)  
 [\_.xorWith](https://lodash.com/docs/#xorWith)  
 [\_.zipObjectDeep](https://lodash.com/docs/#zipObjectDeep)  
