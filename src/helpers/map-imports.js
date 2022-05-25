@@ -12,7 +12,7 @@ const parse = object => {
     cache[area][method] = cache[area][method] || {}
 
     if (version === 'notes') {
-      const [description, resources] = object[file].split('Resources:')
+      const [description, resources] = object[file].split('<p>Resources:')
       cache[area][method].resources = resources
         ? `Resources:${resources}`
         : null
