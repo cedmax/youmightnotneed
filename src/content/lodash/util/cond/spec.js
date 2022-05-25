@@ -3,7 +3,7 @@ const expected = {
   matchesB: 'matches B',
   noMatch: 'no match',
   fiveMinusZero: 5,
-  oneMinusZero: 1,
+  twoMinusOneByTwo: 0,
   twoMinusTwo: 0,
 }
 

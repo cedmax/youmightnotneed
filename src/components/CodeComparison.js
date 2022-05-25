@@ -10,6 +10,7 @@ const LineBlock = styled.div`
   margin: auto;
 
   code {
+    display: block;
     padding: 15px;
     background: var(--custom-bk-code);
     border: 0;
@@ -70,10 +71,10 @@ const Link = ({ url }) => (
 const showTestStr = 'check the tests for more details'
 const ForceShowTestLink = memo(({ children, setForceShowTest }) => {
   const { children: code } = children.props.children.props
+  const onClick = useCallback(() => setForceShowTest(true), [setForceShowTest])
 
   if (code.includes(showTestStr)) {
     const splitCode = code.replace(`\n// => ${showTestStr}`, '')
-    const onClick = useCallback(() => setForceShowTest(true), [])
 
     return (
       <>
