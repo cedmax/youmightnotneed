@@ -1,4 +1,4 @@
-const expected = [1, 4, 3, 6]
+const expected = { unique: [1, 4, 3, 6], duplicates: [1, 3] }
 
 const lodash = require('./lodash')
 const plain = require('./vanilla')
