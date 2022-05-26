@@ -1,4 +1,5 @@
 const xor = (...arrays) => {
+  // this function can be used as a standalone xor if you only ever need it to work with two arguments
   const binaryXor = (arr1, arr2) => {
     const a = arr1.filter(x => !arr2.includes(x))
     const b = arr2.filter(x => !arr1.includes(x))
