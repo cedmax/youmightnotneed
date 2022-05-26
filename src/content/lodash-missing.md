@@ -48,11 +48,8 @@
 
 ### Function
 
-[\_.bindKey](https://lodash.com/docs/#bindKey)  
 [\_.defer](https://lodash.com/docs/#defer)  
 [\_.memoize](https://lodash.com/docs/#memoize)  
-[\_.rest](https://lodash.com/docs/#rest)  
-[\_.spread](https://lodash.com/docs/#spread)  
 [\_.throttle](https://lodash.com/docs/#throttle)
 
 ### Lang
