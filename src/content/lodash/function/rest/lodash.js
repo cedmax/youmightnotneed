@@ -1,5 +1,5 @@
 // https://lodash.com/docs/#rest
-import _, { rest } from 'lodash'
+import { rest } from 'lodash'
 
 const say = rest(
   (what, names) =>

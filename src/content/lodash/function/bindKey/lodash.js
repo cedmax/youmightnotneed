@@ -1,5 +1,5 @@
 // https://lodash.com/docs/#bindKey
-import _, { bindKey } from 'lodash'
+import { bindKey } from 'lodash'
 
 const object = {
   'user': 'fred',
