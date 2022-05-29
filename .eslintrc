@@ -1,5 +1,14 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "next/core-web-vitals"
+  ],
+  "env": {
+    "jest": true,
+    "es6": true
+  },
   "rules": {
     "react/display-name": 0,
     "import/no-anonymous-default-export": 0

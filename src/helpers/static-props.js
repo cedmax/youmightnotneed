@@ -22,8 +22,6 @@ const fetchContent = prj => {
   return mapImports(obj)
 }
 
-const envConfig = {}
-
 const staticProps = {
   footer: parseMarkdown('src/content/footer.md'),
   index: {
