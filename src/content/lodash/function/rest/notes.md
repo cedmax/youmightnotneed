@@ -1,0 +1,1 @@
+Creates a function that invokes <code>func</code> with the <code>this</code> binding of the created function and arguments from <code>start</code> and beyond provided as an array.<br><br><strong>Note:</strong> This method is based on the <a href="https://mdn.io/rest_parameters">rest parameter</a>.
