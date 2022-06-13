@@ -1,10 +1,19 @@
 const expected = {
   null: true,
-  true: true,
+  undef: true,
+  boolTrue: true,
+  boolFalse: true,
   number: true,
   array: false,
+  emptyArray: true,
   object: false,
-  map: true
+  emptyObject: true,
+  map: false,
+  emptyMap: true,
+  symbol: true,
+  string: false,
+  emptyString: true,
+  function: true
 }
 
 const lodash = require('./lodash')

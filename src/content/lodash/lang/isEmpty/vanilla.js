@@ -1,30 +1,55 @@
 const isEmpty = (v) =>
   v === null ||
   v === undefined ||
-  v === true ||
   v === '' ||
-  typeof v === 'number' ||
-  typeof v === 'symbol' ||
-  typeof v === 'function' ||
-  (v instanceof Map || v instanceof Set
-    ? v.size === 0
-    : (typeof v === 'object' && !Object.keys(v).length)
-  )
+  !(typeof v === 'object' || typeof v === 'string')
+    ? true
+    : (v instanceof Map || v instanceof Set)
+      ? v.size === 0
+      : (typeof v === 'object' && !Object.keys(v).length)
 
 exports.null = isEmpty(null)
 // => true
- 
-exports.true = isEmpty(true)
+
+exports.undef = isEmpty()
 // => true
- 
+
+exports.boolTrue = isEmpty(true)
+// => true
+
+exports.boolFalse = isEmpty(false)
+// => true
+
 exports.number = isEmpty(1)
 // => true
- 
+
 exports.array = isEmpty([1, 2, 3])
 // => false
- 
+
+exports.emptyArray = isEmpty([])
+// => true
+
 exports.object = isEmpty({ 'a': 1 })
 // => false
 
-exports.map = isEmpty(new Map())
+exports.emptyObject = isEmpty({})
 // => true
+
+exports.map = isEmpty(new Map([['a', 1]]))
+// => false
+
+exports.emptyMap = isEmpty(new Map())
+// => true
+
+exports.symbol = isEmpty(Symbol(''))
+// => true
+
+exports.string = isEmpty('foo')
+// => false
+
+exports.emptyString = isEmpty('')
+// => true
+
+exports.function = isEmpty(function () {})
+// => true
+
