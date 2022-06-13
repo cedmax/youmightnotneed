@@ -64,7 +64,6 @@
 [\_.isArrayLikeObject](https://lodash.com/docs/#isArrayLikeObject)  
 [\_.isBuffer](https://lodash.com/docs/#isBuffer)  
 [\_.isElement](https://lodash.com/docs/#isElement)  
-[\_.isEmpty](https://lodash.com/docs/#isEmpty)  
 [\_.isEqual](https://lodash.com/docs/#isEqual)  
 [\_.isEqualWith](https://lodash.com/docs/#isEqualWith)  
 [\_.isFunction](https://lodash.com/docs/#isFunction)  
