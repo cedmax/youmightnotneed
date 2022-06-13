@@ -43,5 +43,5 @@ exports.string = isEmpty('foo')
 exports.emptyString = isEmpty('')
 // => true
 
-exports.function = isEmpty(function () {})
+exports.function = isEmpty(function (a, b) { return a + b })
 // => true

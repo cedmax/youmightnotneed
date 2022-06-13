@@ -1,12 +1,12 @@
-const isEmpty = (v) =>
-  v === null ||
-  v === undefined ||
-  v === '' ||
-  !(typeof v === 'object' || typeof v === 'string')
-    ? true
-    : (v instanceof Map || v instanceof Set)
-      ? v.size === 0
-      : (typeof v === 'object' && !Object.keys(v).length)
+const isEmpty = (v) => {
+  if (v === null || v === undefined || v === '' || (typeof v !== 'object' && typeof v !== 'string')) {
+    return true
+  }
+  if (v instanceof Map || v instanceof Set) {
+    return v.size === 0
+  }
+  return (typeof v === 'object' && !Object.keys(v).length)
+}
 
 exports.null = isEmpty(null)
 // => true
@@ -50,6 +50,6 @@ exports.string = isEmpty('foo')
 exports.emptyString = isEmpty('')
 // => true
 
-exports.function = isEmpty(function () {})
+exports.function = isEmpty(function (a, b) { return a + b })
 // => true
 
