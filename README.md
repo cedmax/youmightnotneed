@@ -14,6 +14,8 @@ Please read [how to contribute](./src/content/how-to-contribute.md) if you want 
 <a href="https://github.com/sirLisko"><img src="https://avatars.githubusercontent.com/u/435399?v=4" title="sirLisko" width="80" height="80"></a>
 <a href="https://github.com/codedbypaul"><img src="https://avatars.githubusercontent.com/u/4680439?v=4" title="codedbypaul" width="80" height="80"></a>
 <a href="https://github.com/Adrian-Benavente"><img src="https://avatars.githubusercontent.com/u/11258517?v=4" title="Adrian-Benavente" width="80" height="80"></a>
+<a href="https://github.com/ajitfawade"><img src="https://avatars.githubusercontent.com/u/16475300?v=4" title="ajitfawade" width="80" height="80"></a>
+<a href="https://github.com/slimcandy"><img src="https://avatars.githubusercontent.com/u/91788772?v=4" title="slimcandy" width="80" height="80"></a>
 <a href="https://github.com/BrettMerri"><img src="https://avatars.githubusercontent.com/u/4353965?v=4" title="BrettMerri" width="80" height="80"></a>
 <a href="https://github.com/ColinRTaylor"><img src="https://avatars.githubusercontent.com/u/11527179?v=4" title="ColinRTaylor" width="80" height="80"></a>
 <a href="https://github.com/fgandellini"><img src="https://avatars.githubusercontent.com/u/971375?v=4" title="fgandellini" width="80" height="80"></a>
