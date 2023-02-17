@@ -89,7 +89,6 @@
 [eachWeekendOfMonth](https://date-fns.org/v2.13.0/docs/eachWeekendOfMonth)  
 [endOfMonth](https://date-fns.org/v2.13.0/docs/endOfMonth)  
 [getDaysInMonth](https://date-fns.org/v2.13.0/docs/getDaysInMonth)  
-[lastDayOfMonth](https://date-fns.org/v2.13.0/docs/lastDayOfMonth)  
 [startOfMonth](https://date-fns.org/v2.13.0/docs/startOfMonth)
 
 ## Quarter Helpers
