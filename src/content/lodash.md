@@ -2,7 +2,7 @@
 
 But **you should use Lodash**.
 
-It's a great library, well crafted, battle tested and with a very skilled and active community contributing. **The goal of this project is _NOT_ to provide drop in replacements**, but to show how achieve similar functionalities in plain Javascript, to understand how things work behind the hood.
+It's a great library, well crafted, battle tested and with a very skilled and active community contributing. **The goal of this project is _NOT_ to provide drop in replacements**, but to show how to achieve similar functionalities in plain Javascript, to understand how things work behind the hood.
 
 Being a learning platform, **some implementations have been simplified to make them more digestible, and they might miss edge cases** covered in the original version.
 
