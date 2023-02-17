@@ -1,0 +1,1 @@
+Get the last day of a month from date.
