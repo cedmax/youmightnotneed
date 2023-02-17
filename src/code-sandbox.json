@@ -61,7 +61,7 @@
   "date-fns/08-month/getMonth": "https://codesandbox.io/s/jqquk?previewwindow=tests&file=/08-month/getMonth/vanilla.js",
   "date-fns/08-month/isFirstDayOfMonth": "https://codesandbox.io/s/ltltp?previewwindow=tests&file=/08-month/isFirstDayOfMonth/vanilla.js",
   "date-fns/08-month/isLastDayOfMonth": "https://codesandbox.io/s/d9veq?previewwindow=tests&file=/08-month/isLastDayOfMonth/vanilla.js",
-  "date-fns/08-month/lastDayOfMonth": "https://codesandbox.io/s/date-fns-lastdayofmonth-eun1ls?previewwindow=tests&file=/00-generic/compareDesc/vanilla.js",
+  "date-fns/08-month/lastDayOfMonth": "https://codesandbox.io/s/mnvxk3?previewwindow=tests&file=/08-month/lastDayOfMonth/vanilla.js",
   "date-fns/08-month/isSameMonth": "https://codesandbox.io/s/04clz?previewwindow=tests&file=/08-month/isSameMonth/vanilla.js",
   "date-fns/08-month/isThisMonth": "https://codesandbox.io/s/4u126?previewwindow=tests&file=/08-month/isThisMonth/vanilla.js",
   "date-fns/08-month/setMonth": "https://codesandbox.io/s/jcvuk?previewwindow=tests&file=/08-month/setMonth/vanilla.js",
