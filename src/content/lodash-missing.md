@@ -67,7 +67,6 @@
 [\_.isEmpty](https://lodash.com/docs/#isEmpty)  
 [\_.isEqual](https://lodash.com/docs/#isEqual)  
 [\_.isEqualWith](https://lodash.com/docs/#isEqualWith)  
-[\_.isFunction](https://lodash.com/docs/#isFunction)  
 [\_.isLength](https://lodash.com/docs/#isLength)  
 [\_.isMatch](https://lodash.com/docs/#isMatch)  
 [\_.isMatchWith](https://lodash.com/docs/#isMatchWith)  
