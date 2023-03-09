@@ -1,0 +1,1 @@
+Converts <code>string</code> to <a href="https://en.wikipedia.org/wiki/Letter_case#Special_case_styles">kebab case</a>.
