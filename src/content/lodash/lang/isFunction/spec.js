@@ -3,6 +3,8 @@ const expected = {
   arrowFunc: true,
   class: true,
   reg: false,
+  eval: true,
+  new: true,
 }
 
 const lodash = require('./lodash')

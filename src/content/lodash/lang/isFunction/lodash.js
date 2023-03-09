@@ -12,3 +12,9 @@ exports.class = isFunction(class NotAFunction {})
 
 exports.reg = isFunction(/abc/)
 // => false
+
+exports.eval = isFunction(eval('() => {}'))
+// => true
+
+exports.new = isFunction(new Function('x', 'y', 'return x * y;'))
+// => true
