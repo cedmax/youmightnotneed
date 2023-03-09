@@ -15,6 +15,8 @@ exports.justTwo = 'a-b-c'.split('-').slice(0, 2)
 // the surrogate pairs.
 //
 // To avoid this issue, `Intl.Segmenter` API could be used
+//
+// Please note that it is not yet supported in Firefox
 exports.graphemes = Array.from(new Intl.Segmenter().segment('foo👨‍👨‍👧‍👦')).map(
   ({ segment }) => segment
 )
