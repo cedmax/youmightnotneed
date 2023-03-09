@@ -203,7 +203,7 @@
   "lodash/string/parseInt": "https://codesandbox.io/s/bg6rs?previewwindow=tests&file=/string/parseInt/vanilla.js",
   "lodash/string/repeat": "https://codesandbox.io/s/web8r?previewwindow=tests&file=/string/repeat/vanilla.js",
   "lodash/string/replace": "https://codesandbox.io/s/du7ru?previewwindow=tests&file=/string/replace/vanilla.js",
-  "lodash/string/split": "https://codesandbox.io/s/ddpcg?previewwindow=tests&file=/string/split/vanilla.js",
+  "lodash/string/split": "https://codesandbox.io/s/755myg?previewwindow=tests&file=/string/split/vanilla.js",
   "lodash/string/startsWith": "https://codesandbox.io/s/tpzvi?previewwindow=tests&file=/string/startsWith/vanilla.js",
   "lodash/string/toLower": "https://codesandbox.io/s/8h9zc?previewwindow=tests&file=/string/toLower/vanilla.js",
   "lodash/string/toUpper": "https://codesandbox.io/s/rbm0y?previewwindow=tests&file=/string/toUpper/vanilla.js",
