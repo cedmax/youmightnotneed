@@ -243,7 +243,7 @@
   "lodash/lang/isWeakMap": "https://codesandbox.io/s/8yoscd?previewwindow=tests&file=/lang/isWeakMap/vanilla.js",
   "lodash/lang/isWeakSet": "https://codesandbox.io/s/3humi7?previewwindow=tests&file=/lang/isWeakSet/vanilla.js",
   "lodash/lang/isArrayBuffer": "https://codesandbox.io/s/go55n6?previewwindow=tests&file=/lang/isArrayBuffer/vanilla.js",
-  "lodash/lang/isFunction": "https://codesandbox.io/s/5297dt?previewwindow=tests&file=/lang/isFunction/vanilla.js",
+  "lodash/lang/isFunction": "https://codesandbox.io/s/ipmfwq?previewwindow=tests&file=/lang/isFunction/vanilla.js",
   "lodash/lang/isMap": "https://codesandbox.io/s/yscj30?previewwindow=tests&file=/lang/isMap/vanilla.js",
   "date-fns/00-generic/closestIndexTo": "https://codesandbox.io/s/b434ye?previewwindow=tests&file=/00-generic/closestIndexTo/vanilla.js",
   "date-fns/00-generic/closestTo": "https://codesandbox.io/s/210e7f?previewwindow=tests&file=/00-generic/closestTo/vanilla.js",
