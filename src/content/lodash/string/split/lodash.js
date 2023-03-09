@@ -6,3 +6,6 @@ exports.all = split('a-b-c', '-')
 
 exports.justTwo = split('a-b-c', '-', 2)
 // => ['a', 'b']
+
+exports.graphemes = split('foo👨‍👨‍👧‍👦', '')
+// => ['f', 'o', 'o', '👨‍👨‍👧‍👦']
