@@ -1,6 +1,7 @@
 const expected = {
   all: ['a', 'b', 'c'],
   justTwo: ['a', 'b'],
+  graphemes: ['f', 'o', 'o', '👨‍👨‍👧‍👦'],
 }
 const lodash = require('./lodash')
 const plain = require('./vanilla')
