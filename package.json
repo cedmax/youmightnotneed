@@ -39,6 +39,7 @@
     "eslint-config-next": "^12.1.6",
     "eslint-config-prettier": "8.5.0",
     "eslint-config-react-tools": "1.1.7",
+    "fast-check": "^3.7.1",
     "glob": "8.0.3",
     "husky": "8.0.1",
     "inquirer": "8.2.4",

@@ -1,4 +1,4 @@
-const random = (lower = 0, upper = 1, floating) => {
+export const random = (lower = 0, upper = 0, floating) => {
   if (typeof upper === 'boolean') {
     floating = upper
     upper = 1
