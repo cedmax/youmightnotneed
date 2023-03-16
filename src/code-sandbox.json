@@ -263,5 +263,6 @@
   "lodash/array/xor": "https://codesandbox.io/s/bnf6zr?previewwindow=tests&file=/array/xor/vanilla.js",
   "lodash/function/bindKey": "https://codesandbox.io/s/nle1o9?previewwindow=tests&file=/function/bindKey/vanilla.js",
   "lodash/function/rest": "https://codesandbox.io/s/tvct0k?previewwindow=tests&file=/function/rest/vanilla.js",
-  "lodash/function/spread": "https://codesandbox.io/s/4lp6oj?previewwindow=tests&file=/function/spread/vanilla.js"
+  "lodash/function/spread": "https://codesandbox.io/s/4lp6oj?previewwindow=tests&file=/function/spread/vanilla.js",
+  "lodash/number/random": "https://codesandbox.io/s/jelh1d?previewwindow=tests&file=/number/random/vanilla.js"
 }
