@@ -1,7 +1,7 @@
 const isArrayLike = a =>
   typeof a !== 'function' &&
-  a.length >= 0 &&
-  a.length <= Number.MAX_SAFE_INTEGER
+  a?.length >= 0 &&
+  a?.length <= Number.MAX_SAFE_INTEGER
 
 exports.array = isArrayLike([1, 2, 3])
 // => true
