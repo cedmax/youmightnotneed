@@ -3,13 +3,12 @@ const deburr = str => str.normalize('NFD').replace(/\p{Diacritic}/gu, '')
 exports.simple = deburr('déjà vu')
 // 'deja vu'
 
-// String#normalize only supports a subset of
-// the _.deburr conversions. For more information
-// have a look at the documentation on MDN.
-// You might be fine with the out of the box support
-// but this implementation also covers adding a range
-// of extra characters (disclaimer: the list presented
-// here might not be comprehensive)
+// String#normalize only supports a subset of the _.deburr conversions.
+// For more information have a look at the documentation on MDN.
+// You might be fine with the out of the box support but this implementation
+// also covers adding a range of extra characters.
+//
+// DISCLAIMER: the list presented might not be comprehensive!
 
 const charMap = {
   'oe': 'œ',
