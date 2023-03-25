@@ -83,7 +83,7 @@
   "lodash/array/dropRight": "https://codesandbox.io/s/9o71b?previewwindow=tests&file=/array/dropRight/vanilla.js",
   "lodash/array/fill": "https://codesandbox.io/s/zpkl0?previewwindow=tests&file=/array/fill/vanilla.js",
   "lodash/array/findIndex": "https://codesandbox.io/s/5pd6u?previewwindow=tests&file=/array/findIndex/vanilla.js",
-  "lodash/array/findLastIndex": "https://codesandbox.io/s/06yhq?previewwindow=tests&file=/array/findLastIndex/vanilla.js",
+  "lodash/array/findLastIndex": "https://codesandbox.io/s/c9cqzn?previewwindow=tests&file=/array/findLastIndex/vanilla.js",
   "lodash/array/flatMap": "https://codesandbox.io/s/terrd?previewwindow=tests&file=/array/flatMap/vanilla.js",
   "lodash/array/flatten": "https://codesandbox.io/s/hkvzr?previewwindow=tests&file=/array/flatten/vanilla.js",
   "lodash/array/flattenDeep": "https://codesandbox.io/s/f18t6?previewwindow=tests&file=/array/flattenDeep/vanilla.js",
@@ -203,7 +203,7 @@
   "lodash/string/parseInt": "https://codesandbox.io/s/bg6rs?previewwindow=tests&file=/string/parseInt/vanilla.js",
   "lodash/string/repeat": "https://codesandbox.io/s/web8r?previewwindow=tests&file=/string/repeat/vanilla.js",
   "lodash/string/replace": "https://codesandbox.io/s/du7ru?previewwindow=tests&file=/string/replace/vanilla.js",
-  "lodash/string/split": "https://codesandbox.io/s/ddpcg?previewwindow=tests&file=/string/split/vanilla.js",
+  "lodash/string/split": "https://codesandbox.io/s/755myg?previewwindow=tests&file=/string/split/vanilla.js",
   "lodash/string/startsWith": "https://codesandbox.io/s/tpzvi?previewwindow=tests&file=/string/startsWith/vanilla.js",
   "lodash/string/toLower": "https://codesandbox.io/s/8h9zc?previewwindow=tests&file=/string/toLower/vanilla.js",
   "lodash/string/toUpper": "https://codesandbox.io/s/rbm0y?previewwindow=tests&file=/string/toUpper/vanilla.js",
@@ -264,5 +264,6 @@
   "lodash/function/bindKey": "https://codesandbox.io/s/nle1o9?previewwindow=tests&file=/function/bindKey/vanilla.js",
   "lodash/function/rest": "https://codesandbox.io/s/tvct0k?previewwindow=tests&file=/function/rest/vanilla.js",
   "lodash/function/spread": "https://codesandbox.io/s/4lp6oj?previewwindow=tests&file=/function/spread/vanilla.js",
-  "lodash/lang/isArrayLike": "https://codesandbox.io/s/1z23q1?previewwindow=tests&file=/lang/isArrayLike/vanilla.js"
+  "lodash/lang/isArrayLike": "https://codesandbox.io/s/1z23q1?previewwindow=tests&file=/lang/isArrayLike/vanilla.js",
+  "lodash/number/random": "https://codesandbox.io/s/1m9u5r?previewwindow=tests&file=/number/random/vanilla.js"
 }
