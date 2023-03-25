@@ -83,7 +83,7 @@
   "lodash/array/dropRight": "https://codesandbox.io/s/9o71b?previewwindow=tests&file=/array/dropRight/vanilla.js",
   "lodash/array/fill": "https://codesandbox.io/s/zpkl0?previewwindow=tests&file=/array/fill/vanilla.js",
   "lodash/array/findIndex": "https://codesandbox.io/s/5pd6u?previewwindow=tests&file=/array/findIndex/vanilla.js",
-  "lodash/array/findLastIndex": "https://codesandbox.io/s/06yhq?previewwindow=tests&file=/array/findLastIndex/vanilla.js",
+  "lodash/array/findLastIndex": "https://codesandbox.io/s/c9cqzn?previewwindow=tests&file=/array/findLastIndex/vanilla.js",
   "lodash/array/flatMap": "https://codesandbox.io/s/terrd?previewwindow=tests&file=/array/flatMap/vanilla.js",
   "lodash/array/flatten": "https://codesandbox.io/s/hkvzr?previewwindow=tests&file=/array/flatten/vanilla.js",
   "lodash/array/flattenDeep": "https://codesandbox.io/s/f18t6?previewwindow=tests&file=/array/flattenDeep/vanilla.js",
