@@ -43,8 +43,7 @@ const charMap = {
 const removeExtraChars = str =>
   Object.entries(charMap).reduce((str, [normalised, specialChar]) => {
     var re = new RegExp(specialChar, 'g')
-    str = str.replace(re, normalised)
-    return str
+    return str.replace(re, normalised)
   }, str)
 
 const extendedDeburr = str => removeExtraChars(deburr(str))
