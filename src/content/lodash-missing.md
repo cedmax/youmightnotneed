@@ -85,10 +85,6 @@
 [\_.toSafeInteger](https://lodash.com/docs/#toSafeInteger)  
 [\_.toString](https://lodash.com/docs/#toString)
 
-### Number
-
-[\_.random](https://lodash.com/docs/#random)
-
 ### Object
 
 [\_.assignIn](https://lodash.com/docs/#assignIn)  
