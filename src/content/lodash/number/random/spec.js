@@ -41,3 +41,10 @@ test('random()', () => {
   expect([0, 1]).toContain(lodash.integer)
   expect([0, 1]).toContain(plain.integer)
 })
+
+test('random(-1)', () => {
+  expect(lodash.negative).toBeLessThanOrEqual(0)
+  expect(plain.negative).toBeLessThanOrEqual(0)
+  expect([0, -1]).toContain(lodash.negative)
+  expect([0, -1]).toContain(plain.negative)
+})

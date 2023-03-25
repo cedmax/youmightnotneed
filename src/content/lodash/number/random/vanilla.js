@@ -1,7 +1,10 @@
-const random = (lower = 0, upper = 1, floating) => {
+const random = (lower = 0, upper, floating) => {
   if (typeof upper === 'boolean') {
     floating = upper
-    upper = 1
+  }
+
+  if (isNaN(upper)) {
+    upper = lower < 0 ? 0 : 1
   }
 
   if (typeof floating === 'undefined') {
@@ -26,3 +29,6 @@ exports.floating = random(1.2, 5.2)
 
 exports.integer = random()
 // => 0 or 1
+
+exports.negative = random(-1)
+// => -1 or 0

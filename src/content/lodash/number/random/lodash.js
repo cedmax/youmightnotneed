@@ -15,3 +15,6 @@ exports.floating = random(1.2, 5.2)
 
 exports.integer = random()
 // => 0 or 1
+
+exports.negative = random(-1)
+// => -1 or 0
