@@ -4,7 +4,9 @@ exports.simple = deburr('déjà vu')
 // 'deja vu'
 
 // String#normalize only supports a subset of the _.deburr conversions.
-// For more information have a look at the documentation on MDN.
+// For more information have a look at the documentation on MDN:
+// https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String/normalize
+//
 // You might be fine with the out of the box support but this implementation
 // also covers adding a range of extra characters.
 //
