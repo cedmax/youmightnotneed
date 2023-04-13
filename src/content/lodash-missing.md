@@ -125,7 +125,6 @@
 [\_.camelCase](https://lodash.com/docs/#camelCase)  
 [\_.deburr](https://lodash.com/docs/#deburr)  
 [\_.escapeRegExp](https://lodash.com/docs/#escapeRegExp)  
-[\_.kebabCase](https://lodash.com/docs/#kebabCase)  
 [\_.lowerCase](https://lodash.com/docs/#lowerCase)  
 [\_.snakeCase](https://lodash.com/docs/#snakeCase)  
 [\_.startCase](https://lodash.com/docs/#startCase)  
