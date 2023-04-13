@@ -1,20 +1,53 @@
 const kebabCase = str =>
-  str
-    // Add hypen before capital letters followed by lowercase letters
-    .replace(/[A-Z][a-z]/g, match => `-${match}`)
-    // Everything that is not alphanumeric with an hypen
-    .replace(/[^A-Za-z0-9]/g, '-')
-    // Replace consecutive hyphens with a single hyphen
-    .replace(/-{2,}/g, '-')
-    // Remove hyphen from start and end of the string
-    .replace(/(^-|-$)/g, '')
-    .toLowerCase()
+    (String(str ?? "").match(/([0-9]+|([A-Z][a-z]+)|[a-z]+|([A-Z]+)(?![a-z]))/g) ?? [""])
+        .map((x) => x.toLowerCase())
+        .join("-");
 
-exports.first = kebabCase('Foo Bar')
+module.exports.fooSpaceBar = kebabCase('Foo Bar');
 // => 'foo-bar'
-
-exports.second = kebabCase('fooBar')
+module.exports.fooBar = kebabCase('fooBar');
 // => 'foo-bar'
-
-exports.third = kebabCase('__FOO_BAR__')
+module.exports.foo_bar =  kebabCase('__FOO_BAR__');
 // => 'foo-bar'
+module.exports.varFooBar =  kebabCase("FooBar");
+// => 'foo-bar'
+module.exports.varNull =  kebabCase(null);
+// => ''
+module.exports.varAlllowercase =  kebabCase('alllowercase');
+// => 'alllowercase'
+module.exports.varAllcapitalletters =  kebabCase('ALLCAPITALLETTERS');
+// => 'allcapitalletters'
+module.exports.varEmpty =  kebabCase('');
+// => ""
+module.exports.varFalse =  kebabCase(false);
+// => "false"
+module.exports.varUndefined =  kebabCase(undefined);
+// => ""
+module.exports.varZero =  kebabCase(0);
+// => "0"
+module.exports.varCamelCase =  kebabCase("camelCase");
+// => "camel-case"
+module.exports.varOneUpperCase =  kebabCase("A");
+// => "a"
+module.exports.varOnelowerCase =  kebabCase("b");
+// => "b"
+module.exports.varNumber =  kebabCase("1");
+// => "1"
+module.exports.varNotAlpha1 =  kebabCase("?");
+// => ""
+module.exports.varNotAlpha2 =  kebabCase("-");
+// => ""
+module.exports.CustomXMLParser =  kebabCase("CustomXMLParser");
+// => "custom-xml-parser"
+module.exports.APIFinder =  kebabCase("APIFinder");
+// => "api-finder"
+module.exports.JSONResponseData =  kebabCase("JSONResponseData");
+// => "json-response-data"
+module.exports.Person20Address =  kebabCase("Person20Address");
+// => "person-20-address"
+module.exports.UserAPI20Endpoint =  kebabCase("UserAPI20Endpoint");
+// => "user-api-20-endpoint"
+module.exports.var20abcDe =  kebabCase("20abcDe");
+// => "20-abc-de"
+module.exports.var30fghIJ =  kebabCase("30fghIJ");
+// => "30-fgh-ij"
