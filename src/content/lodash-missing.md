@@ -10,7 +10,6 @@
 [\_.dropRightWhile](https://lodash.com/docs/#dropRightWhile)  
 [\_.dropWhile](https://lodash.com/docs/#dropWhile)  
 [\_.intersectionWith](https://lodash.com/docs/#intersectionWith)  
-[\_.pull](https://lodash.com/docs/#pull)  
 [\_.pullAll](https://lodash.com/docs/#pullAll)  
 [\_.pullAllBy](https://lodash.com/docs/#pullAllBy)  
 [\_.pullAllWith](https://lodash.com/docs/#pullAllWith)  
@@ -75,7 +74,6 @@
 [\_.isNumber](https://lodash.com/docs/#isNumber)  
 [\_.isObjectLike](https://lodash.com/docs/#isObjectLike)  
 [\_.isPlainObject](https://lodash.com/docs/#isPlainObject)  
-[\_.isSafeInteger](https://lodash.com/docs/#isSafeInteger)  
 [\_.toArray](https://lodash.com/docs/#toArray)  
 [\_.toFinite](https://lodash.com/docs/#toFinite)  
 [\_.toInteger](https://lodash.com/docs/#toInteger)  
@@ -120,7 +118,6 @@
 
 [\_.camelCase](https://lodash.com/docs/#camelCase)  
 [\_.escapeRegExp](https://lodash.com/docs/#escapeRegExp)  
-[\_.kebabCase](https://lodash.com/docs/#kebabCase)  
 [\_.lowerCase](https://lodash.com/docs/#lowerCase)  
 [\_.snakeCase](https://lodash.com/docs/#snakeCase)  
 [\_.startCase](https://lodash.com/docs/#startCase)  
