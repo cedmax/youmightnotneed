@@ -119,7 +119,6 @@
 ### String
 
 [\_.camelCase](https://lodash.com/docs/#camelCase)  
-[\_.deburr](https://lodash.com/docs/#deburr)  
 [\_.escapeRegExp](https://lodash.com/docs/#escapeRegExp)  
 [\_.lowerCase](https://lodash.com/docs/#lowerCase)  
 [\_.snakeCase](https://lodash.com/docs/#snakeCase)  
