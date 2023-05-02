@@ -74,7 +74,6 @@
 [\_.isNumber](https://lodash.com/docs/#isNumber)  
 [\_.isObjectLike](https://lodash.com/docs/#isObjectLike)  
 [\_.isPlainObject](https://lodash.com/docs/#isPlainObject)  
-[\_.isSafeInteger](https://lodash.com/docs/#isSafeInteger)  
 [\_.toArray](https://lodash.com/docs/#toArray)  
 [\_.toFinite](https://lodash.com/docs/#toFinite)  
 [\_.toInteger](https://lodash.com/docs/#toInteger)  
