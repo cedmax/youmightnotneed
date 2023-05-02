@@ -10,7 +10,6 @@
 [\_.dropRightWhile](https://lodash.com/docs/#dropRightWhile)  
 [\_.dropWhile](https://lodash.com/docs/#dropWhile)  
 [\_.intersectionWith](https://lodash.com/docs/#intersectionWith)  
-[\_.pull](https://lodash.com/docs/#pull)  
 [\_.pullAll](https://lodash.com/docs/#pullAll)  
 [\_.pullAllBy](https://lodash.com/docs/#pullAllBy)  
 [\_.pullAllWith](https://lodash.com/docs/#pullAllWith)  
