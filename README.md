@@ -32,3 +32,4 @@ Please read [how to contribute](./src/content/how-to-contribute.md) if you want 
 <a href="https://github.com/haykam821"><img src="https://avatars.githubusercontent.com/u/24855774?v=4" title="haykam821" width="80" height="80"></a>
 
 [//]: contributor-faces
+<a href="https://github.com/doydoy44"><img src="https://avatars.githubusercontent.com/u/6697165?v=4" title="doydoy44" width="80" height="80"></a>
