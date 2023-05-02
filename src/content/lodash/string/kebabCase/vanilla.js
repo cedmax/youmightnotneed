@@ -1,20 +1,53 @@
 const kebabCase = str =>
-  str
-    // Add hypen before capital letters followed by lowercase letters
-    .replace(/[A-Z][a-z]/g, match => `-${match}`)
-    // Everything that is not alphanumeric with an hypen
-    .replace(/[^A-Za-z0-9]/g, '-')
-    // Replace consecutive hyphens with a single hyphen
-    .replace(/-{2,}/g, '-')
-    // Remove hyphen from start and end of the string
-    .replace(/(^-|-$)/g, '')
-    .toLowerCase()
+    (String(str ?? "").match(/([0-9]+|([A-Z][a-z]+)|[a-z]+|([A-Z]+)(?![a-z]))/g) ?? [""])
+        .map((x) => x.toLowerCase())
+        .join("-");
 
-exports.first = kebabCase('Foo Bar')
+exports.fooSpaceBar = kebabCase('Foo Bar');
 // => 'foo-bar'
-
-exports.second = kebabCase('fooBar')
+exports.fooBar = kebabCase('fooBar');
 // => 'foo-bar'
-
-exports.third = kebabCase('__FOO_BAR__')
+exports.foo_bar =  kebabCase('__FOO_BAR__');
 // => 'foo-bar'
+exports.varFooBar =  kebabCase("FooBar");
+// => 'foo-bar'
+exports.varNull =  kebabCase(null);
+// => ''
+exports.varAlllowercase =  kebabCase('alllowercase');
+// => 'alllowercase'
+exports.varAllcapitalletters =  kebabCase('ALLCAPITALLETTERS');
+// => 'allcapitalletters'
+exports.varEmpty =  kebabCase('');
+// => ""
+exports.varFalse =  kebabCase(false);
+// => "false"
+exports.varUndefined =  kebabCase(undefined);
+// => ""
+exports.varZero =  kebabCase(0);
+// => "0"
+exports.varCamelCase =  kebabCase("camelCase");
+// => "camel-case"
+exports.varOneUpperCase =  kebabCase("A");
+// => "a"
+exports.varOnelowerCase =  kebabCase("b");
+// => "b"
+exports.varNumber =  kebabCase("1");
+// => "1"
+exports.varNotAlpha1 =  kebabCase("?");
+// => ""
+exports.varNotAlpha2 =  kebabCase("-");
+// => ""
+exports.CustomXMLParser =  kebabCase("Custom*XML*Parser");
+// => "custom-xml-parser"
+exports.APIFinder =  kebabCase("APIFinder");
+// => "api-finder"
+exports.JSONResponseData =  kebabCase("JSONResponseData");
+// => "json-response-data"
+exports.Person20Address =  kebabCase("Person20Address");
+// => "person-20-address"
+exports.UserAPI20Endpoint =  kebabCase("UserAPI20Endpoint");
+// => "user-api-20-endpoint"
+exports.var20abcDe =  kebabCase("20abcDe");
+// => "20-abc-de"
+exports.var30fghIJ =  kebabCase("30fghIJ");
+// => "30-fgh-ij"
