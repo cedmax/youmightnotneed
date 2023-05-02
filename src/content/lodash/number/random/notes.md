@@ -1,0 +1,3 @@
+Produces a random number between the inclusive <code>lower</code> and <code>upper</code> bounds. If only one argument is provided a number between <code>0</code> and the given number is returned. If <code>floating</code> is <code>true</code>, or either <code>lower</code> or <code>upper</code> are floats, a floating-point number is returned instead of an integer.<br><br><strong>Note:</strong> JavaScript follows the IEEE-754 standard for resolving floating-point values which can produce unexpected results.
+
+Resources: [Number.isInteger](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger) [isNaN](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/isNaN)
