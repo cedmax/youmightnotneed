@@ -60,7 +60,7 @@ export const getStaticProps = key => {
   const siteRoot =
     process.env.PULL_REQUEST === 'true'
       ? process.env.DEPLOY_PRIME_URL
-      : process.env.URL.replace('http://', 'https://')
+      : (process.env.URL || '').replace('http://', 'https://')
 
   return {
     props: {
