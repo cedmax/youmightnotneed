@@ -1,4 +1,5 @@
 import React, { Fragment, useCallback, useState, memo, useEffect } from 'react'
+import ScrollToTop from 'react-scroll-up'
 import styled from 'styled-components'
 import Content from './ContentBlock'
 import AnchoredBlock from './AnchoredBlock'
@@ -90,6 +91,12 @@ export default memo(({ data: initialData, frw }) => {
           </AnchoredBlock>
         </Row>
       ))}
+
+      <ScrollToTop style={{ fontSize: 26, bottom: 30 }} showUnder={160}>
+        <span role="img" aria-label="Go To Top">
+          🔝
+        </span>
+      </ScrollToTop>
       <Modal id={embed} close={closeModal} />
     </Fragment>
   )
