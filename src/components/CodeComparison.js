@@ -104,9 +104,24 @@ const Variant = memo(
       <Heading hierarchy="4">
         {variant}
         {variant == 'plain js' ? (
-          <button className="button button-clear" onClick={() => openModal(id)}>
-            see on codesandbox.io
-          </button>
+          <>
+            <button
+              className="button button-clear"
+              onClick={() => openModal(id)}
+            >
+              codesandbox.io
+            </button>
+            <a
+              href={`https://www.phind.com/search?q=${encodeURIComponent(
+                methodData[variant]
+              )}`}
+              title="Take with a pinch of salt"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <button className="button button-clear">AI explanation</button>
+            </a>
+          </>
         ) : (
           ''
         )}
