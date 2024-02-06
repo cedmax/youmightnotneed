@@ -5,4 +5,5 @@ module.exports = {
   eslint: {
     dirs: ['src', 'modules'],
   },
+  output: 'export',
 }

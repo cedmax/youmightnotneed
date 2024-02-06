@@ -12,14 +12,14 @@
     "test": "jest",
     "posttest": "codecov --disable=gcov",
     "start": "next dev",
-    "build": "next build && next export -o dist/"
+    "build": "next build"
   },
   "dependencies": {
     "axios": "0.27.2",
     "date-fns": "2.28.0",
     "is-mobile": "^3.1.1",
     "lodash": "4.17.21",
-    "next": "^12.1.6",
+    "next": "^14.1.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-highlight": "0.12.0",

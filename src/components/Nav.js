@@ -7,23 +7,26 @@ export default memo(() => {
 
   return (
     <nav>
-      <Link href="/">
-        <a aria-current={router.asPath == '/' ? 'page' : undefined}>
-          You Might Not Need
-        </a>
+      <Link href="/" aria-current={router.asPath == '/' ? 'page' : undefined}>
+        You Might Not Need
       </Link>
-      <Link href="/lodash">
-        <a aria-current={router.asPath == '/lodash' ? 'page' : undefined}>
-          lodash
-        </a>
+      <Link
+        href="/lodash"
+        aria-current={router.asPath == '/lodash' ? 'page' : undefined}
+      >
+        lodash
       </Link>
-      <Link href="/date-fns">
-        <a aria-current={router.asPath == '/date-fns' ? 'page' : undefined}>
-          date-fns
-        </a>
+      <Link
+        href="/date-fns"
+        aria-current={router.asPath == '/date-fns' ? 'page' : undefined}
+      >
+        date-fns
       </Link>
-      <Link href="/css">
-        <a aria-current={router.asPath == '/css' ? 'page' : undefined}>css</a>
+      <Link
+        href="/css"
+        aria-current={router.asPath == '/css' ? 'page' : undefined}
+      >
+        css
       </Link>
     </nav>
   )
