@@ -26,14 +26,11 @@
 
 ## Interval Helpers
 
-[areIntervalsOverlapping](https://date-fns.org/v3.5.0/docs/areIntervalsOverlapping)  
-[eachDayOfInterval](https://date-fns.org/v3.5.0/docs/eachDayOfInterval)  
 [eachMonthOfInterval](https://date-fns.org/v3.5.0/docs/eachMonthOfInterval)  
 [eachWeekOfInterval](https://date-fns.org/v3.5.0/docs/eachWeekOfInterval)  
 [eachWeekendOfInterval](https://date-fns.org/v3.5.0/docs/eachWeekendOfInterval)  
 [eachYearOfInterval](https://date-fns.org/v3.5.0/docs/eachYearOfInterval)  
 [getOverlappingDaysInIntervals](https://date-fns.org/v3.5.0/docs/getOverlappingDaysInIntervals)
-[isWithinInterval](https://date-fns.org/v3.5.0/docs/isWithinInterval)
 
 ## Day Helpers
 
