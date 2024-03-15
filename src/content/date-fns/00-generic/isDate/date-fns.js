@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/isDate
-const isDate = require('date-fns/isDate')
+// https://date-fns.org/v3.5.0/docs/isDate
+import { isDate } from 'date-fns'
 
 // For a valid date:
 exports.valid = isDate(new Date())

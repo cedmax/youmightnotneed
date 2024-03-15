@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/isThisSecond
-const isThisSecond = require('date-fns/isThisSecond')
+// https://date-fns.org/v3.5.0/docs/isThisSecond
+import { isThisSecond } from 'date-fns'
 
 // If now is 25 September 2014 18:30:15.500,
 // is 25 September 2014 18:30:15.000 in this second?

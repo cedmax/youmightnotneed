@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/addWeeks
-const addWeeks = require('date-fns/addWeeks')
+// https://date-fns.org/v3.5.0/docs/addWeeks
+import { addWeeks } from 'date-fns'
 
 // Add 4 weeks to 1 September 2014:
 module.exports = addWeeks(new Date(2014, 8, 1), 4)

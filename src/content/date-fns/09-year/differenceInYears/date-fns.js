@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/differenceInYears
-const differenceInYears = require('date-fns/differenceInYears')
+// https://date-fns.org/v3.5.0/docs/differenceInYears
+import { differenceInYears } from 'date-fns'
 
 // How many full years are between 31 December 2013 and 11 February 2015?
 module.exports = differenceInYears(

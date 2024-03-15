@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/differenceInMinutes
-const differenceInMinutes = require('date-fns/differenceInMinutes')
+// https://date-fns.org/v3.5.0/docs/differenceInMinutes
+import { differenceInMinutes } from 'date-fns'
 
 // How many minutes are between 2 July 2014 12:07:59 and 2 July 2014 12:20:00?
 exports.positive = differenceInMinutes(

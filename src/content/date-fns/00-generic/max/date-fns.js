@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/max
-const max = require('date-fns/max')
+// https://date-fns.org/v3.5.0/docs/max
+import { max } from 'date-fns'
 
 // Which of these dates is the latest?
 module.exports = max([

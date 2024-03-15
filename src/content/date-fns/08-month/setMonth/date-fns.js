@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/setMonth
-const setMonth = require('date-fns/setMonth')
+// https://date-fns.org/v3.5.0/docs/setMonth
+import { setMonth } from 'date-fns'
 
 // Set February to 1 September 2014:
 module.exports = setMonth(new Date(2014, 8, 1), 1)

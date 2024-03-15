@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/compareAsc
-const compareAsc = require('date-fns/compareAsc')
+// https://date-fns.org/v3.5.0/docs/compareAsc
+import { compareAsc } from 'date-fns'
 
 // Compare 11 February 1987 and 11 February 1987:
 exports.equal = compareAsc(new Date(1987, 1, 11), new Date(1987, 1, 11))

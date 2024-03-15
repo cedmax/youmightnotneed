@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/differenceInDays
-const differenceInDays = require('date-fns/differenceInDays')
+// https://date-fns.org/v3.5.0/docs/differenceInDays
+import { differenceInDays } from 'date-fns'
 
 // How many full days are between
 // 2 July 2011 23:00:00 and 2 July 2012 00:00:00?

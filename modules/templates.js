@@ -24,8 +24,8 @@ module.exports = ${method}()
 exports['date-fns'] = (
   method,
   example
-) => `// https://date-fns.org/v2.13.0/docs/${method}
-const ${method} = require('date-fns/${method}')
+) => `// https://date-fns.org/v3.5.0/docs/${method}
+import { ${method} } from 'date-fns'
 
 ${example || ''}
 `

@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/isExists
-const isExists = require('date-fns/isExists')
+// https://date-fns.org/v3.5.0/docs/isExists
+import { isExists } from 'date-fns'
 
 // For the valid date:
 exports.valid = isExists(2018, 0, 31)
