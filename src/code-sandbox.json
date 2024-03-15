@@ -270,5 +270,6 @@
   "lodash/lang/isMatch": "https://codesandbox.io/s/rt6l0y?previewwindow=tests&file=/lang/isMatch/vanilla.js",
   "lodash/lang/isSafeInteger": "https://codesandbox.io/s/qnjwlo?previewwindow=tests&file=/lang/isSafeInteger/vanilla.js",
   "lodash/string/deburr": "https://codesandbox.io/s/eimm97?previewwindow=tests&file=/string/deburr/vanilla.js",
-  "lodash/number/random": "https://codesandbox.io/s/1m9u5r?previewwindow=tests&file=/number/random/vanilla.js"
+  "lodash/number/random": "https://codesandbox.io/s/1m9u5r?previewwindow=tests&file=/number/random/vanilla.js",
+  "date-fns/01-interval/eachDayOfInterval": "https://codesandbox.io/s/gv4w2v?previewwindow=tests&file=/01-interval/eachDayOfInterval/vanilla.js"
 }
