@@ -65,7 +65,7 @@
     "collectCoverageFrom": [
       "./src/content/**/*.js"
     ],
-    "testEnvironment": "./FixJSDOMEnvironment.js",
+    "testEnvironment": "jsdom",
     "setupFiles": [
       "./jest.setup.js"
     ],
