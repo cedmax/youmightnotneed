@@ -272,6 +272,6 @@
   "lodash/string/deburr": "https://codesandbox.io/s/eimm97?previewwindow=tests&file=/string/deburr/vanilla.js",
   "lodash/number/random": "https://codesandbox.io/s/1m9u5r?previewwindow=tests&file=/number/random/vanilla.js",
   "date-fns/01-interval/eachDayOfInterval": "https://codesandbox.io/s/gv4w2v?previewwindow=tests&file=/01-interval/eachDayOfInterval/vanilla.js",
-  "lodash/lang/cloneDeep": "https://codesandbox.io/s/vqhjt7?previewwindow=tests&file=/lang/cloneDeep/vanilla.js",
+  "lodash/lang/cloneDeep": "https://codesandbox.io/s/ltc9ky?previewwindow=tests&file=/lang/cloneDeep/vanilla.js",
   "lodash/lang/isEmpty": "https://codesandbox.io/s/8yv474?previewwindow=tests&file=/lang/isEmpty/vanilla.js"
 }
