@@ -1,7 +1,5 @@
 const isEmpty = obj =>
-  [Object, Array].includes((obj || {}).constructor)
-    ? !Object.entries(obj || {}).length
-    : !obj.length && !obj.size
+  !Object.entries(obj || {}).length && !obj?.length && !obj?.size
 
 exports.null = isEmpty(null)
 // => true
