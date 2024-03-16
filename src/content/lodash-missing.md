@@ -54,7 +54,6 @@
 ### Lang
 
 [\_.clone](https://lodash.com/docs/#clone)  
-[\_.cloneDeep](https://lodash.com/docs/#cloneDeep)  
 [\_.cloneDeepWith](https://lodash.com/docs/#cloneDeepWith)  
 [\_.cloneWith](https://lodash.com/docs/#cloneWith)  
 [\_.eq](https://lodash.com/docs/.eq)  
@@ -63,7 +62,6 @@
 [\_.isArrayLikeObject](https://lodash.com/docs/#isArrayLikeObject)  
 [\_.isBuffer](https://lodash.com/docs/#isBuffer)  
 [\_.isElement](https://lodash.com/docs/#isElement)  
-[\_.isEmpty](https://lodash.com/docs/#isEmpty)  
 [\_.isEqual](https://lodash.com/docs/#isEqual)  
 [\_.isEqualWith](https://lodash.com/docs/#isEqualWith)  
 [\_.isFunction](https://lodash.com/docs/#isFunction)  
