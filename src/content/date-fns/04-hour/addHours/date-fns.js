@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/addHours
-const addHours = require('date-fns/addHours')
+// https://date-fns.org/v3.5.0/docs/addHours
+import { addHours } from 'date-fns'
 
 // Add 2 hours to 10 July 2014 23:00:00:
 module.exports = addHours(new Date(2014, 6, 10, 23, 0), 2)

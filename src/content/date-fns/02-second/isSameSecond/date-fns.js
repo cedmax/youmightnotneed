@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/isSameSecond
-const isSameSecond = require('date-fns/isSameSecond')
+// https://date-fns.org/v3.5.0/docs/isSameSecond
+import { isSameSecond } from 'date-fns'
 
 // Are 4 September 2014 06:30:15.000 and 4 September 2014 06:30.15.500
 // in the same second?

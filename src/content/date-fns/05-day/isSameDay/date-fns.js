@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/isSameDay
-const isSameDay = require('date-fns/isSameDay')
+// https://date-fns.org/v3.5.0/docs/isSameDay
+import { isSameDay } from 'date-fns'
 
 // Are 4 September 06:00:00 and 4 September 18:00:00 in the same day?
 module.exports = isSameDay(

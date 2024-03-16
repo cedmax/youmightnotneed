@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/endOfHour
-const endOfHour = require('date-fns/endOfHour')
+// https://date-fns.org/v3.5.0/docs/endOfHour
+import { endOfHour } from 'date-fns'
 
 // The end of an hour for 2 September 2014 11:55:00:
 module.exports = endOfHour(new Date(2014, 8, 2, 11, 55))

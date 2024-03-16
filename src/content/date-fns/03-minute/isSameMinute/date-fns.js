@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/isSameMinute
-const isSameMinute = require('date-fns/isSameMinute')
+// https://date-fns.org/v3.5.0/docs/isSameMinute
+import { isSameMinute } from 'date-fns'
 
 // Are 4 September 2014 06:30:00 and 4 September 2014 06:30:15
 // in the same minute?

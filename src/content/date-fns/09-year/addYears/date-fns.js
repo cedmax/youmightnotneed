@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/addYears
-const addYears = require('date-fns/addYears')
+// https://date-fns.org/v3.5.0/docs/addYears
+import { addYears } from 'date-fns'
 
 // Add 5 years to 1 September 2014:
 module.exports = addYears(new Date(2014, 8, 1), 5)

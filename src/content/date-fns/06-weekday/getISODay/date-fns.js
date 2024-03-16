@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/getISODay
-const getISODay = require('date-fns/getISODay')
+// https://date-fns.org/v3.5.0/docs/getISODay
+import { getISODay } from 'date-fns'
 
 // Which day of the week is 29 February 2012?
 exports.day = getISODay(new Date(2012, 1, 29))

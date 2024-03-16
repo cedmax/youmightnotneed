@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/setYear
-const setYear = require('date-fns/setYear')
+// https://date-fns.org/v3.5.0/docs/setYear
+import { setYear } from 'date-fns'
 
 // Set year 2013 to 1 September 2014:
 module.exports = setYear(new Date(2014, 8, 1), 2013)

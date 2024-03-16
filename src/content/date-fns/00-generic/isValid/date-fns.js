@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/isValid
-const isValid = require('date-fns/isValid')
+// https://date-fns.org/v3.5.0/docs/isValid
+import { isValid } from 'date-fns'
 
 // For the valid date:
 exports.valid = isValid(new Date(2014, 1, 31))

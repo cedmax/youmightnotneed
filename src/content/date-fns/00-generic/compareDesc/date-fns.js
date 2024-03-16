@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/compareDesc
-const compareDesc = require('date-fns/compareDesc')
+// https://date-fns.org/v3.5.0/docs/compareDesc
+import { compareDesc } from 'date-fns'
 
 // Compare 11 February 1987 and 11 February 1987:
 exports.equal = compareDesc(new Date(1987, 1, 11), new Date(1987, 1, 11))

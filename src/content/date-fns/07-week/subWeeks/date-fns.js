@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/subWeeks
-const subWeeks = require('date-fns/subWeeks')
+// https://date-fns.org/v3.5.0/docs/subWeeks
+import { subWeeks } from 'date-fns'
 
 // Subtract 4 weeks from 1 September 2014:
 module.exports = subWeeks(new Date(2014, 8, 1), 4)

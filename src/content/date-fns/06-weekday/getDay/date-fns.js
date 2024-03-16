@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/getDay
-const getDay = require('date-fns/getDay')
+// https://date-fns.org/v3.5.0/docs/getDay
+import { getDay } from 'date-fns'
 
 // Which day of the week is 29 February 2012?
 exports.randomday = getDay(new Date(2012, 1, 29))

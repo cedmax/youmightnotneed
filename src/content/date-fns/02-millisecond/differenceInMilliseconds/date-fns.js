@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/differenceInMilliseconds
-const differenceInMilliseconds = require('date-fns/differenceInMilliseconds')
+// https://date-fns.org/v3.5.0/docs/differenceInMilliseconds
+import { differenceInMilliseconds } from 'date-fns'
 
 // How many milliseconds are between
 // 2 July 2014 12:30:20.600 and 2 July 2014 12:30:21.700?

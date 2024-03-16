@@ -1,5 +1,5 @@
-// https://date-fns.org/v2.13.0/docs/min
-const min = require('date-fns/min')
+// https://date-fns.org/v3.5.0/docs/min
+import { min } from 'date-fns'
 
 // Which of these dates is the earliest?
 module.exports = min([
