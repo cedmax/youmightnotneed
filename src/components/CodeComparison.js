@@ -41,7 +41,7 @@ const NotesLinks = styled.div`
   }
 
   code {
-    color: black;
+    color: var(--nc-tx-1);
     background: var(--custom-bk-code);
     border-radius: 7px;
     padding: 3px 5px;

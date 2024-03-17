@@ -1,4 +1,3 @@
-import 'highlight.js/styles/xcode.css'
 import '@exampledev/new.css/new.css'
 import styled, { createGlobalStyle } from 'styled-components'
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { useDarkMode } from '../helpers/use-dark-mode'
 import AppStyles, { GlobalStyle } from '../helpers/styles'
@@ -26,12 +26,28 @@ const darkTheme = {
     --nc-bg-3: #3a3a3a;
     --nc-lk-1: #99BFFF;
     --nc-lk-2: rgb(176, 188, 198);
-    --custom-bk-code: #ccc;
+    --custom-bk-code: #282c34;
   `,
 }
 
 const App = ({ Component, pageProps }) => {
   const [theme, themeToggler] = useDarkMode()
+
+  useEffect(() => {
+    let link = document.getElementById('highlightjs-css')
+    if (!link) {
+      link = document.createElement('link')
+      link.id = 'highlightjs-css'
+      link.rel = 'stylesheet'
+      const head = document.getElementsByTagName('head')[0]
+      head.appendChild(link)
+    }
+
+    const themefile = theme === 'light' ? 'xcode' : 'hybrid'
+    link.href = `https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/${themefile}.min.css`
+
+    // import 'highlight.js/styles/xcode.css'
+  }, [theme])
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
