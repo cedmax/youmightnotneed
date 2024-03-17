@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-export default memo(() => {
+export default memo(({ themeToggler }) => {
   const router = useRouter()
 
   return (
@@ -25,6 +25,8 @@ export default memo(() => {
       <Link href="/css">
         <a aria-current={router.asPath == '/css' ? 'page' : undefined}>css</a>
       </Link>
+
+      <button onClick={themeToggler}>toggle dark mode</button>
     </nav>
   )
 })
