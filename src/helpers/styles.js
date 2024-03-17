@@ -1,38 +1,11 @@
-import 'highlight.js/styles/xcode.css'
 import '@exampledev/new.css/new.css'
 import styled, { createGlobalStyle } from 'styled-components'
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --nc-tx-1: #ffffff;
-    --nc-tx-2: #eeeeee;
-    --nc-bg-1: #000000;
-    --nc-bg-2: #111111;
-    --nc-bg-3: #222222;
-    --nc-lk-1: #00BFFF;
-    --nc-lk-2: #0D98BA;
-    --nc-lk-tx: #FFFFFF;
-    --nc-ac-1: #7928CA;
-    --nc-ac-tx: #FFFFFF;
-    --custom-bk-code: #ccc;
-    --custom-tx-code: #888
-  }
-} */
-
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --nc-tx-1: rgb(40, 40, 40);
-    --nc-tx-2: rgb(66, 78, 88);
-    --nc-lk-1: rgb(155, 77, 202);
-    --nc-lk-2: rgb(96, 108, 118);
-    --nc-lk-tx: #FFFFFF;
-    --nc-bg-1: #FFFFFF;
-    --nc-bg-2: #F8F8F8;
-    --nc-bg-3: #FFFFFF;
-    --nc-ac-1: rgb(155, 77, 202);
-    --nc-ac-tx: #fff;
-    --custom-bk-code: #f0f0f0
+    ${({ theme }) => theme.variables};
   }
+
 
   body {
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
@@ -74,9 +47,19 @@ export const GlobalStyle = createGlobalStyle`
 
 export default styled.div`
   nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (max-width: 640px) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
     box-sizing: border-box;
     width: 100%;
     padding: 1rem;
+    position: relative;
 
     @media screen and (min-width: 30em) {
       padding: 2rem;
@@ -119,6 +102,23 @@ export default styled.div`
       opacity: 0.5;
       transition: opacity 0.15s ease-in;
       text-decoration: underline;
+    }
+    button {
+      color: var(--nc-lk-2);
+      font-size: 12px;
+
+      &,
+      :hover,
+      :active,
+      :focus {
+        opacity: 0.7;
+        margin-left: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 25px;
+        overflow: hidden;
+        background-color: transparent;
+      }
     }
   }
 

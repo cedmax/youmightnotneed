@@ -92,7 +92,21 @@ export default memo(({ data: initialData, frw }) => {
         </Row>
       ))}
 
-      <ScrollToTop style={{ fontSize: 26, bottom: 30 }} showUnder={160}>
+      <ScrollToTop
+        style={{
+          fontSize: 23,
+          bottom: 30,
+          background: 'rgba(255, 255, 255, .5)',
+          borderRadius: 5,
+          aspectRatio: 1,
+          height: 30,
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          border: '1px solid var(--nc-bg-3)',
+        }}
+        showUnder={160}
+      >
         <span role="img" aria-label="Go To Top">
           🔝
         </span>
