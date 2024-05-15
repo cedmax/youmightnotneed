@@ -122,8 +122,7 @@
 [\_.template](https://lodash.com/docs/#template)  
 [\_.truncate](https://lodash.com/docs/#truncate)  
 [\_.unescape](https://lodash.com/docs/#unescape)  
-[\_.upperCase](https://lodash.com/docs/#upperCase)  
-[\_.words](https://lodash.com/docs/#words)
+[\_.upperCase](https://lodash.com/docs/#upperCase)
 
 ### Util
 
