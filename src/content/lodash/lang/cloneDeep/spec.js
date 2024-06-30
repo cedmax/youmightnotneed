@@ -1,5 +1,5 @@
 /**
- * @jest-environment ./src/content/lodash/lang/cloneDeep/fixJSDOMEnvironment.js
+ * @jest-environment ./src/content/lodash/lang/cloneDeep/jest.fix.js
  */
 
 const expected = false

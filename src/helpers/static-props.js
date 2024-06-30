@@ -13,12 +13,15 @@ const parseMarkdown = file => requireMarkdown(path.resolve(file))
 
 const fetchContent = prj => {
   const obj = {}
-  glob.sync(`./src/content/${prj}/**/*.*`).forEach(file => {
-    const fileKey = file.replace(`src/content/${prj}/`, '')
-    obj[fileKey] = file.endsWith('.md')
-      ? parseMarkdown(file)
-      : fs.readFileSync(file, 'utf8')
-  })
+  glob
+    .sync(`./src/content/${prj}/**/*.*`)
+    .filter(file => !file.match(/jest\..+\.js/))
+    .forEach(file => {
+      const fileKey = file.replace(`src/content/${prj}/`, '')
+      obj[fileKey] = file.endsWith('.md')
+        ? parseMarkdown(file)
+        : fs.readFileSync(file, 'utf8')
+    })
   return mapImports(obj)
 }
 
