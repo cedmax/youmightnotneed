@@ -1,9 +1,9 @@
 const parse = object => {
   const result = Object.keys(object).reduce((cache, file) => {
     const parts = file.split('/')
-    const area = parts[1]
-    const method = parts[2]
-    const version = parts[3]
+    const area = parts[0]
+    const method = parts[1]
+    const version = parts[2]
       .replace('.js', '')
       .replace('vanilla', 'plain js')
       .replace('.md', '')

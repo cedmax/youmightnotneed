@@ -1,4 +1,4 @@
-import glob from 'glob'
+import { globSync } from 'glob'
 import fs from 'fs'
 import path from 'path'
 import requireMarkdownC from 'require-markdown'
@@ -13,7 +13,11 @@ const parseMarkdown = file => requireMarkdown(path.resolve(file))
 
 const fetchContent = prj => {
   const obj = {}
-  glob.sync(`./src/content/${prj}/**/*.*`).forEach(file => {
+  globSync(`./src/content/${prj}/**/*.*`, {
+    ignore: {
+      ignored: p => /jest\..+\.js$/.test(p.name),
+    },
+  }).forEach(file => {
     const fileKey = file.replace(`src/content/${prj}/`, '')
     obj[fileKey] = file.endsWith('.md')
       ? parseMarkdown(file)
