@@ -1,12 +1,13 @@
 import React from 'react'
 import Page from '../components/Page'
 import dynamic from 'next/dynamic'
-import { getStaticProps as getStatProp } from '../helpers/static-props'
 
 const LibPage = dynamic(import('../components/LibPage'))
 
 export async function getStaticProps({ params: { frw } }) {
-  return getStatProp(frw)
+  const { getStaticProps } = require('../helpers/static-props')
+
+  return getStaticProps(frw)
 }
 
 export async function getStaticPaths() {

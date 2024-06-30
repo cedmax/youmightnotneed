@@ -1,10 +1,11 @@
 import React from 'react'
 import Page from '../components/Page'
 import ResponsiveVideo from '../components/ResponsiveVideo'
-import { getStaticProps as getStatProp } from '../helpers/static-props'
 
 export async function getStaticProps() {
-  return getStatProp('css')
+  const { getStaticProps } = require('../helpers/static-props')
+
+  return getStaticProps('css')
 }
 
 export default props => (
