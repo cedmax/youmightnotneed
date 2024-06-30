@@ -1,6 +1,7 @@
 import React, { memo } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Badge from './Badge'
 
 export default memo(({ themeToggler }) => {
   const router = useRouter()
@@ -27,6 +28,7 @@ export default memo(({ themeToggler }) => {
       </Link>
 
       <button onClick={themeToggler}>toggle dark mode</button>
+      <Badge />
     </nav>
   )
 })
