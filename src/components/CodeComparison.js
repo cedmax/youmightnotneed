@@ -26,7 +26,7 @@ const LineBlock = styled.div`
       overflow: hidden;
       width: 48%;
 
-      * {
+      pre {
         margin-bottom: 0;
       }
     }
