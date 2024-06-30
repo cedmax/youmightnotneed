@@ -26,7 +26,7 @@ const LineBlock = styled.div`
       overflow: hidden;
       width: 48%;
 
-      * {
+      pre {
         margin-bottom: 0;
       }
     }
@@ -111,16 +111,6 @@ const Variant = memo(
             >
               codesandbox.io
             </button>
-            <a
-              href={`https://www.phind.com/search?q=${encodeURIComponent(
-                methodData[variant]
-              )}`}
-              title="Take with a pinch of salt"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <button className="button button-clear">AI explanation</button>
-            </a>
           </>
         ) : (
           ''

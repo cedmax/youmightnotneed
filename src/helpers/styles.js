@@ -35,9 +35,15 @@ export const GlobalStyle = createGlobalStyle`
     background: none;
     color: var(--nc-lk-1);
   }
+
   .button:hover, .button:focus, .button:active {
     background: none;
     color: var(--nc-lk-2);
+  }
+
+  .button {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   strong {
@@ -63,6 +69,7 @@ export default styled.div`
 
     @media screen and (min-width: 30em) {
       padding: 2rem;
+      padding-right: 3.5em;
     }
 
     a:first-child {
