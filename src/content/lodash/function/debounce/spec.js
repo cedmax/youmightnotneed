@@ -64,6 +64,15 @@ describe('debounce', () => {
         expect(fn).toBeCalledWith(0)
         expect(fn).toBeCalledWith(99)
       })
+
+      test('it should call the debounced fn once with leading option if it was called once', () => {
+        const debounced = debounce(fn, 1000, { leading: true })
+
+        debounced();
+
+        jest.advanceTimersByTime(1001)
+        expect(fn).toBeCalledTimes(1)
+      })
     })
   })
 })
