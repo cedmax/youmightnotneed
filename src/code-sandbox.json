@@ -131,7 +131,7 @@
   "lodash/function/bind": "https://codesandbox.io/s/hwqht?previewwindow=tests&file=/function/bind/vanilla.js",
   "lodash/function/curry": "https://codesandbox.io/s/rjz9o?previewwindow=tests&file=/function/curry/vanilla.js",
   "lodash/function/curryRight": "https://codesandbox.io/s/3i27g?previewwindow=tests&file=/function/curryRight/vanilla.js",
-  "lodash/function/debounce": "https://codesandbox.io/s/v49r9y?previewwindow=tests&file=/function/debounce/vanilla.js",
+  "lodash/function/debounce": "https://codesandbox.io/s/zzc7w5?previewwindow=tests&file=/function/debounce/vanilla.js",
   "lodash/function/delay": "https://codesandbox.io/s/81fwe7?previewwindow=tests&file=/function/delay/vanilla.js",
   "lodash/function/flip": "https://codesandbox.io/s/32gwy?previewwindow=tests&file=/function/flip/vanilla.js",
   "lodash/function/negate": "https://codesandbox.io/s/ib0le?previewwindow=tests&file=/function/negate/vanilla.js",
