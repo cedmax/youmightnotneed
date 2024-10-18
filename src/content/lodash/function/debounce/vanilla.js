@@ -11,13 +11,7 @@ const debounce = (func, delay, { leading } = {}) => {
     }
     clearTimeout(timerId)
 
-    timerId = setTimeout(() => {
-      if (!shouldInvoke) {
-        return
-      }
-
-      func(...args)
-    }, delay)
+    timerId = setTimeout(() => shouldInvoke && func(...args), delay)
   }
 }
 
