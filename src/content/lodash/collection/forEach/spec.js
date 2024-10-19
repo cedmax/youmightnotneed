@@ -14,6 +14,8 @@ describe('forEach', () => {
       expect(console.log).toHaveBeenNthCalledWith(1, 'a', 0)
       expect(console.log).toHaveBeenNthCalledWith(2, 'b', 1)
       expect(console.log).toHaveBeenNthCalledWith(3, 'c', 2)
+      expect(console.log).toHaveBeenNthCalledWith(4, 'red', 'a')
+      expect(console.log).toHaveBeenNthCalledWith(5, 'green', 'b')
     })
   })
 
@@ -32,6 +34,8 @@ describe('forEach', () => {
       expect(console.log).toHaveBeenNthCalledWith(1, 'a', 0)
       expect(console.log).toHaveBeenNthCalledWith(2, 'b', 1)
       expect(console.log).toHaveBeenNthCalledWith(3, 'c', 2)
+      expect(console.log).toHaveBeenNthCalledWith(4, 'red', 'a')
+      expect(console.log).toHaveBeenNthCalledWith(5, 'green', 'b')
     })
   })
 })
